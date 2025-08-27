@@ -1,46 +1,88 @@
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-2 py-16">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Section - Text and CTA */}
-        <div className="space-y-8">
-          <h1 className="text-6xl lg:text-6xl font-black text-black leading-tight">
-            GMAJOR cùng bạn vươn ra thế giới
-          </h1>
-          
-          <div className="space-y-4 text-lg text-black leading-relaxed">
-            <p>
-              Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ Nhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới -{' '}
-              <span className="font-black text-black">"HOÀN TOÀN MIỄN PHÍ"</span>
-            </p>
-            <p>
-              Tiếp cận với thị trường quốc tế từ hôm nay mà không cần hội chợ thương mại hay tốn kém cho trung gian
-            </p>
-          </div>
-          
-          <button className="bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-8 py-4 rounded-lg font-black text-lg flex items-center space-x-3 group shadow-lg">
-            <span>Đăng ký ngay</span>
-            <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+    <section className="w-full">
+      {/* Mobile: Full image layout */}
+      <div className="lg:hidden">
+        {/* Full width image on mobile */}
+        <div className="w-full h-screen relative">
+          <img
+            src="/images/gmajor-toppage.png"
+            alt="GMAJOR Business Professionals"
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay content */}
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+            <div className="w-full p-6 pb-8 text-white">
+              <h1 className="text-3xl md:text-4xl font-black leading-tight mb-4">
+                GMAJOR cùng bạn vươn ra thế giới
+              </h1>
+              
+              <div className="space-y-3 text-sm md:text-base leading-relaxed mb-6">
+                <p>
+                  Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ Nhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới -{' '}
+                  <span className="font-black">"HOÀN TOÀN MIỄN PHÍ"</span>
+                </p>
+                <p>
+                  Tiếp cận với thị trường quốc tế từ hôm nay mà không cần hội chợ thương mại hay tốn kém cho trung gian
+                </p>
+              </div>
+
+              <button className="w-full bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-6 py-4 rounded-lg font-black text-lg flex items-center justify-center space-x-3 group shadow-lg">
+                <span>Đăng ký ngay</span>
+                <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
-        
-        {/* Right Section - Image */}
-        <div className="relative">
-          {/* Main Image Container */}
-          <div className="w-full h-full rounded-3xl overflow-hidden">
-            {/* Real GMAJOR top page image */}
-            <img 
-              src="/images/gmajor-toppage.png" 
-              alt="GMAJOR Business Professionals" 
-              className="w-full h-full object-cover"
-            />
+      </div>
+
+      {/* Desktop: Original side-by-side layout */}
+      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid gap-8 sm:gap-12 items-center lg:grid-cols-2">
+          {/* Left Section - Text and CTA */}
+          <div className="space-y-6 sm:space-y-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-black leading-tight">
+              GMAJOR cùng bạn vươn ra thế giới
+            </h1>
+
+            <div className="space-y-4 text-base sm:text-lg text-black leading-relaxed">
+              <p>
+                Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ Nhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới -{' '}
+                <span className="font-black text-black">"HOÀN TOÀN MIỄN PHÍ"</span>
+              </p>
+              <p>
+                Tiếp cận với thị trường quốc tế từ hôm nay mà không cần hội chợ thương mại hay tốn kém cho trung gian
+              </p>
+            </div>
+
+            <button className="w-full sm:w-auto justify-center sm:justify-start bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-8 py-4 rounded-lg font-black text-lg flex items-center space-x-3 group shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
+              <span>Đăng ký ngay</span>
+              <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          {/* Right Section - Image */}
+          <div className="relative">
+            {/* Main Image Container */}
+            <div className="w-full rounded-2xl sm:rounded-3xl overflow-hidden h-56 sm:h-80 md:h-96 lg:h-full">
+              {/* Real GMAJOR top page image */}
+              <img
+                src="/images/gmajor-toppage.png"
+                alt="GMAJOR Business Professionals"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
   )
-} 
+}

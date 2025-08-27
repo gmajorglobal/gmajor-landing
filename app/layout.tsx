@@ -19,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className="antialiased">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className="antialiased w-full overflow-x-hidden">
         {children}
       </body>
     </html>

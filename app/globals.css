@@ -4,8 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-body {
+html, body {
   font-family: 'Inter', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure sticky positioning works properly */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .dotted-bg {
