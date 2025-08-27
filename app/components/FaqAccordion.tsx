@@ -115,7 +115,7 @@ export default function FaqAccordion() {
   return (
     <section className="bg-gray-50 lg:bg-white transition-all duration-500 ease-in-out">
       {/* match the top section width */}
-      <div className="mx-auto w-full max-w-[1280px] px-6 py-12 lg:py-24">
+      <div className="mx-auto w-full max-w-[1280px] px-6 py-10 lg:py-16">
         <h2 className="mb-10 text-center font-extrabold tracking-tight text-gray-900 text-4xl lg:text-5xl">
           Bạn còn thắc mắc về GMAJOR?
         </h2>

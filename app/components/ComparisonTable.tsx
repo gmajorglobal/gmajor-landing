@@ -83,12 +83,6 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
   return (
     <section
       className="w-full"
-      style={{
-        backgroundImage:
-          "radial-gradient(#e6e7eb 1px, transparent 1px), radial-gradient(#e6e7eb 1px, transparent 1px)",
-        backgroundSize: "22px 22px, 22px 22px",
-        backgroundPosition: "0 0, 11px 11px",
-      }}
     >
       <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-16">
         {/* Heading */}

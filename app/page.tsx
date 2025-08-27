@@ -7,6 +7,9 @@ import FeatureGrid from './components/FeatureGrid'
 import ComparisonTable from './components/ComparisonTable'
 import CommentShowcase from './components/CommentShowcase'
 import FaqAccordion from './components/FaqAccordion'
+import HeroGlobalMarket from './components/HeroGlobalMarket'
+import ContactFormHero from './components/ContactFormHero'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -27,6 +30,9 @@ export default function Home() {
       <ComparisonSection />
       <CommentShowcase />
       <FaqAccordion />
+      <HeroGlobalMarket />
+      <ContactFormHero />
+      <Footer />
     </main>
   )
 } 
