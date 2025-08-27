@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
+    <section className="max-w-7xl mx-auto px-2 py-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Section - Text and CTA */}
         <div className="space-y-8">
@@ -31,7 +31,7 @@ export default function Hero() {
         {/* Right Section - Image */}
         <div className="relative">
           {/* Main Image Container */}
-          <div className="w-full h-96 lg:h-[500px] rounded-3xl overflow-hidden">
+          <div className="w-full h-full rounded-3xl overflow-hidden">
             {/* Real GMAJOR top page image */}
             <img 
               src="/images/gmajor-toppage.png" 

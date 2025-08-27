@@ -46,7 +46,7 @@ gmajor-landing/
 
 ### Spacing
 - **Container**: `max-w-7xl` (1280px)
-- **Padding**: `px-6` (24px horizontal)
+- **Padding**: `px-2` (24px horizontal)
 - **Gap**: `gap-12` (48px between sections)
 - **Section Padding**: `py-16` (64px vertical)
 

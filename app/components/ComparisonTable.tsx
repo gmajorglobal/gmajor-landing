@@ -90,37 +90,40 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
         backgroundPosition: "0 0, 11px 11px",
       }}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-14">
+      <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-14">
         {/* Heading */}
-        <div className="text-center md:text-left mb-6">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-indigo-800 uppercase">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase">
             {heading}
           </h2>
-          <p className="mt-3 text-sm md:text-base text-gray-600 leading-relaxed max-w-3xl">
+
+          <hr className="mx-auto my-4 h-[2px] w-46 md:w-60 border-0 rounded bg-indigo-800" />
+
+          <p className="text-lg md:text-xl text-indigo-700 italic">
             {subtext}
           </p>
         </div>
 
+
         {/* Table */}
         <div className="overflow-x-auto">
-          <div className="min-w-[880px] rounded-xl border border-gray-200 bg-white shadow-sm">
+          <div className="min-w-[1080px] rounded-xl border border-gray-200 bg-white shadow-sm">
             <table className="w-full table-fixed border-separate border-spacing-0">
               <thead>
                 <tr>
-                  <th className="w-[28%] bg-gray-100 text-gray-700 text-sm font-semibold p-4 text-left rounded-tl-xl border-b border-gray-200">
+                  <th className="w-[18%] bg-gray-100 text-gray-700 text-sm font-semibold p-4 text-left rounded-tl-xl border-b border-gray-200">
                     {/* empty label header */}
                   </th>
                   {logoItems.map((l, i) => (
                     <th
                       key={i}
-                      className={`p-4 border-b border-gray-200 ${
-                        i === logoItems.length - 1 ? "rounded-tr-xl" : ""
-                      }`}
+                      className={`p-4 border-b border-gray-200 ${i === logoItems.length - 1 ? "rounded-tr-xl" : ""
+                        }`}
                     >
                       <img
                         src={l.src}
                         alt={l.alt || `Logo ${i + 1}`}
-                        className="mx-auto h-20 object-contain"
+                        className="mx-auto h-28 object-contain"
                       />
                     </th>
                   ))}
@@ -132,13 +135,12 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
                   const vals = pad(r.values)
                   const lastRow = ri === rows.length - 1
                   return (
-                    <tr key={ri} className="align-top">
+                    <tr key={ri} className="align-middle text-center">
                       {/* left label */}
                       <th
                         scope="row"
-                        className={`bg-gray-100 text-gray-800 text-sm font-semibold p-4 text-left border-t border-gray-200 ${
-                          lastRow ? "rounded-bl-xl" : ""
-                        }`}
+                        className={`bg-gray-100 text-gray-800 text-lg font-semibold p-4 text-left border-t border-gray-200 ${lastRow ? "rounded-bl-xl" : ""
+                          }`}
                       >
                         {r.label}
                       </th>
@@ -148,9 +150,8 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
                         return (
                           <td
                             key={ci}
-                            className={`p-4 text-sm text-gray-700 border-t border-gray-200 ${
-                              lastRow && isLastCol ? "rounded-br-xl" : ""
-                            }`}
+                            className={`p-4 text-lg text-gray-700 border-t border-gray-200 ${lastRow && isLastCol ? "rounded-br-xl" : ""
+                              }`}
                           >
                             {v}
                           </td>

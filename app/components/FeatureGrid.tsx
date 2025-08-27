@@ -64,13 +64,13 @@ export default function FeatureGrid({
                 backgroundColor: "#f5f6f7",
             }}
         >
-            <div className="max-w-7xl mx-auto px-6 md:px-8 py-10 md:py-14">
+            <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-14">
                 {/* Header */}
                 <div className="mb-6 md:mb-8">
                     <div className="flex items-start justify-center gap-3 text-center">
                         <span className="block h-8 w-1 bg-orange-500 rounded" />
                         <div>
-                            <p className="text-indigo-700 font-semibold tracking-wide">
+                            <p className="text-indigo-700 font-semibold tracking-wide text-lg md:text-xl">
                                 {heading}
                             </p>
                             <h2 className="mt-1 text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase leading-tight">

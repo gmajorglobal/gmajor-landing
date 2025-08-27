@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import InfoSection from './components/InfoSection'
 import FeaturesCarousel from './components/FeaturesCarousel'
+import ComparisonSection from './components/ComparisonSection'
 import FeatureGrid from './components/FeatureGrid'
 import ComparisonTable from './components/ComparisonTable'
 
@@ -21,6 +22,7 @@ export default function Home() {
             "/images/logo-globy.png",
             "/images/logo-shopify.png",
         ]}/>
+      <ComparisonSection />
     </main>
   )
 } 

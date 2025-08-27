@@ -38,7 +38,7 @@ export default function FeaturesCarousel() {
 
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-2">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
@@ -95,7 +95,7 @@ export default function FeaturesCarousel() {
                         <img src={f.image} alt={f.alt} className="w-full h-full object-cover" />
                       </div>
                     </div>
-                    <div className="px-4 pb-5 text-center w-[280px] mx-auto">
+                    <div className="px-2 pb-5 text-center w-[280px] mx-auto">
                       <h3 className="text-xl font-bold text-blue-900">{f.title}</h3>
                     </div>
                   </div>

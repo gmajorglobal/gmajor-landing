@@ -28,7 +28,7 @@ export default function InfoSection() {
 
   return (
     <section className="w-full bg-gray-100 py-16">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-2">
         <div className="flex justify-between items-center">
         {/* Left Section - Heading and Description */}
         <div className="space-y-6 w-[400px]">
