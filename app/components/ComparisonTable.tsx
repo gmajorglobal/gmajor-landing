@@ -90,7 +90,7 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
         backgroundPosition: "0 0, 11px 11px",
       }}
     >
-      <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-14">
+      <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-16">
         {/* Heading */}
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase">

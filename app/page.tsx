@@ -5,6 +5,7 @@ import FeaturesCarousel from './components/FeaturesCarousel'
 import ComparisonSection from './components/ComparisonSection'
 import FeatureGrid from './components/FeatureGrid'
 import ComparisonTable from './components/ComparisonTable'
+import CommentShowcase from './components/CommentShowcase'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
             "/images/logo-shopify.png",
         ]}/>
       <ComparisonSection />
+      <CommentShowcase />
     </main>
   )
 } 

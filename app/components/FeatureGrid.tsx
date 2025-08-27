@@ -64,7 +64,7 @@ export default function FeatureGrid({
                 backgroundColor: "#f5f6f7",
             }}
         >
-            <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-14">
+            <div className="max-w-7xl mx-auto px-2 md:px-8 py-10 md:py-16">
                 {/* Header */}
                 <div className="mb-6 md:mb-8">
                     <div className="flex items-start justify-center gap-3 text-center">

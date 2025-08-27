@@ -49,7 +49,7 @@ export default function ComparisonSection() {
   ]
 
   return (
-    <section className="w-full bg-white py-14">
+    <section className="w-full bg-white py-16">
       <div className="mx-auto w-full max-w-[1280px] px-2">
         <div className="space-y-3.5">
           {rows.map(({ id, logo, text, bg, rightIcon }) => (

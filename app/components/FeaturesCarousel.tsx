@@ -37,7 +37,7 @@ export default function FeaturesCarousel() {
   const prev = () => setIndex((i) => (i <= 0 ? MAX_INDEX : i - 1))
 
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-2">
         {/* Header */}
         <div className="text-center mb-16">
