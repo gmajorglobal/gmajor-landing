@@ -49,23 +49,25 @@ export default function ComparisonSection() {
   ]
 
   return (
-    <section className="w-full bg-white py-16">
-      <div className="mx-auto w-full max-w-[1280px] px-2">
-        <div className="space-y-3.5">
+    <section className="w-full bg-white py-8 sm:py-12 md:py-14 lg:py-16">
+      <div className="mx-auto w-full max-w-[1280px] px-2 sm:px-4 md:px-6">
+        <div className="space-y-2 sm:space-y-3 md:space-y-3.5">
           {rows.map(({ id, logo, text, bg, rightIcon }) => (
             <div
               key={id}
               className={[
-                "relative rounded-md",
-                "flex items-center gap-6 px-6",
-                "sm:flex-row", // keep horizontal on larger screens
+                "relative rounded-lg sm:rounded-md",
+                "flex items-center",
+                "gap-3 sm:gap-4 md:gap-6",
+                "px-3 sm:px-4 md:px-6",
+                "py-3 sm:py-4 md:py-5",
                 bg,
               ].join(" ")}
             >
               {/* LEFT: logo (optional) */}
               {logo && (
                 <div className="shrink-0">
-                  <div className="flex h-28 w-[124px] items-center justify-center rounded-md">
+                  <div className="flex h-12 w-14 sm:h-16 sm:w-20 md:h-20 md:w-24 lg:h-28 lg:w-[124px] items-center justify-center rounded-md">
                     <img
                       src={logo}
                       alt=""
@@ -76,14 +78,14 @@ export default function ComparisonSection() {
               )}
 
               {/* TEXT */}
-              <p className="flex-1 text-[22px] leading-7 text-[#1f2937]">
+              <p className="flex-1 min-w-0 break-words text-xs sm:text-sm md:text-base lg:text-[22px] leading-5 sm:leading-6 md:leading-7 text-[#1f2937]">
                 {text}
               </p>
 
               {/* RIGHT: icon (optional) */}
               {rightIcon && (
                 <div className="shrink-0">
-                  <div className="flex h-28 w-[124px] items-center justify-center rounded-md">
+                  <div className="flex h-12 w-14 sm:h-16 sm:w-20 md:h-20 md:w-24 lg:h-28 lg:w-[124px] items-center justify-center rounded-md">
                     <img
                       src={rightIcon}
                       alt=""

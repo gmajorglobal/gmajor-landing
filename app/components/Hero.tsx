@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
 
       {/* Desktop: Original side-by-side layout */}
-      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14 lg:py-16">
         <div className="grid gap-8 sm:gap-12 items-center lg:grid-cols-2">
           {/* Left Section - Text and CTA */}
           <div className="space-y-6 sm:space-y-8">
