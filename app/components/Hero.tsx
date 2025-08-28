@@ -1,4 +1,10 @@
+'use client'
+
 export default function Hero() {
+  const handleRegisterClick = () => {
+    window.location.href = 'https://market.gmajor.biz/register?lang=vi'
+  }
+
   return (
     <section className="w-full">
       {/* Mobile: Full image layout */}
@@ -27,7 +33,7 @@ export default function Hero() {
                 </p>
               </div>
 
-              <button className="w-full bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-6 py-4 rounded-lg font-black text-lg flex items-center justify-center space-x-3 group shadow-lg">
+              <button onClick={handleRegisterClick} className="w-full bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-6 py-4 rounded-lg font-black text-lg flex items-center justify-center space-x-3 group shadow-lg">
                 <span>Đăng ký ngay</span>
                 <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -59,7 +65,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <button className="w-full sm:w-auto justify-center sm:justify-start bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-8 py-4 rounded-lg font-black text-lg flex items-center space-x-3 group shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
+            <button onClick={handleRegisterClick} className="w-full sm:w-auto justify-center sm:justify-start bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-8 py-4 rounded-lg font-black text-lg flex items-center space-x-3 group shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
               <span>Đăng ký ngay</span>
               <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

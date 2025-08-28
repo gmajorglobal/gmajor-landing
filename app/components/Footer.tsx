@@ -7,7 +7,7 @@ export default function SiteFooter() {
           {/* Left block */}
           <div className="col-span-1 sm:col-span-2">
             <h3 className="mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg font-semibold uppercase text-gray-900">
-              <a href="https://gmajor.biz" target="_blank" rel="noopener noreferrer">
+              <a href="https://gmajor.biz" rel="noopener noreferrer">
                 <img src="/images/gmajor-logo.png" className="mr-3 w-[100px] sm:w-[120px]" alt="GMAJOR Logo" />
               </a>
             </h3>
@@ -52,27 +52,27 @@ export default function SiteFooter() {
             </h3>
             <ul className="text-sm sm:text-base md:text-lg text-gray-600 leading-6 sm:leading-7">
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/cookies-policy?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/cookies-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Chính sách Cookie
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/privacy-policy?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/privacy-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Chính sách bảo mật
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/terms-and-conditions?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/terms-and-conditions?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Điều khoản dịch vụ
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/paid-services-policy?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/paid-services-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Chính sách dịch vụ trả phí
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/payment-policy?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/payment-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Chính sách thanh toán
                 </a>
               </li>
@@ -86,27 +86,27 @@ export default function SiteFooter() {
             </h3>
             <ul className="text-sm sm:text-base md:text-lg text-gray-600 leading-6 sm:leading-7">
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/about-us?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/about-us?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Về GMAJOR
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/for-ma?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/for-ma?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Liên quan đến M&amp;A
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/for-ps?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/for-ps?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Liên quan đến Sản phẩm hoặc Dịch vụ
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/faq?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/faq?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Câu hỏi thường gặp
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/blog?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/blog?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Blog
                 </a>
               </li>
@@ -120,12 +120,12 @@ export default function SiteFooter() {
             </h3>
             <ul className="text-sm sm:text-base md:text-lg text-gray-600 leading-6 sm:leading-7">
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/logistic-credit-support?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/logistic-credit-support?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Hỗ trợ Thương mại &amp; Tín dụng
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/contact-us?lang=vi" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://gmajor.biz/contact-us?lang=vi" rel="noopener noreferrer" className="hover:underline">
                   Liên hệ
                 </a>
               </li>
@@ -139,7 +139,7 @@ export default function SiteFooter() {
         <div className="text-center">
           <a
             href="https://gmajor.biz?lang=vi"
-            target="_blank"
+           
             rel="noopener noreferrer"
             className="mb-4 sm:mb-5 flex items-center justify-center text-2xl sm:text-3xl font-semibold text-gray-900"
           >
@@ -151,7 +151,7 @@ export default function SiteFooter() {
             © 2024-2025 GMAJOR. Bảo lưu mọi quyền. Trang web được thiết kế và vận hành bởi{" "}
             <a
               href="https://gmajor.biz?lang=vi"
-              target="_blank"
+             
               rel="noopener noreferrer"
               className="font-bold text-main hover:underline"
             >
@@ -163,7 +163,7 @@ export default function SiteFooter() {
             <li>
               <a
                 href="https://www.facebook.com/gmajorvietnam/"
-                target="_blank"
+               
                 rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="text-gray-500 hover:text-gray-900"
@@ -180,7 +180,7 @@ export default function SiteFooter() {
             <li>
               <a
                 href="https://twitter.com/gmajorglobal"
-                target="_blank"
+               
                 rel="noopener noreferrer"
                 aria-label="Twitter"
                 className="text-gray-500 hover:text-gray-900"
@@ -193,7 +193,7 @@ export default function SiteFooter() {
             <li>
               <a
                 href="https://www.tiktok.com/@phieucungsepnhat"
-                target="_blank"
+               
                 rel="noopener noreferrer"
                 aria-label="TikTok"
                 className="text-gray-500 hover:text-gray-900"
@@ -206,7 +206,7 @@ export default function SiteFooter() {
             <li>
               <a
                 href="https://www.youtube.com/@phieucungsepNhat"
-                target="_blank"
+               
                 rel="noopener noreferrer"
                 aria-label="YouTube"
                 className="text-gray-500 hover:text-gray-900"

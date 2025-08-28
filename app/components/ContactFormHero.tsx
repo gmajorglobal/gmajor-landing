@@ -30,7 +30,7 @@ export default function ContactFormHero() {
   }
 
   return (
-    <section className="w-full bg-white">
+    <section id="contact-form" className="w-full bg-white">
       <div className="mx-auto w-full max-w-[1280px] px-3 sm:px-4 md:px-6">
         {/* mobile stacks, desktop stays 2 cols */}
         <div className="grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-6 sm:gap-10 lg:gap-16 py-8 sm:py-12 md:py-14 lg:py-16 lg:min-h-[620px]">

@@ -45,7 +45,7 @@ export default function HeroGlobalMarket() {
 
           {/* CTA button (now has comfortable space below the card on mobile) */}
           <a
-            href="#signup"
+            href="https://market.gmajor.biz/register?lang=vi"
             className="absolute left-4 sm:left-6 md:left-10 lg:left-12 bottom-4 sm:bottom-5 md:bottom-6 lg:bottom-6 inline-flex items-center gap-3 sm:gap-4 md:gap-5 rounded-full bg-[#eaf2ff] px-5 sm:px-6 md:px-7 lg:px-8 py-3 sm:py-3.5 md:py-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold text-[#0b1b2b] shadow-md"
           >
             Đăng ký ngay
