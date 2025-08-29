@@ -60,9 +60,7 @@ export default function FeatureGrid({
     return (
         <section
             className="w-full bg-gray-50"
-            style={{
-                backgroundColor: "#f5f6f7",
-            }}
+            style={{ backgroundColor: "#f5f6f7" }}
         >
             <div className="max-w-7xl mx-auto px-2 md:px-8 py-8 sm:py-12 md:py-14 lg:py-16">
                 {/* Header */}
@@ -84,9 +82,17 @@ export default function FeatureGrid({
                 <div className="flex flex-wrap -mx-3">
                     {features.map((f, idx) => (
                         <div key={`${f.title}-${idx}`} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
-                            <article className="relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 md:p-7 shadow-[0_2px_14px_rgba(0,0,0,0.06)] h-full">
+                            <article
+                                className="
+                                    group relative overflow-hidden rounded-xl border border-gray-200
+                                    bg-white p-6 md:p-7 shadow-[0_2px_14px_rgba(0,0,0,0.06)] h-full
+                                    transition-colors duration-300
+                                    hover:bg-blue-900 hover:border-blue-900
+                                "
+                            >
                                 {/* Top image row */}
                                 <div className="relative h-12 mb-8">
+                                    {/* decorative image stays as-is (not tinted) */}
                                     <img
                                         src="/images/decored.png"
                                         alt=""
@@ -94,23 +100,42 @@ export default function FeatureGrid({
                                         className="pointer-events-none select-none absolute right-4 top-0 w-16 md:w-20 opacity-90"
                                     />
                                     {f.image ? (
+                                        /* feature image stays as-is (not affected by hover colors) */
                                         <img
                                             src={f.image}
                                             alt={f.imageAlt || f.title}
                                             className="h-10 w-10 md:h-20 md:w-20 rounded-lg object-contain relative z-10"
                                         />
                                     ) : (
-                                        <div className="h-10 w-10 md:h-12 md:w-12 rounded-lg bg-indigo-50 text-indigo-400 flex items-center justify-center text-sm border border-dashed border-indigo-200 relative z-10">
+                                        <div
+                                            className="
+                                                h-10 w-10 md:h-12 md:w-12 rounded-lg bg-indigo-50
+                                                text-indigo-400 flex items-center justify-center text-sm
+                                                border border-dashed border-indigo-200 relative z-10
+                                            "
+                                        >
                                             img
                                         </div>
                                     )}
                                 </div>
 
                                 {/* Text below the images */}
-                                <h3 className="text-[18px] md:text-[28px] font-extrabold text-blue-900 uppercase">
+                                <h3
+                                    className="
+                                        text-[18px] md:text-[28px] font-extrabold uppercase
+                                        text-blue-900 transition-colors duration-300
+                                        group-hover:text-white
+                                    "
+                                >
                                     {f.title}
                                 </h3>
-                                <p className="mt-2 text-gray-700 leading-relaxed text-sm md:text-[16px] max-w-[440px]">
+                                <p
+                                    className="
+                                        mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px]
+                                        text-gray-700 transition-colors duration-300
+                                        group-hover:text-white/90
+                                    "
+                                >
                                     {f.description}
                                 </p>
                             </article>
