@@ -1,15 +1,57 @@
 "use client"
 
-import { SetStateAction, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function FeaturesCarousel() {
   const features = [
-    { id: 1, title: "Kết nối trực tiếp với doanh nghiệp toàn cầu", image: "/images/casorel1.png", alt: "Business collaboration puzzle pieces" },
-    { id: 2, title: "Hệ thống tự động phiên dịch đa ngôn ngữ", image: "/images/casorel2.png", alt: "Translate key on keyboard" },
-    { id: 3, title: "Kết nối để tiến tới đàm phán thực sự", image: "/images/casorel3.png", alt: "Business meeting and negotiation" },
-    { id: 4, title: "Miễn phí đăng bài sản phẩm/dịch vụ", image: "/images/casorel4.png", alt: "Free tag on label" },
-    { id: 5, title: "Mô tả sản phẩm tối ưu với AI", image: "/images/casorel5.png", alt: "AI concept with digital elements" },
-    { id: 6, title: "Miễn phí tính năng cơ bản – Gói nâng cấp chi phí hợp lý", image: "/images/casorel6.png", alt: "Finger pressing upgrade key" },
+    {
+      id: 1,
+      title: "Kết nối trực tiếp với doanh nghiệp toàn cầu",
+      image: "/images/casorel1.png",
+      alt: "Business collaboration puzzle pieces",
+      desc:
+        "Kết nối trực tiếp với doanh nghiệp toàn cầu: Hàng loạt nhà cung cấp, nhà máy sản xuất và đối tác tiềm năng đến từ Nhật Bản, Mỹ, Trung Quốc, Việt Nam… đã sẵn sàng. Đây chính là cánh cổng giúp doanh nghiệp Việt Nam tiến gần hơn đến thị trường quốc tế.",
+    },
+    {
+      id: 2,
+      title: "Hệ thống tự động phiên dịch đa ngôn ngữ",
+      image: "/images/casorel2.png",
+      alt: "Translate key on keyboard",
+      desc:
+        "Hệ thống tự động phiên dịch đa ngôn ngữ: Bạn có thể nhắn tin thoải mái bằng tiếng Việt, hệ thống sẽ ngay lập tức chuyển đổi sang tiếng Anh hoặc tiếng Nhật, đảm bảo cuộc trò chuyện luôn liền mạch và hiệu quả.",
+    },
+    {
+      id: 3,
+      title: "Kết nối để tiến tới đàm phán thực sự",
+      image: "/images/casorel3.png",
+      alt: "Business meeting and negotiation",
+      desc:
+        "Kết nối để tiến tới đàm phán thực sự: GMAJOR không chỉ là nơi giới thiệu sản phẩm. Với những tính năng thiết thực, nền tảng này giúp bạn rút ngắn khoảng cách từ bước giới thiệu đến bàn đàm phán và ký kết hợp đồng.",
+    },
+    {
+      id: 4,
+      title: "Miễn phí đăng bài sản phẩm/dịch vụ",
+      image: "/images/casorel4.png",
+      alt: "Free tag on label",
+      desc:
+        "Miễn phí đăng bài sản phẩm/dịch vụ, chẳng ngại rủi ro: Chỉ cần đăng sản phẩm hoặc dịch vụ, bạn đã có cơ hội nhận yêu cầu hợp tác từ khắp nơi trên thế giới.",
+    },
+    {
+      id: 5,
+      title: "Mô tả sản phẩm tối ưu với AI",
+      image: "/images/casorel5.png",
+      alt: "AI concept with digital elements",
+      desc:
+        "Mô tả sản phẩm tối ưu với AI: Không cần chuyên môn sâu, chỉ với vài từ khóa, AI sẽ giúp bạn tạo nội dung mô tả sản phẩm chuyên nghiệp, chuẩn hóa cho thị trường quốc tế.",
+    },
+    {
+      id: 6,
+      title: "Miễn phí tính năng cơ bản – Gói nâng cấp chi phí hợp lý",
+      image: "/images/casorel6.png",
+      alt: "Finger pressing upgrade key",
+      desc:
+        "Miễn phí tính năng cơ bản - gói nâng cấp chi phí hợp lý: Dành riêng cho SMEs, GMAJOR cung cấp đầy đủ tính năng cơ bản hoàn toàn miễn phí. Nếu cần nâng cấp, bạn có thể chọn gói trả phí với chi phí phù hợp, đặc biệt cho những doanh nghiệp còn hạn chế ngân sách.",
+    },
   ]
 
   // Responsive: 1 (mobile), 2 (tablet), 3 (desktop)
@@ -28,7 +70,6 @@ export default function FeaturesCarousel() {
   const STEP_PCT = 100 / visible
 
   const [index, setIndex] = useState(0)
-  // Keep index in range when `visible` changes
   useEffect(() => {
     setIndex((i) => Math.min(i, Math.max(0, features.length - visible)))
   }, [visible])
@@ -36,7 +77,7 @@ export default function FeaturesCarousel() {
   const next = () => setIndex((i) => (i >= MAX_INDEX ? 0 : i + 1))
   const prev = () => setIndex((i) => (i <= 0 ? MAX_INDEX : i - 1))
 
-  // --- Mobile swipe (adds responsiveness without changing desktop behavior)
+  // Mobile swipe
   const [touchStart, setTouchStart] = useState<number | null>(null)
   const [touchEnd, setTouchEnd] = useState<number | null>(null)
   const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => setTouchStart(e.changedTouches[0].clientX)
@@ -44,14 +85,10 @@ export default function FeaturesCarousel() {
   const onTouchEnd = () => {
     if (touchStart == null || touchEnd == null) return
     const delta = touchEnd - touchStart
-    if (Math.abs(delta) > 40) {
-      if (delta < 0) next()
-      else prev()
-    }
+    if (Math.abs(delta) > 40) (delta < 0 ? next() : prev())
     setTouchStart(null)
     setTouchEnd(null)
   }
-  // ---
 
   return (
     <section className="w-full bg-white py-8 sm:py-12 md:py-14 lg:py-16">
@@ -86,7 +123,7 @@ export default function FeaturesCarousel() {
               aria-label="Previous"
               className="absolute left-2 md:-left-8 lg:-left-14 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors z-10"
             >
-              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7"/></svg>
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
             </button>
           )}
 
@@ -97,7 +134,7 @@ export default function FeaturesCarousel() {
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
-            {/* Track (no fixed width) */}
+            {/* Track */}
             <div
               className="flex transition-transform duration-500 ease-in-out will-change-transform w-full"
               style={{ transform: `translateX(-${index * STEP_PCT}%)` }}
@@ -108,18 +145,57 @@ export default function FeaturesCarousel() {
                 <div
                   key={f.id}
                   className="flex-none px-1.5 sm:px-2 md:px-3"
-                  style={{ width: `${100 / visible}%` }} // each slide is a fixed fraction of the viewport
+                  style={{ width: `${100 / visible}%` }}
                 >
-                  <div className="h-full bg-[#fff5ed] border-8 border-blue-800 shadow-lg rounded-sm flex flex-col">
-                    <div className="bg-[#fff5ed] p-3 sm:p-4">
-                      {/* consistent image box height */}
-                      <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden">
-                        <img src={f.image} alt={f.alt} className="w-full h-full object-cover" />
+                  {/* Flip card */}
+                  <div
+                    className="h-full group flip-card outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+                    tabIndex={0}
+                    aria-label={`Thông tin: ${f.title}`}
+                  >
+                    <div className="flip-inner h-full will-change-transform">
+                      {/* Front */}
+                      <div className="flip-face flip-front h-full bg-[#fff5ed] border-8 border-blue-800 shadow-lg rounded-sm flex flex-col">
+                        <div className="bg-[#fff5ed] p-3 sm:p-4">
+                          <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden">
+                            <img src={f.image} alt={f.alt} className="w-full h-full object-cover" />
+                          </div>
+                        </div>
+                        <div className="px-2 pb-4 sm:pb-5 text-center w-full max-w-[280px] mx-auto">
+                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-900">{f.title}</h3>
+                        </div>
+                      </div>
+
+                      {/* Back (only your provided content) */}
+                      <div className="flip-face flip-back h-full bg-blue-900 text-white border-8 border-blue-800 shadow-lg rounded-sm p-5 sm:p-6 lg:p-8 flex items-center justify-center text-center">
+                        <p className="max-w-[680px] text-[16px] sm:text-[18px] md:text-[20px] leading-6 sm:leading-8 font-semibold text-white/95">
+                          {f.desc}
+                        </p>
                       </div>
                     </div>
-                    <div className="px-2 pb-4 sm:pb-5 text-center w-full max-w-[280px] mx-auto">
-                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-900">{f.title}</h3>
-                    </div>
+
+                    {/* 3D flip styles */}
+                    <style jsx>{`
+                      .flip-card { perspective: 1000px; }
+                      .flip-inner {
+                        position: relative;
+                        transform-style: preserve-3d;
+                        transition: transform 600ms cubic-bezier(.2,.8,.2,1);
+                      }
+                      /* Right-to-left flip */
+                      .group:hover .flip-inner,
+                      .group:focus-within .flip-inner { transform: rotateY(-180deg); }
+                      .flip-face {
+                        backface-visibility: hidden;
+                        -webkit-backface-visibility: hidden;
+                      }
+                      .flip-front { transform: rotateY(0deg); }
+                      .flip-back {
+                        position: absolute;
+                        inset: 0;
+                        transform: rotateY(180deg);
+                      }
+                    `}</style>
                   </div>
                 </div>
               ))}
@@ -133,7 +209,7 @@ export default function FeaturesCarousel() {
               aria-label="Next"
               className="absolute right-2 md:-right-8 lg:-right-14 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors z-10"
             >
-              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </button>
           )}
         </div>
