@@ -76,48 +76,53 @@ export default function ContactFormHero() {
               onSubmit={handleFormSubmit}
               className="space-y-4 sm:space-y-5"
             >
-              <input
-                name="name"
-                type="text"
-                required
-                placeholder="Họ và tên *"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
-                           motion-safe:transition-shadow"
-              />
-              <input
-                name="company"
-                type="text"
-                placeholder="Tên công ty"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
-                           motion-safe:transition-shadow"
-              />
-              <input
-                name="phone"
-                type="tel"
-                required
-                placeholder="Số điện thoại *"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
-                           motion-safe:transition-shadow"
-              />
-              <input
-                name="email"
-                type="email"
-                required
-                placeholder="Email *"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
-                           motion-safe:transition-shadow"
-              />
-              <textarea
-                name="message"
-                required
-                placeholder="Nội dung *"
-                className="h-[140px] sm:h-[180px] md:h-[200px] w-full resize-none rounded-[16px] md:rounded-[18px] bg-white px-5 sm:px-6 py-3 sm:py-4 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
-                           motion-safe:transition-shadow"
-              />
+              <div className="space-y-1">
+                <label htmlFor="name" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
+                  Họ và tên <span className="text-red-500">*</span>
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Nhập họ và tên"
+                  className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6
+               text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400
+               ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <label htmlFor="phone" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
+                  Số điện thoại <span className="text-red-500">*</span>
+                </label>
+                <input id="phone" name="phone" type="tel" required placeholder="Nhập số điện thoại" className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+
+              <div className="space-y-1">
+                <label htmlFor="email" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
+                  Email <span className="text-red-500">*</span>
+                </label>
+                <input id="email" name="email" type="email" required placeholder="Nhập email" className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+
+              <div className="space-y-1">
+                <label htmlFor="message" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
+                  Nội dung <span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Nhập nội dung"
+                  className="h-[140px] sm:h-[180px] md:h-[200px] w-full resize-none rounded-[16px] md:rounded-[18px] bg-white px-5 sm:px-6 py-3 sm:py-4 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
               <p className="text-[12px] sm:text-[13px] leading-5 text-gray-600">
                 Khi nhấn vào nút <strong>"GỬI THÔNG TIN"</strong>, bạn đồng nghĩa với việc chấp
-                nhận <span className="italic font-semibold">Chính Sách Quyền Riêng Tư</span> của
-                GMAJOR.
+                nhận
+                <a className="border-b border-gray-800" href="https://www.gmajor.biz/privacy-policy?lang=en" target="_blank">Chính sách bảo mật của GMAJOR</a>
+                của GMAJOR.
               </p>
               <button
                 type="submit"
