@@ -82,11 +82,11 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
                   const vals = pad(r.values)
                   const lastRow = ri === rows.length - 1
                   return (
-                    <tr key={ri} className="align-middle text-center">
+                    <tr key={ri} className="group align-middle text-center">
                       {/* left label */}
                       <th
                         scope="row"
-                        className={`bg-gray-100 text-gray-800 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg font-semibold p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-left border-t border-gray-200 leading-snug ${
+                        className={`bg-gray-100 text-gray-800 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg font-semibold p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-left border-t border-gray-200 leading-snug transition-colors duration-150 group-hover:bg-indigo-50 ${
                           lastRow ? "rounded-bl-xl" : ""
                         }`}
                       >
@@ -98,9 +98,9 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
                         return (
                           <td
                             key={ci}
-                            className={`p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg text-gray-700 border-t border-gray-200 leading-snug ${
+                            className={`p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg text-gray-700 border-t border-gray-200 leading-snug break-words transition-colors duration-150 group-hover:bg-indigo-50 ${
                               lastRow && isLastCol ? "rounded-br-xl" : ""
-                            } break-words`}
+                            }`}
                           >
                             {v}
                           </td>

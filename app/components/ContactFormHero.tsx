@@ -36,12 +36,22 @@ export default function ContactFormHero() {
         <div className="grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-6 sm:gap-10 lg:gap-16 py-8 sm:py-12 md:py-14 lg:py-16 lg:min-h-[620px]">
           {/* LEFT — image + lines */}
           <div className="relative flex h-full items-center justify-center">
-            <div className="relative">
-              <img
-                src="/images/contact-form.png"
-                alt="Tư vấn GMAJOR"
-                className="relative z-10 h-[180px] w-[300px] sm:h-[220px] sm:w-[360px] md:h-[260px] md:w-[420px] lg:h-[300px] lg:w-[460px] rounded-md object-cover"
-              />
+            {/* hoverable CARD */}
+            <div
+              className="relative transform-gpu will-change-[transform]
+                         motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out
+                         hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg rounded-md"
+            >
+              <div className="relative overflow-hidden rounded-md">
+                <img
+                  src="/images/contact-form.png"
+                  alt="Tư vấn GMAJOR"
+                  className="relative z-10 h-[180px] w-[300px] sm:h-[220px] sm:w-[360px] md:h-[260px] md:w-[420px] lg:h-[300px] lg:w-[460px] object-cover
+                             motion-safe:transition-transform motion-safe:duration-500
+                             hover:scale-[1.04]"
+                />
+              </div>
+
               <div className="mt-5 sm:mt-6 md:mt-7 text-center leading-6 sm:leading-7 text-[#0c2083] italic">
                 <p className="text-[16px] sm:text-[18px] md:text-[20px]">Bạn cần tư vấn thêm ?</p>
                 <p className="text-[16px] sm:text-[18px] md:text-[20px]">Hãy để lại thông tin,</p>
@@ -53,7 +63,12 @@ export default function ContactFormHero() {
           </div>
 
           {/* RIGHT — form panel */}
-          <div className="rounded-md bg-[#eeeeee] p-5 sm:p-6 md:p-8">
+          <div
+            className="rounded-md bg-[#eeeeee] p-5 sm:p-6 md:p-8
+                       transform-gpu will-change-[transform]
+                       motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out
+                       hover:-translate-y-1 hover:scale-[1.01] hover:shadow-lg"
+          >
             <form
               action="https://formspree.io/f/mvgqkowy"
               method="POST"
@@ -66,33 +81,38 @@ export default function ContactFormHero() {
                 type="text"
                 required
                 placeholder="Họ và tên *"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                           motion-safe:transition-shadow"
               />
               <input
                 name="company"
                 type="text"
                 placeholder="Tên công ty"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                           motion-safe:transition-shadow"
               />
               <input
                 name="phone"
                 type="tel"
                 required
                 placeholder="Số điện thoại *"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                           motion-safe:transition-shadow"
               />
               <input
                 name="email"
                 type="email"
                 required
                 placeholder="Email *"
-                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                           motion-safe:transition-shadow"
               />
               <textarea
                 name="message"
                 required
                 placeholder="Nội dung *"
-                className="h-[140px] sm:h-[180px] md:h-[200px] w-full resize-none rounded-[16px] md:rounded-[18px] bg-white px-5 sm:px-6 py-3 sm:py-4 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-[140px] sm:h-[180px] md:h-[200px] w-full resize-none rounded-[16px] md:rounded-[18px] bg-white px-5 sm:px-6 py-3 sm:py-4 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                           motion-safe:transition-shadow"
               />
               <p className="text-[12px] sm:text-[13px] leading-5 text-gray-600">
                 Khi nhấn vào nút <strong>"GỬI THÔNG TIN"</strong>, bạn đồng nghĩa với việc chấp
@@ -102,7 +122,8 @@ export default function ContactFormHero() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="flex w-full items-center justify-center rounded-full bg-[#F1B24B] px-6 py-3 sm:py-3.5 md:py-4 text-[16px] sm:text-[17px] md:text-[18px] font-extrabold tracking-wide text-[#1a1a1a] shadow-md transition hover:brightness-105 disabled:opacity-60"
+                className="flex w-full items-center justify-center rounded-full bg-[#F1B24B] px-6 py-3 sm:py-3.5 md:py-4 text-[16px] sm:text-[17px] md:text-[18px] font-extrabold tracking-wide text-[#1a1a1a] shadow-md transition hover:brightness-105 disabled:opacity-60
+                           transform-gpu motion-safe:transition-transform motion-safe:duration-200 hover:scale-[1.02] active:scale-95"
               >
                 {status === "submitting" ? "ĐANG GỬI..." : "GỬI THÔNG TIN"}
               </button>

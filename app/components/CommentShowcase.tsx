@@ -7,7 +7,11 @@ export default function CommentShowcase() {
       {/* Match top component width */}
       <div className="mx-auto w-full max-w-[1280px] px-3 sm:px-4 md:px-6 space-y-4 sm:space-y-5 md:space-y-6">
         {/* ================= BLOCK 1 ================= */}
-        <div className="relative h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] w-full overflow-hidden rounded-md">
+        <div
+          className="relative h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] w-full overflow-hidden rounded-md
+                     transform-gpu transition-transform duration-300 ease-out
+                     hover:scale-[1.04] hover:-translate-y-1 hover:shadow-lg hover:z-10 cursor-pointer"
+        >
           <img
             src="/images/comment1.png"
             alt=""
@@ -52,7 +56,11 @@ export default function CommentShowcase() {
         {/* ================= BLOCK 2 ================= */}
         <div className="grid grid-cols-12 gap-3 sm:gap-4 md:gap-6">
           {/* left image */}
-          <div className="relative col-span-12 md:col-span-7 h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] overflow-hidden rounded-md">
+          <div
+            className="relative col-span-12 md:col-span-7 h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] overflow-hidden rounded-md
+                       transform-gpu transition-transform duration-300 ease-out
+                       hover:scale-[1.04] hover:-translate-y-1 hover:shadow-lg hover:z-10 cursor-pointer"
+          >
             <img
               src="/images/comment2.png"
               alt=""
@@ -70,7 +78,11 @@ export default function CommentShowcase() {
 
           {/* right quote card */}
           <div className="col-span-12 md:col-span-5">
-            <div className="relative h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] rounded-md border-[4px] sm:border-[6px] md:border-[8px] border-[#0E4E7F] bg-[#dfeafe] px-4 sm:px-5 md:px-6 lg:px-6 py-4 sm:py-5 md:py-8">
+            <div
+              className="relative h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] rounded-md border-[4px] sm:border-[6px] md:border-[8px] border-[#0E4E7F] bg-[#dfeafe] px-4 sm:px-5 md:px-6 lg:px-6 py-4 sm:py-5 md:py-8
+                         transform-gpu transition-transform duration-300 ease-out
+                         hover:scale-[1.04] hover:-translate-y-1 hover:shadow-lg hover:z-10 cursor-pointer"
+            >
               <p className="pr-1 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[40px] text-[#0b1b2b]">
                 “Trên Alibaba, chúng tôi gần như không nhận được phản hồi trong nửa năm. Nhưng chỉ
                 sau hai tháng trên GMAJOR, một công ty thương mại Nhật đã chủ động liên hệ.”
@@ -94,7 +106,11 @@ export default function CommentShowcase() {
         </div>
 
         {/* ================= BLOCK 3 ================= */}
-        <div className="relative h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] w-full overflow-hidden rounded-md">
+        <div
+          className="relative h-[260px] sm:h-[340px] md:h-[460px] lg:h-[520px] w-full overflow-hidden rounded-md
+                     transform-gpu transition-transform duration-300 ease-out
+                     hover:scale-[1.04] hover:-translate-y-1 hover:shadow-lg hover:z-10 cursor-pointer"
+        >
           <img
             src="/images/comment3.png"
             alt=""

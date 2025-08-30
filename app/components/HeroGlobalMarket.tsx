@@ -6,12 +6,18 @@ export default function HeroGlobalMarket() {
     <section className="w-full bg-white">
       <div className="mx-auto w-full max-w-[1280px] px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-14 lg:py-16">
         {/* More height on mobile, unchanged at lg */}
-        <div className="relative h-[420px] sm:h-[460px] md:h-[460px] lg:h-[520px] w-full overflow-hidden rounded-md">
+        <div
+          className="group relative h-[420px] sm:h-[460px] md:h-[460px] lg:h-[520px] w-full overflow-hidden rounded-md
+                     transform-gpu will-change-[transform] motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out
+                     hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl"
+        >
           {/* Background */}
           <img
             src="/images/global-market.png"
             alt="Global market"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover
+                       transform-gpu motion-safe:transition-transform motion-safe:duration-500 motion-safe:ease-out
+                       group-hover:scale-[1.04]"
           />
           <div className="pointer-events-none absolute inset-0 bg-black/10" />
 
@@ -27,7 +33,11 @@ export default function HeroGlobalMarket() {
 
           {/* Frosted content card */}
           <div className="absolute left-4 sm:left-6 md:left-10 lg:left-12 top-28 sm:top-[120px] md:top-[120px] lg:top-[140px] w-[94%] sm:w-[540px] md:w-[620px] lg:w-[700px]">
-            <div className="rounded-md bg-white/80 backdrop-blur-[1px] shadow-[0_8px_24px_rgba(0,0,0,0.18)] ring-1 ring-white/40">
+            <div
+              className="rounded-md bg-white/80 backdrop-blur-[1px] shadow-[0_8px_24px_rgba(0,0,0,0.18)] ring-1 ring-white/40
+                         transform-gpu motion-safe:transition-transform motion-safe:duration-300
+                         group-hover:translate-y-[-4px] group-hover:scale-[1.01]"
+            >
               <div className="px-4 py-5 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-8 lg:py-12">
                 <p className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b]">
                   Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội
@@ -43,10 +53,12 @@ export default function HeroGlobalMarket() {
             </div>
           </div>
 
-          {/* CTA button (now has comfortable space below the card on mobile) */}
+          {/* CTA button (now pops a bit on hover) */}
           <a
             href="https://market.gmajor.biz/register?lang=vi"
-            className="absolute left-4 sm:left-6 md:left-10 lg:left-12 bottom-4 sm:bottom-5 md:bottom-6 lg:bottom-6 inline-flex items-center gap-3 sm:gap-4 md:gap-5 rounded-full bg-[#eaf2ff] px-5 sm:px-6 md:px-7 lg:px-8 py-3 sm:py-3.5 md:py-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold text-[#0b1b2b] shadow-md"
+            className="absolute left-4 sm:left-6 md:left-10 lg:left-12 bottom-4 sm:bottom-5 md:bottom-6 lg:bottom-6 inline-flex items-center gap-3 sm:gap-4 md:gap-5 rounded-full bg-[#eaf2ff] px-5 sm:px-6 md:px-7 lg:px-8 py-3 sm:py-3.5 md:py-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold text-[#0b1b2b] shadow-md
+                       transform-gpu motion-safe:transition-transform motion-safe:duration-300
+                       hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/60"
           >
             Đăng ký ngay
             <span className="grid h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 place-items-center rounded-full bg-white shadow-inner">
