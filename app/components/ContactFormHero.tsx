@@ -76,54 +76,108 @@ export default function ContactFormHero() {
               onSubmit={handleFormSubmit}
               className="space-y-4 sm:space-y-5"
             >
-              <div className="space-y-1">
-                <label htmlFor="name" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
-                  Họ và tên <span className="text-red-500">*</span>
-                </label>
+              <div className="relative">
+                {/* real input */}
                 <input
                   id="name"
-                  name="name"
-                  type="text"
                   required
-                  placeholder="Nhập họ và tên"
-                  className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6
-               text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400
-               ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder=" "                             // keep a blank placeholder
+                  className="peer h-12 w-full rounded-full bg-white px-5 pr-5 text-[15px]
+               text-gray-800 placeholder-transparent ring-1 ring-gray-200
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
+
+                {/* fake placeholder + red star (disappears on focus or when typed) */}
+                <span
+                  className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2
+               text-gray-400 opacity-0
+               peer-placeholder-shown:opacity-100 peer-focus:opacity-0"
+                >
+                  Họ và tên <span className="text-red-500">*</span>
+                </span>
               </div>
 
-              <div className="space-y-1">
-                <label htmlFor="phone" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
+              {/* Phone */}
+              <div className="relative">
+                <label htmlFor="phone" className="sr-only">
+                  Số điện thoại *
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  placeholder=" "
+                  className="peer h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white
+               px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800
+               placeholder-transparent ring-1 ring-gray-200
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <span className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2
+                   text-gray-400 opacity-0
+                   peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                   Số điện thoại <span className="text-red-500">*</span>
-                </label>
-                <input id="phone" name="phone" type="tel" required placeholder="Nhập số điện thoại" className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </span>
               </div>
 
-              <div className="space-y-1">
-                <label htmlFor="email" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
+              {/* Email */}
+              <div className="relative">
+                <label htmlFor="email" className="sr-only">
+                  Email *
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder=" "
+                  className="peer h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white
+               px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800
+               placeholder-transparent ring-1 ring-gray-200
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <span className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2
+                   text-gray-400 opacity-0
+                   peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                   Email <span className="text-red-500">*</span>
-                </label>
-                <input id="email" name="email" type="email" required placeholder="Nhập email" className="h-12 sm:h-[52px] md:h-[56px] w-full rounded-full bg-white px-5 sm:px-6 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </span>
               </div>
 
-              <div className="space-y-1">
-                <label htmlFor="message" className="ml-1 text-[13px] sm:text-[14px] text-gray-700">
-                  Nội dung <span className="text-red-500">*</span>
+              {/* Message */}
+              <div className="relative">
+                <label htmlFor="message" className="sr-only">
+                  Nội dung *
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
-                  placeholder="Nhập nội dung"
-                  className="h-[140px] sm:h-[180px] md:h-[200px] w-full resize-none rounded-[16px] md:rounded-[18px] bg-white px-5 sm:px-6 py-3 sm:py-4 text-[15px] sm:text-[16px] text-gray-800 placeholder-gray-400 ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder=" "
+                  className="peer h-[140px] sm:h-[180px] md:h-[200px] w-full resize-none
+               rounded-[16px] md:rounded-[18px] bg-white px-5 sm:px-6 py-3 sm:py-4
+               text-[15px] sm:text-[16px] text-gray-800 placeholder-transparent
+               ring-1 ring-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
+                <span className="pointer-events-none absolute left-5 top-3 sm:top-4
+                   text-gray-400 opacity-0
+                   peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
+                  Nội dung <span className="text-red-500">*</span>
+                </span>
               </div>
-              <p className="text-[12px] sm:text-[13px] leading-5 text-gray-600">
-                Khi nhấn vào nút <strong>"GỬI THÔNG TIN"</strong>, bạn đồng nghĩa với việc chấp
-                nhận
-                <a className="border-b border-gray-800" href="https://www.gmajor.biz/privacy-policy?lang=en" target="_blank">Chính sách bảo mật của GMAJOR</a>
-                của GMAJOR.
+
+              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-6 sm:leading-7 text-gray-700">
+                Khi nhấn vào nút <span className="font-semibold">"GỬI THÔNG TIN"</span>, bạn đồng nghĩa với việc chấp nhận{" "}
+                <a
+                  href="https://www.gmajor.biz/privacy-policy?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold underline underline-offset-2 decoration-gray-800 hover:text-gray-900"
+                >
+                  Chính sách bảo mật của GMAJOR
+                </a>
+                .
               </p>
+
               <button
                 type="submit"
                 disabled={status === "submitting"}
