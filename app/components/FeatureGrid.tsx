@@ -64,10 +64,14 @@ export default function FeatureGrid({
         >
             <div className="max-w-7xl mx-auto px-2 md:px-8 py-8 sm:py-12 md:py-14 lg:py-16">
                 {/* Header */}
+                {/* Header */}
                 <div className="mb-6 md:mb-8">
-                    <div className="flex items-start justify-center gap-3 text-center">
-                        <span className="block h-8 w-1 bg-orange-500 rounded" />
-                        <div>
+                    <div className="flex items-stretch justify-center gap-4 text-center">
+                        <span
+                            aria-hidden="true"
+                            className="block w-1.5 md:w-2 bg-orange-500 rounded self-stretch"
+                        />
+                        <div className="py-1">
                             <p className="text-indigo-700 font-semibold tracking-wide text-lg md:text-xl">
                                 {heading}
                             </p>
@@ -77,6 +81,7 @@ export default function FeatureGrid({
                         </div>
                     </div>
                 </div>
+
 
                 {/* Cards */}
                 <div className="flex flex-wrap -mx-3">

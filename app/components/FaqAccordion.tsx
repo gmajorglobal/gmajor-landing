@@ -8,101 +8,46 @@ type Faq = { id: number; q: string; a: JSX.Element };
 const faqs: Faq[] = [
   {
     id: 1,
-    q: "GMAJOR là gì và dành cho ai?",
+    q: "Có cần phải trả phí để đăng ký tài khoản không ?",
     a: (
       <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        GMAJOR là một nền tảng B2B thông minh giúp các doanh nghiệp kết nối và giao
-        thương xuyên quốc gia — đặc biệt là giữa Việt Nam, Nhật Bản, Hoa Kỳ và ASEAN.
-        Dù bạn là nhà sản xuất, nhà nhập khẩu, công ty thương mại hay startup, GMAJOR
-        đều giúp bạn mở rộng mạng lưới mà không gặp rào cản về ngôn ngữ hay chi phí cao.
+        Không. Người dùng không cần phải trả phí cho việc tạo tài khoản cũng như là đăng bài cho sản phẩm/dịch vụ.
       </p>
     ),
   },
   {
     id: 2,
-    q: "Sử dụng GMAJOR có tốn phí không?",
+    q: "Có bất kỳ khó khăn nào nếu không thể giao tiếp bằng tiếng Nhật hay tiếng Anh không?",
     a: (
       <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Hoàn toàn không. GMAJOR cung cấp gói miễn phí hoàn toàn, bao gồm đăng ký tài khoản,
-        đăng sản phẩm, gửi yêu cầu báo giá (RFQ), nhắn tin và trò chuyện đa ngôn ngữ.
-        Các nâng cấp trả phí như banner quảng cáo hoặc huy hiệu xác thực là tùy chọn.
+        Không. Hệ thống dịch tự động giúp giao tiếp trôi chảy bằng tiếng Nhật, tiếng Anh và tiếng Việt.
       </p>
     ),
   },
   {
     id: 3,
-    q: "Tôi không thông thạo tiếng Anh, tiếng Nhật hay tiếng Việt — làm sao để giao tiếp?",
+    q: "Những loại công ty nào được đăng ký?",
     a: (
       <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Đừng lo! GMAJOR có tính năng trò chuyện đa ngôn ngữ tích hợp, cho phép bạn gõ bằng
-        ngôn ngữ của mình và hệ thống sẽ tự động dịch sang ngôn ngữ của đối tác. Không cần
-        phiên dịch viên hay email dài dòng — chỉ cần gõ và gửi.
+        Chủ yếu là các nhà sản xuất, công ty thực phẩm và công ty thương mại của Nhật Bản, cũng như các nhà mua hàng từ Mỹ và Trung Quốc.
       </p>
     ),
   },
   {
     id: 4,
-    q: "Tôi đang tìm nhà cung cấp hoặc người mua. GMAJOR giúp được gì?",
+    q: "Các yêu cầu từ nước ngoài có đến ngay lập tức không?  ",
     a: (
-      <div className="space-y-3 sm:space-y-4">
-        <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">Bạn có thể:</p>
-        <ul className="pl-6 list-disc space-y-2 sm:space-y-3 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-          <li>
-            <strong className="text-main hover:text-blue-700">
-              Đăng sản phẩm hoặc dịch vụ để tăng khả năng hiển thị
-            </strong>
-          </li>
-          <li>
-            <strong className="text-main hover:text-blue-700">
-              Gửi Yêu cầu báo giá (RFQ) đến nhiều đối tác đã xác thực cùng lúc
-            </strong>
-          </li>
-          <li>
-            <strong className="text-main hover:text-blue-700">
-              Sử dụng công cụ Gửi đề xuất hàng loạt để tiết kiệm thời gian
-            </strong>
-          </li>
-          <li>
-            <strong className="text-main hover:text-blue-700">
-              Tận dụng công cụ kết nối thông minh để tìm các đối tác kinh doanh phù hợp nhất
-            </strong>
-          </li>
-        </ul>
-      </div>
+      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
+        Điều đó phụ thuộc vào ngành nghề và sản phẩm của bạn, nhưng các yêu cầu phù hợp có thể đến rất nhanh.
+      </p>
     ),
   },
   {
     id: 5,
-    q: "Người dùng trên GMAJOR có được xác thực không? Tôi có thể tin tưởng họ không?",
+    q: "Các bạn có hỗ trợ đàm phán không?",
     a: (
       <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Có. GMAJOR xem xét và xác thực thủ công tất cả các tài khoản doanh nghiệp trước khi
-        cho phép đăng bài và nhắn tin. Bạn cũng có thể đăng ký Huy hiệu Xác thực để tăng uy tín
-        và khả năng hiển thị. Đây là một môi trường an toàn cho người dùng B2B nghiêm túc.
-      </p>
-    ),
-  },
-  {
-    id: 6,
-    q: "GMAJOR khác gì so với Alibaba hay các nhóm Facebook?",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        So với Alibaba: GMAJOR hoàn toàn miễn phí, không phụ thuộc vào quảng cáo và dễ sử dụng hơn
-        cho các doanh nghiệp vừa và nhỏ (SMEs).
-        <br />
-        So với các nhóm Facebook: GMAJOR cung cấp người dùng đã xác thực, các tính năng có cấu trúc
-        và không có spam — với các công cụ B2B thực sự như trò chuyện đa ngôn ngữ, RFQ và kết nối.
-      </p>
-    ),
-  },
-  {
-    id: 7,
-    q: "Tôi mới bắt đầu kinh doanh và chưa có khách hàng. Tôi có nên dùng GMAJOR không?",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Chắc chắn rồi! GMAJOR rất lý tưởng cho các doanh nghiệp mới, startup và nhà cung cấp nhỏ.
-        Bạn không cần có mạng lưới hay ngân sách marketing lớn — chỉ cần tạo hồ sơ, đăng sản phẩm
-        và để GMAJOR giúp bạn tiếp cận người mua quốc tế một cách nhanh chóng.
+        Có, dịch vụ hỗ trợ tùy chọn bởi các chuyên gia địa phương luôn sẵn sàng.
       </p>
     ),
   },
@@ -117,7 +62,7 @@ export default function FaqAccordion() {
       {/* match the top section width */}
       <div className="mx-auto w-full max-w-[1280px] px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-14 lg:py-16">
         <h2 className="mb-6 sm:mb-8 md:mb-10 text-center font-extrabold tracking-tight text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-          Bạn còn thắc mắc về GMAJOR?
+          Những thắc mắc thường gặp
         </h2>
 
         <div className="mx-auto w-full max-w-[1200px]">

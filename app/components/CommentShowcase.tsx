@@ -27,30 +27,31 @@ export default function CommentShowcase() {
           </div>
 
           {/* chip + quote (right/bottom) */}
-          <div className="absolute right-3 sm:right-4 md:right-5 bottom-3 sm:bottom-4 md:bottom-5 w-[90%] sm:w-[520px] md:w-[560px]">
+          <div className="absolute right-3 sm:right-4 md:right-5 bottom-3 sm:bottom-4 md:bottom-5 w-[94%] sm:w-[340px] md:w-[420px] lg:w-[560px]">
             {/* chip */}
-            <div className="mb-2 sm:mb-3 flex items-center">
-              <div className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 overflow-hidden rounded-full ring-2 ring-white/90">
+            <div className="mb-3 sm:mb-4 flex items-center">
+              <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 overflow-hidden rounded-full ring-2 ring-white/90">
                 <img src="/images/user1.png" alt="" className="h-full w-full object-cover" />
               </div>
-              <div className="ml-2 sm:ml-3 rounded bg-white/90 px-2 sm:px-3 py-1.5 sm:py-2 shadow">
-                <div className="text-[12px] sm:text-[13px] md:text-[15px] lg:text-[16px] font-semibold leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]">
+              <div className="ml-3 sm:ml-4 rounded bg-white/90 px-3 sm:px-4 py-2 sm:py-2.5 shadow">
+                <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
                   NGUYỄN DƯƠNG NGA
                 </div>
-                <div className="mt-0.5 sm:mt-1 text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]/70">
+                <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
                   QUẢN LÝ CUNG ỨNG THỰC PHẨM · TP.HCM
                 </div>
               </div>
             </div>
 
             {/* quote */}
-            <div className="rounded bg-white/90 p-3 sm:p-4 shadow">
-              <p className="text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[26px] text-[#0b1b2b]">
-                “Chúng tôi nhận được liên hệ trực tiếp từ một doanh nghiệp thực phẩm Nhật Bản. Nhờ
-                khả năng thống kê dữ liệu, việc trao đổi trở nên trôi chảy và hoàn toàn yên tâm.”
+            <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
+              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b]">
+                “Chúng tôi nhận được liên hệ trực tiếp từ một doanh nghiệp thực phẩm Nhật Bản. Nhờ khả năng
+                thống kê dữ liệu, việc trao đổi trở nên trôi chảy và hoàn toàn yên tâm.”
               </p>
             </div>
           </div>
+
         </div>
 
         {/* ================= BLOCK 2 ================= */}
@@ -83,20 +84,30 @@ export default function CommentShowcase() {
                          transform-gpu transition-transform duration-300 ease-out
                          hover:scale-[1.04] hover:-translate-y-1 hover:shadow-lg hover:z-10 cursor-pointer"
             >
-              <p className="pr-1 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[40px] text-[#0b1b2b]">
-                “Trên Alibaba, chúng tôi gần như không nhận được phản hồi trong nửa năm. Nhưng chỉ
-                sau hai tháng trên GMAJOR, một công ty thương mại Nhật đã chủ động liên hệ.”
-              </p>
+              <div className="h-full pr-1 flex items-center pb-16 sm:pb-20 md:pb-24 lg:pb-28">
+    <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px]
+                  leading-[30px] sm:leading-[36px] md:leading-[44px] lg:leading-[50px]
+                  text-[#0b1b2b]">
+      “Trên Alibaba, chúng tôi gần như không nhận được phản hồi trong nửa năm. Nhưng chỉ
+      sau hai tháng trên GMAJOR, một công ty thương mại Nhật đã chủ động liên hệ.”
+    </p>
+  </div>
 
               <div className="absolute left-4 sm:left-5 md:left-6 bottom-4 sm:bottom-5 md:bottom-6 flex items-center gap-2.5 sm:gap-3">
                 <div className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 overflow-hidden rounded-full ring-2 ring-white/90">
                   <img src="/images/user2.png" alt="" className="h-full w-full object-cover" />
                 </div>
                 <div>
-                  <div className="text-[12px] sm:text-[13px] md:text-[15px] lg:text-[16px] font-semibold leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]">
+                  {/* <div className="text-[12px] sm:text-[13px] md:text-[15px] lg:text-[16px] font-semibold leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]">
                     TRẦN MẠNH HÙNG
                   </div>
                   <div className="mt-0.5 sm:mt-1 text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]/70">
+                    CHỦ XƯỞNG DỆT MAY · HÀ NỘI
+                  </div> */}
+                  <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
+                    TRẦN MẠNH HÙNG
+                  </div>
+                  <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
                     CHỦ XƯỞNG DỆT MAY · HÀ NỘI
                   </div>
                 </div>
@@ -126,34 +137,34 @@ export default function CommentShowcase() {
 
           {/* bottom-left group */}
           <div className="absolute left-3 sm:left-4 md:left-5 bottom-3 sm:bottom-4 md:bottom-5 w-[90%] sm:w-[480px] md:w-[540px]">
-            {/* chip */}
-            <div className="mb-2 sm:mb-3 flex items-center">
-              <div className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 overflow-hidden rounded-full ring-2 ring-white/90">
-                <img src="/images/user3.png" alt="" className="h-full w-full object-cover" />
+            {/* points */}
+            <div className="absolute left-3 sm:left-4 md:left-5 bottom-3 sm:bottom-4 md:bottom-5 w-[94%] sm:w-[340px] md:w-[420px] lg:w-[560px]">
+              {/* chip */}
+              <div className="mb-3 sm:mb-4 flex items-center">
+                <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 overflow-hidden rounded-full ring-2 ring-white/90">
+                  <img src="/images/user3.png" alt="" className="h-full w-full object-cover" />
+                </div>
+                <div className="ml-3 sm:ml-4 rounded bg-white/90 px-3 sm:px-4 py-2 sm:py-2.5 shadow">
+                  <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
+                    NGUYỄN TUẤN VŨ
+                  </div>
+                  <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
+                    NÔNG DÂN CÀ PHÊ · ĐẮK LẮK
+                  </div>
+                </div>
               </div>
-              <div className="ml-2 sm:ml-3 rounded bg-white/90 px-2 sm:px-3 py-1.5 sm:py-2 shadow">
-                <div className="text-[12px] sm:text-[13px] md:text-[15px] lg:text-[16px] font-semibold leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]">
-                  NGUYỄN TUẤN VŨ
-                </div>
-                <div className="mt-0.5 sm:mt-1 text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]/70">
-                  NÔNG DÂN CÀ PHÊ · ĐẮK LẮK
-                </div>
+
+              {/* points */}
+              <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
+                <ul className="space-y-2 sm:space-y-2.5 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b]">
+                  <li>
+                    “Chúng tôi sẵn sàng đưa cà phê đặc sản ra thị trường quốc tế nhưng ít hiểu biết về thương mại quốc tế.
+                      Nhờ GMAJOR, những khâu đối ngoại được đồng bộ rõ ràng và khớp với thị trường Nhật Bản.”
+                  </li>
+                </ul>
               </div>
             </div>
 
-            {/* points */}
-            <div className="rounded bg-white/90 p-3 sm:p-4 shadow">
-              <ul className="space-y-1.5 sm:space-y-2 text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[26px] text-[#0b1b2b]">
-                <li>
-                  “Chúng tôi sẵn sàng đưa cà phê đặc sản ra thị trường quốc tế nhưng ít hiểu biết về
-                  thương mại quốc tế.”
-                </li>
-                <li>
-                  “Nhờ GMAJOR, những khâu đối ngoại được đồng bộ rõ ràng và khớp với thị trường
-                  Nhật Bản.”
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
