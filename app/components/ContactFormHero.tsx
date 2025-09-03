@@ -2,8 +2,15 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
 
-export default function ContactFormHero() {
+interface ContactFormHeroProps {
+  locale?: Locale;
+}
+
+export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps) {
+  const { t } = useTranslation(locale);
   const [status, setStatus] =
     useState<"idle" | "submitting" | "success" | "error">("idle");
 
@@ -45,7 +52,7 @@ export default function ContactFormHero() {
               <div className="relative overflow-hidden rounded-md">
                 <img
                   src="/images/contact-form.png"
-                  alt="Tư vấn GMAJOR"
+                  alt={t('contactForm.imageAlt')}
                   className="relative z-10 h-[180px] w-[300px] sm:h-[220px] sm:w-[360px] md:h-[260px] md:w-[420px] lg:h-[300px] lg:w-[460px] object-cover
                              motion-safe:transition-transform motion-safe:duration-500
                              hover:scale-[1.04]"
@@ -53,10 +60,10 @@ export default function ContactFormHero() {
               </div>
 
               <div className="mt-5 sm:mt-6 md:mt-7 text-center leading-6 sm:leading-7 text-[#0c2083] italic">
-                <p className="text-[16px] sm:text-[18px] md:text-[20px]">Bạn cần tư vấn thêm ?</p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px]">Hãy để lại thông tin,</p>
+                <p className="text-[16px] sm:text-[18px] md:text-[20px]">{t('contactForm.consultationText1')}</p>
+                <p className="text-[16px] sm:text-[18px] md:text-[20px]">{t('contactForm.consultationText2')}</p>
                 <p className="text-[16px] sm:text-[18px] md:text-[20px]">
-                  <span className="font-semibold not-italic">GMAJOR</span> sẽ đồng hành cùng bạn
+                  <span className="font-semibold not-italic">GMAJOR</span> {t('contactForm.consultationText3')}
                 </p>
               </div>
             </div>
@@ -93,14 +100,14 @@ export default function ContactFormHero() {
                text-gray-400 opacity-0
                peer-placeholder-shown:opacity-100 peer-focus:opacity-0"
                 >
-                  Họ và tên <span className="text-red-500">*</span>
+                  {t('contactForm.form.nameLabel')} <span className="text-red-500">*</span>
                 </span>
               </div>
 
               {/* Phone */}
               <div className="relative">
                 <label htmlFor="phone" className="sr-only">
-                  Số điện thoại *
+                  {t('contactForm.form.phoneLabel')} *
                 </label>
                 <input
                   id="phone"
@@ -116,14 +123,14 @@ export default function ContactFormHero() {
                 <span className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2
                    text-gray-400 opacity-0
                    peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
-                  Số điện thoại <span className="text-red-500">*</span>
+                  {t('contactForm.form.phoneLabel')} <span className="text-red-500">*</span>
                 </span>
               </div>
 
               {/* Email */}
               <div className="relative">
                 <label htmlFor="email" className="sr-only">
-                  Email *
+                  {t('contactForm.form.emailLabel')} *
                 </label>
                 <input
                   id="email"
@@ -139,14 +146,14 @@ export default function ContactFormHero() {
                 <span className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2
                    text-gray-400 opacity-0
                    peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
-                  Email <span className="text-red-500">*</span>
+                  {t('contactForm.form.emailLabel')} <span className="text-red-500">*</span>
                 </span>
               </div>
 
               {/* Message */}
               <div className="relative">
                 <label htmlFor="message" className="sr-only">
-                  Nội dung *
+                  {t('contactForm.form.messageLabel')} *
                 </label>
                 <textarea
                   id="message"
@@ -161,19 +168,19 @@ export default function ContactFormHero() {
                 <span className="pointer-events-none absolute left-5 top-3 sm:top-4
                    text-gray-400 opacity-0
                    peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
-                  Nội dung <span className="text-red-500">*</span>
+                  {t('contactForm.form.messageLabel')} <span className="text-red-500">*</span>
                 </span>
               </div>
 
               <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-6 sm:leading-7 text-gray-700">
-                Khi nhấn vào nút <span className="font-semibold">"GỬI THÔNG TIN"</span>, bạn đồng nghĩa với việc chấp nhận{" "}
+                {t('contactForm.form.privacyText')} <span className="font-semibold">"{t('contactForm.form.submitButton')}"</span>,{" "}
                 <a
-                  href="https://www.gmajor.biz/privacy-policy?lang=en"
+                  href={`https://www.gmajor.biz/privacy-policy?lang=${locale}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold underline underline-offset-2 decoration-gray-800 hover:text-gray-900"
                 >
-                  Chính sách bảo mật của GMAJOR
+                  {t('contactForm.form.privacyLink')}
                 </a>
                 .
               </p>
@@ -184,17 +191,17 @@ export default function ContactFormHero() {
                 className="flex w-full items-center justify-center rounded-full bg-[#F1B24B] px-6 py-3 sm:py-3.5 md:py-4 text-[16px] sm:text-[17px] md:text-[18px] font-extrabold tracking-wide text-[#1a1a1a] shadow-md transition hover:brightness-105 disabled:opacity-60
                            transform-gpu motion-safe:transition-transform motion-safe:duration-200 hover:scale-[1.02] active:scale-95"
               >
-                {status === "submitting" ? "ĐANG GỬI..." : "GỬI THÔNG TIN"}
+                {status === "submitting" ? t('contactForm.form.submittingButton') : t('contactForm.form.submitButton')}
               </button>
 
               {status === "success" && (
                 <div className="rounded-md bg-green-50 px-4 py-3 text-green-800">
-                  Cảm ơn bạn! Thông tin đã được gửi thành công. Chúng tôi sẽ liên hệ sớm nhất.
+                  {t('contactForm.form.successMessage')}
                 </div>
               )}
               {status === "error" && (
                 <div className="rounded-md bg-red-50 px-4 py-3 text-red-700">
-                  Rất tiếc, có lỗi xảy ra. Vui lòng thử lại sau.
+                  {t('contactForm.form.errorMessage')}
                 </div>
               )}
             </form>

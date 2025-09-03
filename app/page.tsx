@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from 'react'
+import { type Locale } from '../i18n'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import InfoSection from './components/InfoSection'
@@ -12,15 +16,18 @@ import ContactFormHero from './components/ContactFormHero'
 import Footer from './components/Footer'
 
 export default function Home() {
+  const [locale, setLocale] = useState<Locale>('vi');
+
   return (
     <>
-      <Header />
+      <Header locale={locale} onLocaleChange={setLocale} />
       <main className="min-h-screen bg-white dotted-bg w-full overflow-x-hidden pt-16 md:pt-20">
-        <Hero />
-        <InfoSection />
-        <FeaturesCarousel />  
-        <FeatureGrid />
+        <Hero locale={locale} />
+        <InfoSection locale={locale} />
+        <FeaturesCarousel locale={locale} />  
+        <FeatureGrid locale={locale} />
         <ComparisonTable 
+          locale={locale}
           logos={[
               "/images/logo-gmajor.png",
               "/images/logo-alibaba.png",
@@ -28,12 +35,12 @@ export default function Home() {
               "/images/logo-globy.png",
               "/images/logo-shopify.png",
           ]}/>
-        <ComparisonSection />
-        <CommentShowcase />
-        <FaqAccordion />
-        <HeroGlobalMarket />
-        <ContactFormHero />
-        <Footer />
+        <ComparisonSection locale={locale} />
+        <CommentShowcase locale={locale} />
+        <FaqAccordion locale={locale} />
+        <HeroGlobalMarket locale={locale} />
+        <ContactFormHero locale={locale} />
+        <Footer locale={locale} />
       </main>
     </>
   )

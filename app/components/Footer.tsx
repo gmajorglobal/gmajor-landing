@@ -1,5 +1,15 @@
 // components/SiteFooter.tsx
-export default function SiteFooter() {
+"use client";
+
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
+
+interface SiteFooterProps {
+  locale?: Locale;
+}
+
+export default function SiteFooter({ locale = 'vi' }: SiteFooterProps) {
+  const { t } = useTranslation(locale);
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-screen-xl p-4 sm:p-5 md:p-8 lg:p-10 lg:py-16">
@@ -13,32 +23,32 @@ export default function SiteFooter() {
             </h3>
 
             <div className="mb-5 sm:mb-6 text-gray-700 text-sm sm:text-base md:text-lg leading-6 sm:leading-7">
-              <b>Công ty sở hữu:</b>
+              <b>{t('footer.owned.title')} </b>
               <ul className="mt-2 list-inside space-y-1">
                 <li>
                   <span>
-                    <span className="font-semibold">Tên công ty:</span> GMAJOR Co., Ltd.
+                    <span className="font-semibold">{t('footer.owned.companyLabel')}</span> {t('footer.owned.companyName')}
                   </span>
                 </li>
                 <li>
                   <span>
-                    <span className="font-semibold">Địa chỉ:</span> Thành phố Fukuoka, Nhật Bản
+                    <span className="font-semibold">{t('footer.owned.addressLabel')}</span> {t('footer.owned.address')}
                   </span>
                 </li>
               </ul>
             </div>
 
             <div className="text-gray-700 text-sm sm:text-base md:text-lg leading-6 sm:leading-7">
-              <b>Công ty bảo trì:</b>
+              <b>{t('footer.maintenance.title')}</b>
               <ul className="mt-2 list-inside space-y-1">
                 <li>
                   <span>
-                    <span className="font-semibold">Tên công ty:</span> GNF JAPAN Co., Ltd.
+                    <span className="font-semibold">{t('footer.maintenance.companyLabel')}</span> {t('footer.maintenance.companyName')}
                   </span>
                 </li>
                 <li>
                   <span>
-                    <span className="font-semibold">Địa chỉ:</span> Thành phố Hồ Chí Minh, Việt Nam
+                    <span className="font-semibold">{t('footer.maintenance.addressLabel')}</span> {t('footer.maintenance.address')}
                   </span>
                 </li>
               </ul>
@@ -48,32 +58,32 @@ export default function SiteFooter() {
           {/* Column 2 */}
           <div>
             <h3 className="mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg font-semibold uppercase text-gray-700">
-              HƯỚNG DẪN
+              {t('footer.guides.title')}
             </h3>
             <ul className="text-sm sm:text-base md:text-lg text-gray-600 leading-6 sm:leading-7">
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/cookies-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Chính sách Cookie
+                <a href={`https://gmajor.biz/cookies-policy?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.guides.cookies')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/privacy-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Chính sách bảo mật
+                <a href={`https://gmajor.biz/privacy-policy?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.guides.privacy')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/terms-and-conditions?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Điều khoản dịch vụ
+                <a href={`https://gmajor.biz/terms-and-conditions?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.guides.terms')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/paid-services-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Chính sách dịch vụ trả phí
+                <a href={`https://gmajor.biz/paid-services-policy?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.guides.paidServices')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/payment-policy?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Chính sách thanh toán
+                <a href={`https://gmajor.biz/payment-policy?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.guides.payment')}
                 </a>
               </li>
             </ul>
@@ -82,32 +92,32 @@ export default function SiteFooter() {
           {/* Column 3 */}
           <div>
             <h3 className="mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg font-semibold uppercase text-gray-700">
-              THÔNG TIN KHÁC
+              {t('footer.more.title')}
             </h3>
             <ul className="text-sm sm:text-base md:text-lg text-gray-600 leading-6 sm:leading-7">
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/about-us?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Về GMAJOR
+                <a href={`https://gmajor.biz/about-us?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.more.about')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/for-ma?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Liên quan đến M&amp;A
+                <a href={`https://gmajor.biz/for-ma?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.more.ma')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/for-ps?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Liên quan đến Sản phẩm hoặc Dịch vụ
+                <a href={`https://gmajor.biz/for-ps?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.more.ps')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/faq?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Câu hỏi thường gặp
+                <a href={`https://gmajor.biz/faq?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.more.faq')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/blog?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Blog
+                <a href={`https://gmajor.biz/blog?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.more.blog')}
                 </a>
               </li>
             </ul>
@@ -116,17 +126,17 @@ export default function SiteFooter() {
           {/* Column 4 */}
           <div>
             <h3 className="mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg font-semibold uppercase text-gray-700">
-              Hỗ trợ khách hàng
+              {t('footer.support.title')}
             </h3>
             <ul className="text-sm sm:text-base md:text-lg text-gray-600 leading-6 sm:leading-7">
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/logistic-credit-support?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Hỗ trợ Thương mại &amp; Tín dụng
+                <a href={`https://gmajor.biz/logistic-credit-support?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.support.tradeCredit')}
                 </a>
               </li>
               <li className="mb-2.5 sm:mb-3 md:mb-4">
-                <a href="https://gmajor.biz/contact-us?lang=vi" rel="noopener noreferrer" className="hover:underline">
-                  Liên hệ
+                <a href={`https://gmajor.biz/contact-us?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
+                  {t('footer.support.contact')}
                 </a>
               </li>
             </ul>
@@ -138,7 +148,7 @@ export default function SiteFooter() {
         {/* Bottom area */}
         <div className="text-center">
           <a
-            href="https://gmajor.biz?lang=vi"
+            href={`https://gmajor.biz?lang=${locale}`}
            
             rel="noopener noreferrer"
             className="mb-4 sm:mb-5 flex items-center justify-center text-2xl sm:text-3xl font-semibold text-gray-900"
@@ -148,14 +158,14 @@ export default function SiteFooter() {
           </a>
 
           <span className="block text-center text-xs sm:text-sm md:text-base lg:text-lg text-gray-600">
-            © 2024-2025 GMAJOR. Bảo lưu mọi quyền. Trang web được thiết kế và vận hành bởi{" "}
+            {t('footer.bottom.copyright')} {' '}
             <a
-              href="https://gmajor.biz?lang=vi"
+              href={`https://gmajor.biz?lang=${locale}`}
              
               rel="noopener noreferrer"
               className="font-bold text-main hover:underline"
             >
-              GMAJOR
+              {t('footer.bottom.brand')}
             </a>
           </span>
 

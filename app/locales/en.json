@@ -1,0 +1,436 @@
+{
+  "header": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "contact": "CONTACT",
+    "blog": "BLOG"
+  },
+  "comparisonSection": {
+    "alibaba": "One of the world's largest B2B platforms, but the competition is so high that small and medium enterprises struggle to gain an advantage. Additionally, the high costs make evaluating ROI difficult.",
+    "yellow": "Easy to use, but limited in language optimization and negotiation support capabilities. Due to the platform's nature, receiving spam emails is also unavoidable.",
+    "globy": "Easy to use, but limited in language optimization and negotiation support capabilities. Due to the platform's nature, receiving spam emails is also unavoidable.",
+    "shopify": "The best solution for building online stores, but lacks hinges and doesn't fully support B2B activities.",
+    "gmajor": "The difference lies in providing a fast and efficient connection system between Vietnamese businesses and international partners, especially focusing on key markets: Japan, USA, and China."
+  },
+  "faqAccordion": {
+    "title": "Frequently Asked Questions",
+    "faq1": {
+      "question": "Do I need to pay to register an account?",
+      "answer": "No. Users do not need to pay for creating an account or posting products/services."
+    },
+    "faq2": {
+      "question": "Are there any difficulties if I cannot communicate in Japanese or English?",
+      "answer": "No. The automatic translation system helps communicate smoothly in Japanese, English, and Vietnamese."
+    },
+    "faq3": {
+      "question": "What types of companies are registered?",
+      "answer": "Mainly manufacturers, food companies, and trading companies from Japan, as well as buyers from the US and China."
+    },
+    "faq4": {
+      "question": "Do foreign requests come immediately?",
+      "answer": "It depends on your industry and products, but suitable requests can come very quickly."
+    },
+    "faq5": {
+      "question": "Do you support negotiations?",
+      "answer": "Yes, optional support services by local experts are always available."
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "featuresCarousel": {
+    "platform": "B2B business connection platform",
+    "solution": "Bringing international market expansion solutions for Vietnamese businesses",
+    "infoLabel": "Information",
+    "features": {
+      "globalConnection": {
+        "title": "Direct connection with global businesses",
+        "alt": "Business collaboration puzzle pieces",
+        "desc": "Direct connection with global businesses: A series of suppliers, manufacturers and potential partners from Japan, USA, China, Vietnam... are ready. This is the gateway that helps Vietnamese businesses get closer to international markets."
+      },
+      "translation": {
+        "title": "Automatic multilingual translation system",
+        "alt": "Translate key on keyboard",
+        "desc": "Automatic multilingual translation system: You can message comfortably in Vietnamese, the system will instantly convert to English or Japanese, ensuring conversations are always seamless and effective."
+      },
+      "negotiation": {
+        "title": "Connect to move towards real negotiations",
+        "alt": "Business meeting and negotiation",
+        "desc": "Connect to move towards real negotiations: GMAJOR is not just a place to introduce products. With practical features, this platform helps you shorten the distance from introduction to negotiation and contract signing."
+      },
+      "freePosting": {
+        "title": "Free product/service posting",
+        "alt": "Free tag on label",
+        "desc": "Free product/service posting, no risk involved: Just post your products or services, and you'll have the opportunity to receive collaboration requests from around the world."
+      },
+      "aiOptimization": {
+        "title": "AI-optimized product descriptions",
+        "alt": "AI concept with digital elements",
+        "desc": "AI-optimized product descriptions: No deep expertise needed, with just a few keywords, AI will help you create professional product description content, standardized for international markets."
+      },
+      "pricing": {
+        "title": "Free basic features – Reasonable upgrade packages",
+        "alt": "Finger pressing upgrade key",
+        "desc": "Free basic features - reasonable upgrade packages: Exclusively for SMEs, GMAJOR provides all basic features completely free. If you need upgrades, you can choose paid packages with suitable costs, especially for businesses with limited budgets."
+      },
+      "heroGlobalMarket": {
+        "imageAlt": "Global market",
+        "headline": "FROM VIETNAM TO THE WORLD",
+        "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+        "content": {
+          "line1": "Connect with global businesses without attending international trade fairs.",
+          "line2": "Overcome language barriers and introduce your products/services.",
+          "line3": "Start today, completely free   } risk-free."
+        },
+        "ctaButton": "Register Now"
+      }
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "contactForm": {
+    "imageAlt": "GMAJOR Consultation",
+    "consultationText1": "Need more consultation?",
+    "consultationText2": "Please leave your information,",
+    "consultationText3": "will accompany you",
+    "form": {
+      "nameLabel": "Full Name",
+      "phoneLabel": "Phone Number",
+      "emailLabel": "Email",
+      "messageLabel": "Message",
+      "submitButton": "SEND INFORMATION",
+      "submittingButton": "SENDING...",
+      "privacyText": "By clicking the \"SEND INFORMATION\" button, you agree to accept",
+      "privacyLink": "GMAJOR's Privacy Policy",
+      "successMessage": "Thank you! Your information has been sent successfully. We will contact you soon.",
+      "errorMessage": "Sorry, an error occurred. Please try again later."
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "infoSection": {
+    "sectionTitle": "WE UNDERSTAND",
+    "intro1": "In recent years, the ambition of SMEs to reach international markets has been growing stronger.",
+    "intro2": "However, reality presents many barriers that are not easy to overcome",
+    "language": {
+      "title": "LANGUAGE",
+      "description": "When lacking English or Japanese skills, businesses easily miss opportunities in email exchanges or negotiations."
+    },
+    "information": {
+      "title": "INFORMATION",
+      "description": "Online searches yield too many results, making it difficult to assess the credibility of factories or partners."
+    },
+    "access": {
+      "title": "ACCESS",
+      "description": "Dependence on trade fairs or intermediaries increases costs and lacks initiative."
+    },
+    "manpower": {
+      "title": "MANPOWER",
+      "description": "From international personnel teams, foreign market research, communication skill improvement, budget approval... all require time and cost to build."
+    },
+    "budget": {
+      "title": "BUDGET",
+      "description": "Even when businesses want to expand globally, budget constraints often prevent plans from being approved."
+    },
+    "start": {
+      "title": "START",
+      "description": "Large platforms like Alibaba are both expensive and difficult to clearly determine return on investment (ROI)."
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "hero": {
+    "title": "GMAJOR helps you reach the world",
+    "description1": "Experience direct trade with businesses from Japan, USA, China and all over the world - \"COMPLETELY FREE\"",
+    "description2": "Access international markets from today without trade fairs or expensive intermediaries",
+    "registerButton": "Register Now"
+  },
+  "featureGrid": {
+    "heading": "Outstanding features and utilities",
+    "subheading": "ON THE PLATFORM",
+    "features": {
+      "free": {
+        "title": "FREE",
+        "description": "Create account & post products/services",
+        "imageAlt": "Free"
+      },
+      "aiSupport": {
+        "title": "AI SUPPORT",
+        "description": "AI automatically describes products based on keywords",
+        "imageAlt": "AI support"
+      },
+      "translation": {
+        "title": "TRANSLATION",
+        "description": "Automatic message translation system (English/Vietnamese/Japanese)",
+        "imageAlt": "Translation"
+      },
+      "search": {
+        "title": "SEARCH",
+        "description": "Smart search algorithm, suggestions by industry & business goals",
+        "imageAlt": "Search"
+      },
+      "direct": {
+        "title": "DIRECT",
+        "description": "Direct messaging and negotiation, centralized management on a single dashboard",
+        "imageAlt": "Direct"
+      },
+      "handsOn": {
+        "title": "HANDS-ON",
+        "description": "Optional support from local experts (Hands-On Service)",
+        "imageAlt": "Hands-on"
+      },
+      "heroGlobalMarket": {
+        "imageAlt": "Global market",
+        "headline": "FROM VIETNAM TO THE WORLD",
+        "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+        "content": {
+          "line1": "Connect with global businesses without attending international trade fairs.",
+          "line2": "Overcome language barriers and introduce your products/services.",
+          "line3": "Start today, completely free   } risk-free."
+        },
+        "ctaButton": "Register Now"
+      }
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "comparisonTable": {
+    "heading": "The difference lies in suitability",
+    "subtext": "GMAJOR is not the only platform. Besides GMAJOR, there are many platforms with different advantages and disadvantages.\nBelow is a quick comparison table that Vietnamese businesses can refer to:",
+    "rows": {
+      "freePosting": {
+        "label": "Free product/service posting",
+        "values": [
+          "Yes",
+          "No, high cost",
+          "No, low cost",
+          "Yes",
+          "No"
+        ]
+      },
+      "companyCount": {
+        "label": "Number of registered companies (global scale)",
+        "values": [
+          "Medium",
+          "Large",
+          "Medium",
+          "Medium",
+          "Large"
+        ]
+      },
+      "multiLanguage": {
+        "label": "Multi-language support",
+        "values": [
+          "Unlimited",
+          "Focus on English",
+          "None",
+          "Depends on language type",
+          "Focus on English"
+        ]
+      },
+      "visibility": {
+        "label": "Visibility (applicable to Vietnamese businesses)",
+        "values": [
+          "High (focus on Japanese/US/Chinese businesses)",
+          "Low (high competition)",
+          "Low",
+          "Medium",
+          "Low"
+        ]
+      },
+      "aiOptimization": {
+        "label": "AI-optimized product description",
+        "values": [
+          "Yes",
+          "No",
+          "No",
+          "No",
+          "No"
+        ]
+      },
+      "connectionSupport": {
+        "label": "Product/service connection support",
+        "values": [
+          "Not required",
+          "No",
+          "No",
+          "No",
+          "No"
+        ]
+      },
+      "cost": {
+        "label": "Cost",
+        "values": [
+          "Low",
+          "High",
+          "Medium",
+          "Medium",
+          "High (including monthly and advertising costs)"
+        ]
+      },
+      "heroGlobalMarket": {
+        "imageAlt": "Global market",
+        "headline": "FROM VIETNAM TO THE WORLD",
+        "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+        "content": {
+          "line1": "Connect with global businesses without attending international trade fairs.",
+          "line2": "Overcome language barriers and introduce your products/services.",
+          "line3": "Start today, completely free   } risk-free."
+        },
+        "ctaButton": "Register Now"
+      }
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "commentShowcase": {
+    "comment1": {
+      "label": "More Smoothly",
+      "number": "01",
+      "user": {
+        "name": "NGUYỄN DƯƠNG NGA",
+        "title": "Food Supply Manager - HCMC"
+      },
+      "quote": "I received direct inquiries from Japanese food wholesale companies. With the translation feature, I can communicate with confidence."
+    },
+    "comment2": {
+      "label": "Faster",
+      "number": "02",
+      "user": {
+        "name": "TRẦN MẠNH HÙNG",
+        "title": "Garment Factory Owner - HÀ NỘI"
+      },
+      "quote": "After 6 months on Alibaba with little response, I registered with GMAJOR and got contacted by a Japanese trading company within 2 months."
+    },
+    "comment3": {
+      "label": "Easier",
+      "number": "03",
+      "user": {
+        "name": "NGUYỄN TUẤN VŨ",
+        "title": "Coffee Farmer - ĐẮK LẮK"
+      },
+      "quote": "I wanted to sell coffee to overseas markets but struggled to find buyers. Through GMAJOR, I was able to contract directly with a US buyer."
+    },
+    "heroGlobalMarket": {
+      "imageAlt": "Global market",
+      "headline": "FROM VIETNAM TO THE WORLD",
+      "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+      "content": {
+        "line1": "Connect with global businesses without attending international trade fairs.",
+        "line2": "Overcome language barriers and introduce your products/services.",
+        "line3": "Start today, completely free   } risk-free."
+      },
+      "ctaButton": "Register Now"
+    }
+  },
+  "heroGlobalMarket": {
+    "imageAlt": "Global market",
+    "headline": "FROM VIETNAM TO THE WORLD",
+    "subheadline": "GMAJOR WILL BE YOUR COMPANION",
+    "content": {
+      "line1": "Connect with global businesses without attending international trade fairs.",
+      "line2": "Overcome language barriers and introduce your products/services.",
+      "line3": "Start today, completely free   } risk-free."
+    },
+    "ctaButton": "Register Now"
+  },
+  "footer": {
+    "owned": {
+      "title": "Owned by:",
+      "companyLabel": "Company name:",
+      "addressLabel": "Address:",
+      "companyName": "GMAJOR Co., Ltd.",
+      "address": "Fukuoka City, Japan"
+    },
+    "maintenance": {
+      "title": "Maintained by:",
+      "companyLabel": "Company name:",
+      "addressLabel": "Address:",
+      "companyName": "GNF JAPAN Co., Ltd.",
+      "address": "Ho Chi Minh City, Vietnam"
+    },
+    "guides": {
+      "title": "GUIDES",
+      "cookies": "Cookie Policy",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "paidServices": "Paid Services Policy",
+      "payment": "Payment Policy"
+    },
+    "more": {
+      "title": "MORE INFORMATION",
+      "about": "About GMAJOR",
+      "ma": "About M&A",
+      "ps": "About Products or Services",
+      "faq": "FAQ",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Customer Support",
+      "tradeCredit": "Trade & Credit Support",
+      "contact": "Contact"
+    },
+    "bottom": {
+      "copyright": "© 2024-2025 GMAJOR. All rights reserved. Website designed and operated by",
+      "brand": "GMAJOR"
+    }
+  },
+  "lang": {
+    "en": "English",
+    "vi": "Vietnamese",
+    "ja": "Japanese"
+  }
+}

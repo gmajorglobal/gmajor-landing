@@ -1,0 +1,326 @@
+{
+  "header": {
+    "home": "ホーム",
+    "about": "私たちについて",
+    "contact": "お問い合わせ",
+    "blog": "ブログ"
+  },
+  "comparisonSection": {
+    "alibaba": "アリババは世界最大ですが、「競合が多すぎて埋もれる」問題があります。また、高額のため、費用対効果の計測が困難であります。",
+    "yellow": "YellowPagesはシンプルですが、翻訳や商談支援は弱いです。また、多数のスパムメールに悩まされます。",
+    "globy": "Globyはシンプルですが、翻訳や商談支援は弱いです。また、多数のスパムメールに悩まされます。",
+    "shopify": "ShopifyはEC構築に強いが、B2Bマッチングには不向きです。",
+    "gmajor": "GMAJORは「ベトナム企業が海外企業に見つけられやすい仕組み」また、日本とベトナム、アメリカに特化した機能を備えています。"
+  },
+  "faqAccordion": {
+    "title": "よくある質問",
+    "faq1": {
+      "question": "アカウント登録に料金が必要ですか？",
+      "answer": "いいえ。アカウント作成や商品・サービスの投稿に料金は必要ありません。"
+    },
+    "faq2": {
+      "question": "日本語や英語でコミュニケーションできない場合、困難はありますか？",
+      "answer": "いいえ。自動翻訳システムにより、日本語、英語、ベトナム語でスムーズにコミュニケーションできます。"
+    },
+    "faq3": {
+      "question": "どのような種類の企業が登録されていますか？",
+      "answer": "主に日本のメーカー、食品会社、商社、そしてアメリカや中国のバイヤーです。"
+    },
+    "faq4": {
+      "question": "海外からの問い合わせはすぐに来ますか？",
+      "answer": "お客様の業界や製品によりますが、適切な問い合わせは非常に早く来る可能性があります。"
+    },
+    "faq5": {
+      "question": "交渉サポートはありますか？",
+      "answer": "はい、現地専門家によるオプションサポートサービスをいつでもご利用いただけます。"
+    }
+  },
+  "contactForm": {
+    "imageAlt": "GMAJORコンサルテーション",
+    "consultationText1": "さらにご相談が必要ですか？",
+    "consultationText2": "お客様の情報をお聞かせください、",
+    "consultationText3": "がお客様をサポートいたします",
+    "form": {
+      "nameLabel": "お名前",
+      "phoneLabel": "電話番号",
+      "emailLabel": "メールアドレス",
+      "messageLabel": "メッセージ",
+      "submitButton": "情報を送信",
+      "submittingButton": "送信中...",
+      "privacyText": "「情報を送信」ボタンをクリックすることで、以下に同意したことになります",
+      "privacyLink": "GMAJORのプライバシーポリシー",
+      "successMessage": "ありがとうございます！お客様の情報が正常に送信されました。すぐにご連絡いたします。",
+      "errorMessage": "申し訳ございませんが、エラーが発生しました。後でもう一度お試しください。"
+    }
+  },
+  "infoSection": {
+    "sectionTitle": "私たちは、〜と信じています。",
+    "intro1": "近年、中小企業が国際市場へ進出したいという意欲はますます高まっています。",
+    "intro2": "しかし、現実には以下のような壁が立ちはだかります。",
+    "language": {
+      "title": "信頼できる提携工場が分からない。",
+      "description": "ネットで検索しても情報が多すぎて判断が難し"
+    },
+    "information": {
+      "title": "どうやって始めたらよいのか分からない。",
+      "description": "Alibabaのような大規模プラットフォームではコストがかかりすぎて、費用対効果が不明である。"
+    },
+    "access": {
+      "title": "アクセス",
+      "description": "展示会や紹介を頼らざるを得ず、コストがかかる。"
+    },
+    "manpower": {
+      "title": "海外のお客様と接点を持ちたいが、社内リソースが整っていない",
+      "description": "国際人材、海外リサーチ、コミュニケーション問題、予算、社内稟議など、リソースを整えるには、時間もコストもかかる。"
+    },
+    "budget": {
+      "title": "そもそも社内稟議が通らない",
+      "description": "海外展開を社内で進めていきたいが、予算との兼ね合いで社内稟議が通らない。"
+    },
+    "start": {
+      "title": "言語の壁",
+      "description": "英語、日本語ができず、メールや交渉でチャンスを逃してしまう。"
+    }
+  },
+  "hero": {
+    "title": "ベトナムから世界へ。GMAJORで始まる、繋がる、響きあう",
+    "description1": "日本・アメリカ・中国をはじめとする海外企業との直接取引が無料で体験可能。",
+    "description2": "展示会や仲介を通さず、今すぐ海外市場にアプローチできます。",
+    "registerButton": "今すぐ無料登録"
+  },
+  "featureGrid": {
+    "heading": "優れた機能と利便性",
+    "subheading": "プラットフォーム上で",
+    "features": {
+      "free": {
+        "title": "無料",
+        "description": "無料登録・商品、サービス掲載",
+        "imageAlt": "無料"
+      },
+      "aiSupport": {
+        "title": "AIサポート",
+        "description": "AIによる商品説明作成（キーワードから生成可能）簡易的な登録対応",
+        "imageAlt": "AIサポート"
+      },
+      "translation": {
+        "title": "自動翻訳機能",
+        "description": "日本語・英語・ベトナム語の自動翻訳チャット機能",
+        "imageAlt": "自動翻訳機能"
+      },
+      "search": {
+        "title": "検索",
+        "description": "業種・目的に合わせた検索・推薦アルゴリズム",
+        "imageAlt": "検索"
+      },
+      "direct": {
+        "title": "直接",
+        "description": "商談メッセージ機能（直接交渉可能）、全てダッシュボードで管理可能",
+        "imageAlt": "直接"
+      },
+      "handsOn": {
+        "title": "ハンズオンサービス",
+        "description": "現地担当者によるオプションサポート（ハンズオンサービスあり）",
+        "imageAlt": "ハンズオンサービス"
+      }
+    }
+  },
+  "featuresCarousel": {
+    "platform": "グローバルオンラインB2Bマッチングサービス",
+    "solution": "こうした課題を解決するために誕生したのが 「GMAJOR」 です。",
+    "infoLabel": "情報",
+    "features": {
+      "globalConnection": {
+        "title": "世界の企業と直接つながる",
+        "alt": "Business collaboration puzzle pieces",
+        "desc": "食品、繊維、家具、農産物、IT、物流など、多様なベトナム企業が登録済み。"
+      },
+      "translation": {
+        "title": "多言語自動翻訳",
+        "alt": "Translate key on keyboard",
+        "desc": "日本語で入力すれば、自動的にベトナム語・英語に翻訳。海外パートナーとのやり取りもスムーズに。"
+      },
+      "negotiation": {
+        "title": "実際の商談へつながるマッチング",
+        "alt": "Business meeting and negotiation",
+        "desc": "「登録だけで終わらない」仕組み。成果に近いマッチング機能を搭載。"
+      },
+      "freePosting": {
+        "title": "無料の製品・サービス投稿",
+        "alt": "Free tag on label",
+        "desc": "ベトナム企業や海外バイヤーからの問い合わせを直接受けられます。"
+      },
+      "aiOptimization": {
+        "title": "AIによる商品説明生成",
+        "alt": "AI concept with digital elements",
+        "desc": "海外向けに最適化された説明文を自動作成し、アピール力を強化。"
+      },
+      "pricing": {
+        "title": "全ての基本機能は無料、有料プランもリーズナブル",
+        "alt": "Finger pressing upgrade key",
+        "desc": "海外展開の社内承認を通しやすいコスト設計。"
+      }
+    }
+  },
+  "comparisonTable": {
+    "heading": "他社サービスとの比較",
+    "subtext": "「GMAJORだけが良い」というわけではありません。世界には多くのB2Bプラットフォームが存在し、それぞれ強みと弱みがあります。\n ベトナム企業にとっての実用性を基準に比較しました。",
+    "rows": {
+      "freePosting": {
+        "label": "製品・サービスの無料投稿",
+        "values": [
+          "はい",
+          "いいえ、高コスト",
+          "いいえ、低コスト",
+          "はい",
+          "いいえ"
+        ]
+      },
+      "companyCount": {
+        "label": "登録企業数（グローバル規模）",
+        "values": [
+          "中程度",
+          "大規模",
+          "中程度",
+          "中程度",
+          "大規模"
+        ]
+      },
+      "multiLanguage": {
+        "label": "多言語サポート",
+        "values": [
+          "無制限",
+          "英語に焦点",
+          "なし",
+          "言語タイプによる",
+          "英語に焦点"
+        ]
+      },
+      "visibility": {
+        "label": "視認性（ベトナム企業に適用）",
+        "values": [
+          "高い（日本・米国・中国企業に焦点）",
+          "低い（高い競争率）",
+          "低い",
+          "中程度",
+          "低い"
+        ]
+      },
+      "aiOptimization": {
+        "label": "AI最適化製品説明",
+        "values": [
+          "はい",
+          "いいえ",
+          "いいえ",
+          "いいえ",
+          "いいえ"
+        ]
+      },
+      "connectionSupport": {
+        "label": "製品・サービス接続サポート",
+        "values": [
+          "必須ではない",
+          "いいえ",
+          "いいえ",
+          "いいえ",
+          "いいえ"
+        ]
+      },
+      "cost": {
+        "label": "コスト面（掲載費・広告費）",
+        "values": [
+          "低い",
+          "高い",
+          "中程度",
+          "中程度",
+          "高い（月額費用と広告費を含む）"
+        ]
+      }
+    }
+  },
+  "commentShowcase": {
+    "comment1": {
+      "label": "よりスムーズに",
+      "number": "01",
+      "user": {
+        "name": "NGUYỄN DƯƠNG NGA",
+        "title": "食品供給管理者 - HCMC"
+      },
+      "quote": "日本の食品卸会社から直接問い合わせを受けました。翻訳機能があるので、安心してやり取りできました。"
+    },
+    "comment2": {
+      "label": "より早く",
+      "number": "02",
+      "user": {
+        "name": "TRẦN MẠNH HÙNG",
+        "title": "縫製工場主 - HÀ NỘI"
+      },
+      "quote": "Alibabaでは半年間ほとんど反応がありませんでしたが、GMAJORに登録して2か月間で日本の商社から声がかかりました。"
+    },
+    "comment3": {
+      "label": "より簡単に",
+      "number": "03",
+      "user": {
+        "name": "NGUYỄN TUẤN VŨ",
+        "title": "コーヒー農業従事者 - ĐẮK LẮK"
+      },
+      "quote": "海外市場にコーヒーを売り出したいと考えていましたが、バイヤー探しに困っていました。GMAJORを通じて米国のバイヤーと直接契約できました。"
+    }
+  },
+  "heroGlobalMarket": {
+    "imageAlt": "Global market",
+    "headline": "ベトナムから世界へ",
+    "subheadline": "GMAJORがあなたのパートナーになります",
+    "content": {
+      "line1": "海外展示会に行かなくても、世界の企業とつながれる",
+      "line2": "言語の壁を越えて、自社の製品・サービスをアピールできる",
+      "line3": "無料でリスクゼロ、今すぐ始められる"
+    },
+    "ctaButton": "今すぐ無料登録"
+  },
+  "footer": {
+    "owned": {
+      "title": "運営会社:",
+      "companyLabel": "会社名:",
+      "addressLabel": "住所:",
+      "companyName": "GMAJOR Co., Ltd.",
+      "address": "日本・福岡市"
+    },
+    "maintenance": {
+      "title": "保守会社:",
+      "companyLabel": "会社名:",
+      "addressLabel": "住所:",
+      "companyName": "GNF JAPAN Co., Ltd.",
+      "address": "ベトナム・ホーチミン市"
+    },
+    "guides": {
+      "title": "ガイド",
+      "cookies": "クッキーポリシー",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "paidServices": "有料サービス規約",
+      "payment": "支払いポリシー"
+    },
+    "more": {
+      "title": "その他の情報",
+      "about": "GMAJORについて",
+      "ma": "M&Aについて",
+      "ps": "製品・サービスについて",
+      "faq": "よくある質問",
+      "blog": "ブログ"
+    },
+    "support": {
+      "title": "カスタマーサポート",
+      "tradeCredit": "貿易・信用サポート",
+      "contact": "お問い合わせ"
+    },
+    "bottom": {
+      "copyright": "© 2024-2025 GMAJOR. 無断転載禁止。 本サイトは",
+      "brand": "GMAJOR"
+    }
+  },
+  "lang": {
+    "en": "英語",
+    "vi": "ベトナム語",
+    "ja": "日本語"
+  }
+}

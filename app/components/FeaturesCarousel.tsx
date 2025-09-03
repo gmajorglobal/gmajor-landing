@@ -1,58 +1,32 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
 
-export default function FeaturesCarousel() {
-  const features = [
-    {
-      id: 1,
-      title: "Kết nối trực tiếp với doanh nghiệp toàn cầu",
-      image: "/images/casorel1.png",
-      alt: "Business collaboration puzzle pieces",
-      desc:
-        "Kết nối trực tiếp với doanh nghiệp toàn cầu: Hàng loạt nhà cung cấp, nhà máy sản xuất và đối tác tiềm năng đến từ Nhật Bản, Mỹ, Trung Quốc, Việt Nam… đã sẵn sàng. Đây chính là cánh cổng giúp doanh nghiệp Việt Nam tiến gần hơn đến thị trường quốc tế.",
-    },
-    {
-      id: 2,
-      title: "Hệ thống tự động phiên dịch đa ngôn ngữ",
-      image: "/images/casorel2.png",
-      alt: "Translate key on keyboard",
-      desc:
-        "Hệ thống tự động phiên dịch đa ngôn ngữ: Bạn có thể nhắn tin thoải mái bằng tiếng Việt, hệ thống sẽ ngay lập tức chuyển đổi sang tiếng Anh hoặc tiếng Nhật, đảm bảo cuộc trò chuyện luôn liền mạch và hiệu quả.",
-    },
-    {
-      id: 3,
-      title: "Kết nối để tiến tới đàm phán thực sự",
-      image: "/images/casorel3.png",
-      alt: "Business meeting and negotiation",
-      desc:
-        "Kết nối để tiến tới đàm phán thực sự: GMAJOR không chỉ là nơi giới thiệu sản phẩm. Với những tính năng thiết thực, nền tảng này giúp bạn rút ngắn khoảng cách từ bước giới thiệu đến bàn đàm phán và ký kết hợp đồng.",
-    },
-    {
-      id: 4,
-      title: "Miễn phí đăng bài sản phẩm/dịch vụ",
-      image: "/images/casorel4.png",
-      alt: "Free tag on label",
-      desc:
-        "Miễn phí đăng bài sản phẩm/dịch vụ, chẳng ngại rủi ro: Chỉ cần đăng sản phẩm hoặc dịch vụ, bạn đã có cơ hội nhận yêu cầu hợp tác từ khắp nơi trên thế giới.",
-    },
-    {
-      id: 5,
-      title: "Mô tả sản phẩm tối ưu với AI",
-      image: "/images/casorel5.png",
-      alt: "AI concept with digital elements",
-      desc:
-        "Mô tả sản phẩm tối ưu với AI: Không cần chuyên môn sâu, chỉ với vài từ khóa, AI sẽ giúp bạn tạo nội dung mô tả sản phẩm chuyên nghiệp, chuẩn hóa cho thị trường quốc tế.",
-    },
-    {
-      id: 6,
-      title: "Miễn phí tính năng cơ bản – Gói nâng cấp chi phí hợp lý",
-      image: "/images/casorel6.png",
-      alt: "Finger pressing upgrade key",
-      desc:
-        "Miễn phí tính năng cơ bản - gói nâng cấp chi phí hợp lý: Dành riêng cho SMEs, GMAJOR cung cấp đầy đủ tính năng cơ bản hoàn toàn miễn phí. Nếu cần nâng cấp, bạn có thể chọn gói trả phí với chi phí phù hợp, đặc biệt cho những doanh nghiệp còn hạn chế ngân sách.",
-    },
+interface FeaturesCarouselProps {
+  locale?: Locale;
+}
+
+export default function FeaturesCarousel({ locale = 'vi' }: FeaturesCarouselProps) {
+  const { t } = useTranslation(locale);
+
+  const featuresData = [
+    { key: 'globalConnection', image: '/images/casorel1.png' },
+    { key: 'translation', image: '/images/casorel2.png' },
+    { key: 'negotiation', image: '/images/casorel3.png' },
+    { key: 'freePosting', image: '/images/casorel4.png' },
+    { key: 'aiOptimization', image: '/images/casorel5.png' },
+    { key: 'pricing', image: '/images/casorel6.png' },
   ]
+
+  const features = featuresData.map((feature, index) => ({
+    id: index + 1,
+    title: t(`featuresCarousel.features.${feature.key}.title`),
+    image: feature.image,
+    alt: t(`featuresCarousel.features.${feature.key}.alt`),
+    desc: t(`featuresCarousel.features.${feature.key}.desc`),
+  }))
 
   // Responsive: 1 (mobile), 2 (tablet), 3 (desktop)
   const [visible, setVisible] = useState(3)
@@ -109,8 +83,8 @@ export default function FeaturesCarousel() {
           <div className="w-16 sm:w-20 lg:w-24 h-0.5 bg-black mx-auto mb-4 sm:mb-6" />
 
           <div className="space-y-1.5 sm:space-y-2 text-base sm:text-lg md:text-xl text-gray-700 px-2">
-            <p>Nền tảng kết nối doanh nghiệp B2B</p>
-            <p>Mang đến giải pháp mở rộng thị trường quốc tế cho doanh nghiệp Việt Nam</p>
+            <p>{t('featuresCarousel.platform')}</p>
+            <p>{t('featuresCarousel.solution')}</p>
           </div>
         </div>
 
@@ -151,7 +125,7 @@ export default function FeaturesCarousel() {
                   <div
                     className="h-full group flip-card outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
                     tabIndex={0}
-                    aria-label={`Thông tin: ${f.title}`}
+                    aria-label={`${t('featuresCarousel.infoLabel')}: ${f.title}`}
                   >
                     <div className="flip-inner h-full will-change-transform">
                       {/* Front */}

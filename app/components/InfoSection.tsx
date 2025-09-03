@@ -1,11 +1,21 @@
-export default function InfoSection() {
+"use client";
+
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
+
+interface InfoSectionProps {
+  locale?: Locale;
+}
+
+export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
+  const { t } = useTranslation(locale);
   const cards = [
-    { title: "NGÔN NGỮ", description: "Khi thiếu kỹ năng tiếng Anh hoặc tiếng Nhật, doanh nghiệp dễ bỏ lỡ cơ hội trong trao đổi email hay đàm phán." },
-    { title: "THÔNG TIN", description: "Việc tìm kiếm trực tuyến cho kết quả quá nhiều, gây khó khăn trong việc đánh giá uy tín của nhà máy hoặc đối tác." },
-    { title: "TIẾP CẬN", description: "Phụ thuộc vào hội chợ thương mại hoặc trung gian khiến chi phí tăng cao và thiếu sự chủ động." },
-    { title: "NHÂN LỰC", description: "Từ đội ngũ nhân sự quốc tế, nghiên cứu thị trường nước ngoài, cải thiện kỹ năng giao tiếp, phê duyệt ngân sách,... tất cả đều cần thời gian và chi phí để xây dựng" },
-    { title: "NGÂN SÁCH", description: "Ngay cả khi doanh nghiệp có mong muốn mở rộng toàn cầu, hạn chế về ngân sách thường khiến kế hoạch không được thông qua." },
-    { title: "BẮT ĐẦU", description: "Các nền tảng lớn như Alibaba vừa tốn kém, vừa khó xác định rõ hiệu quả đầu tư (ROI)." }
+    { title: t('infoSection.language.title'), description: t('infoSection.language.description') },
+    { title: t('infoSection.information.title'), description: t('infoSection.information.description') },
+    { title: t('infoSection.access.title'), description: t('infoSection.access.description') },
+    { title: t('infoSection.manpower.title'), description: t('infoSection.manpower.description') },
+    { title: t('infoSection.budget.title'), description: t('infoSection.budget.description') },
+    { title: t('infoSection.start.title'), description: t('infoSection.start.description') }
   ];
 
   return (
@@ -15,13 +25,13 @@ export default function InfoSection() {
           {/* Left */}
           <div className="space-y-4 sm:space-y-5 md:space-y-6 w-full md:w-[600px] lg:w-[400px]">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-black text-blue-900 lg:leading-[1.2] uppercase">
-              CHÚNG TÔI <br /> HIỂU RẰNG
+              {t('infoSection.sectionTitle')}
             </h2>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left text-blue-800 leading-relaxed">
               <p className="italic">
-                Những năm gần đây, khát vọng vươn mình ra thị trường quốc tế của các doanh nghiệp vừa và nhỏ ngày càng lớn mạnh.
+                {t('infoSection.intro1')}
               </p>
-              <p className="italic">Song, thực tế lại đặt ra nhiều rào cản không dễ vượt qua</p>
+              <p className="italic">{t('infoSection.intro2')}</p>
             </div>
           </div>
 
@@ -44,12 +54,12 @@ export default function InfoSection() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
                                group-hover:text-white group-focus-within:text-white">
-                  NGÔN NGỮ
+                  {cards[0].title}
                 </h3>
                 <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
                               group-hover:text-white/95 group-focus-within:text-white/95">
-                  Khi thiếu kỹ năng tiếng Anh hoặc tiếng Nhật, doanh nghiệp dễ bỏ lỡ cơ hội trong trao đổi email hay đàm phán.
+                  {cards[0].description}
                 </p>
               </div>
 
@@ -66,12 +76,12 @@ export default function InfoSection() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
                                group-hover:text-white group-focus-within:text-white">
-                  THÔNG TIN
+                  {cards[1].title}
                 </h3>
                 <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
                               group-hover:text-white/95 group-focus-within:text-white/95">
-                  Việc tìm kiếm trực tuyến cho kết quả quá nhiều, gây khó khăn trong việc đánh giá uy tín của nhà máy hoặc đối tác.
+                  {cards[1].description}
                 </p>
               </div>
             </div>
@@ -92,12 +102,12 @@ export default function InfoSection() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
                                group-hover:text-white group-focus-within:text-white">
-                  TIẾP CẬN
+                  {cards[2].title}
                 </h3>
                 <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
                               group-hover:text-white/95 group-focus-within:text-white/95">
-                  Phụ thuộc vào hội chợ thương mại hoặc trung gian khiến chi phí tăng cao và thiếu sự chủ động.
+                  {cards[2].description}
                 </p>
               </div>
 
@@ -114,12 +124,12 @@ export default function InfoSection() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
                                group-hover:text-white group-focus-within:text-white">
-                  NHÂN LỰC
+                  {cards[3].title}
                 </h3>
                 <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
                               group-hover:text-white/95 group-focus-within:text-white/95">
-                  Từ đội ngũ nhân sự quốc tế, nghiên cứu thị trường nước ngoài, cải thiện kỹ năng giao tiếp, phê duyệt ngân sách,... tất cả đều cần thời gian và chi phí để xây dựng
+                  {cards[3].description}
                 </p>
               </div>
             </div>
@@ -140,12 +150,12 @@ export default function InfoSection() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
                                group-hover:text-white group-focus-within:text-white">
-                  NGÂN SÁCH
+                  {cards[4].title}
                 </h3>
                 <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
                               group-hover:text-white/95 group-focus-within:text-white/95">
-                  Ngay cả khi doanh nghiệp có mong muốn mở rộng toàn cầu, hạn chế về ngân sách thường khiến kế hoạch không được thông qua.
+                  {cards[4].description}
                 </p>
               </div>
 
@@ -162,12 +172,12 @@ export default function InfoSection() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
                                group-hover:text-white group-focus-within:text-white">
-                  BẮT ĐẦU
+                  {cards[5].title}
                 </h3>
                 <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
                               group-hover:text-white/95 group-focus-within:text-white/95">
-                  Các nền tảng lớn như Alibaba vừa tốn kém, vừa khó xác định rõ hiệu quả đầu tư (ROI).
+                  {cards[5].description}
                 </p>
               </div>
             </div>

@@ -1,7 +1,16 @@
 // components/CommentShowcase.tsx
 "use client"
 
-export default function CommentShowcase() {
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
+
+interface CommentShowcaseProps {
+  locale?: Locale;
+}
+
+export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps) {
+  const { t } = useTranslation(locale);
+
   return (
     <section className="w-full bg-white py-8 sm:py-12 md:py-14 lg:py-16">
       {/* Match top component width */}
@@ -20,10 +29,10 @@ export default function CommentShowcase() {
 
           {/* labels */}
           <div className="absolute left-3 sm:left-4 md:left-5 top-3 sm:top-4 md:top-5 text-white text-[18px] sm:text-[22px] md:text-[28px] lg:text-[32px] font-semibold tracking-wide">
-            mượt mà hơn
+            {t('commentShowcase.comment1.label')}
           </div>
           <div className="absolute right-3 sm:right-4 md:right-5 top-3 sm:top-4 md:top-5 text-white text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold">
-            01
+            {t('commentShowcase.comment1.number')}
           </div>
 
           {/* chip + quote (right/bottom) */}
@@ -35,10 +44,10 @@ export default function CommentShowcase() {
               </div>
               <div className="ml-3 sm:ml-4 rounded bg-white/90 px-3 sm:px-4 py-2 sm:py-2.5 shadow">
                 <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
-                  NGUYỄN DƯƠNG NGA
+                  {t('commentShowcase.comment1.user.name')}
                 </div>
                 <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
-                  QUẢN LÝ CUNG ỨNG THỰC PHẨM · TP.HCM
+                  {t('commentShowcase.comment1.user.title')}
                 </div>
               </div>
             </div>
@@ -46,8 +55,7 @@ export default function CommentShowcase() {
             {/* quote */}
             <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
               <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b]">
-                “Chúng tôi nhận được liên hệ trực tiếp từ một doanh nghiệp thực phẩm Nhật Bản. Nhờ khả năng
-                thống kê dữ liệu, việc trao đổi trở nên trôi chảy và hoàn toàn yên tâm.”
+                "{t('commentShowcase.comment1.quote')}"
               </p>
             </div>
           </div>
@@ -69,10 +77,10 @@ export default function CommentShowcase() {
             />
             <div className="absolute right-3 sm:right-4 top-3 sm:top-4 flex flex-col">
               <div className="text-white text-[18px] sm:text-[22px] md:text-[28px] lg:text-[32px] font-semibold tracking-wide">
-                sớm hơn
+                {t('commentShowcase.comment2.label')}
               </div>
               <div className="self-end text-white text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold">
-                02
+                {t('commentShowcase.comment2.number')}
               </div>
             </div>
           </div>
@@ -88,8 +96,7 @@ export default function CommentShowcase() {
     <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px]
                   leading-[30px] sm:leading-[36px] md:leading-[44px] lg:leading-[50px]
                   text-[#0b1b2b]">
-      “Trên Alibaba, chúng tôi gần như không nhận được phản hồi trong nửa năm. Nhưng chỉ
-      sau hai tháng trên GMAJOR, một công ty thương mại Nhật đã chủ động liên hệ.”
+      "{t('commentShowcase.comment2.quote')}"
     </p>
   </div>
 
@@ -98,17 +105,11 @@ export default function CommentShowcase() {
                   <img src="/images/user2.png" alt="" className="h-full w-full object-cover" />
                 </div>
                 <div>
-                  {/* <div className="text-[12px] sm:text-[13px] md:text-[15px] lg:text-[16px] font-semibold leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]">
-                    TRẦN MẠNH HÙNG
-                  </div>
-                  <div className="mt-0.5 sm:mt-1 text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[14px] sm:leading-[16px] md:leading-[18px] text-[#0b1b2b]/70">
-                    CHỦ XƯỞNG DỆT MAY · HÀ NỘI
-                  </div> */}
                   <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
-                    TRẦN MẠNH HÙNG
+                    {t('commentShowcase.comment2.user.name')}
                   </div>
                   <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
-                    CHỦ XƯỞNG DỆT MAY · HÀ NỘI
+                    {t('commentShowcase.comment2.user.title')}
                   </div>
                 </div>
               </div>
@@ -129,10 +130,10 @@ export default function CommentShowcase() {
           />
 
           <div className="absolute left-3 sm:left-4 md:left-5 top-3 sm:top-4 md:top-5 text-white text-[18px] sm:text-[22px] md:text-[28px] lg:text-[32px] font-semibold tracking-wide">
-            đơn giản hơn
+            {t('commentShowcase.comment3.label')}
           </div>
           <div className="absolute right-3 sm:right-4 md:right-5 top-3 sm:top-4 md:top-5 text-white text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold">
-            03
+            {t('commentShowcase.comment3.number')}
           </div>
 
           {/* bottom-left group */}
@@ -146,10 +147,10 @@ export default function CommentShowcase() {
                 </div>
                 <div className="ml-3 sm:ml-4 rounded bg-white/90 px-3 sm:px-4 py-2 sm:py-2.5 shadow">
                   <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
-                    NGUYỄN TUẤN VŨ
+                    {t('commentShowcase.comment3.user.name')}
                   </div>
                   <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
-                    NÔNG DÂN CÀ PHÊ · ĐẮK LẮK
+                    {t('commentShowcase.comment3.user.title')}
                   </div>
                 </div>
               </div>
@@ -158,8 +159,7 @@ export default function CommentShowcase() {
               <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
                 <ul className="space-y-2 sm:space-y-2.5 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b]">
                   <li>
-                    “Chúng tôi sẵn sàng đưa cà phê đặc sản ra thị trường quốc tế nhưng ít hiểu biết về thương mại quốc tế.
-                      Nhờ GMAJOR, những khâu đối ngoại được đồng bộ rõ ràng và khớp với thị trường Nhật Bản.”
+                    "{t('commentShowcase.comment3.quote')}"
                   </li>
                 </ul>
               </div>

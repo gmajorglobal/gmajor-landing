@@ -2,71 +2,31 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
 
-type Faq = { id: number; q: string; a: JSX.Element };
+interface FaqAccordionProps {
+  locale?: Locale;
+}
 
-const faqs: Faq[] = [
-  {
-    id: 1,
-    q: "Có cần phải trả phí để đăng ký tài khoản không ?",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Không. Người dùng không cần phải trả phí cho việc tạo tài khoản cũng như là đăng bài cho sản phẩm/dịch vụ.
-      </p>
-    ),
-  },
-  {
-    id: 2,
-    q: "Có bất kỳ khó khăn nào nếu không thể giao tiếp bằng tiếng Nhật hay tiếng Anh không?",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Không. Hệ thống dịch tự động giúp giao tiếp trôi chảy bằng tiếng Nhật, tiếng Anh và tiếng Việt.
-      </p>
-    ),
-  },
-  {
-    id: 3,
-    q: "Những loại công ty nào được đăng ký?",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Chủ yếu là các nhà sản xuất, công ty thực phẩm và công ty thương mại của Nhật Bản, cũng như các nhà mua hàng từ Mỹ và Trung Quốc.
-      </p>
-    ),
-  },
-  {
-    id: 4,
-    q: "Các yêu cầu từ nước ngoài có đến ngay lập tức không?  ",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Điều đó phụ thuộc vào ngành nghề và sản phẩm của bạn, nhưng các yêu cầu phù hợp có thể đến rất nhanh.
-      </p>
-    ),
-  },
-  {
-    id: 5,
-    q: "Các bạn có hỗ trợ đàm phán không?",
-    a: (
-      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-        Có, dịch vụ hỗ trợ tùy chọn bởi các chuyên gia địa phương luôn sẵn sàng.
-      </p>
-    ),
-  },
-];
-
-export default function FaqAccordion() {
+export default function FaqAccordion({ locale = 'vi' }: FaqAccordionProps) {
+  const { t } = useTranslation(locale);
   const [openId, setOpenId] = useState<number | null>(null);
   const toggle = (id: number) => setOpenId((cur) => (cur === id ? null : id));
+
+  const faqKeys = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5'];
 
   return (
     <section className="bg-gray-50 lg:bg-white transition-all duration-500 ease-in-out">
       {/* match the top section width */}
       <div className="mx-auto w-full max-w-[1280px] px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-14 lg:py-16">
         <h2 className="mb-6 sm:mb-8 md:mb-10 text-center font-extrabold tracking-tight text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-          Những thắc mắc thường gặp
+          {t('faqAccordion.title')}
         </h2>
 
         <div className="mx-auto w-full max-w-[1200px]">
-          {faqs.map(({ id, q, a }) => {
+          {faqKeys.map((faqKey, index) => {
+            const id = index + 1;
             const isOpen = openId === id;
             return (
               <div key={id} className="mb-3 sm:mb-4 rounded-2xl overflow-hidden">
@@ -84,7 +44,9 @@ export default function FaqAccordion() {
                       : "bg-white border-gray-200 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-900",
                   ].join(" ")}
                 >
-                  <span className="text-base sm:text-lg md:text-xl font-semibold">{q}</span>
+                  <span className="text-base sm:text-lg md:text-xl font-semibold">
+                    {t(`faqAccordion.${faqKey}.question`)}
+                  </span>
                   <svg
                     className={[
                       "shrink-0 transition-transform duration-300 ease-in-out",
@@ -114,7 +76,9 @@ export default function FaqAccordion() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-4 sm:px-5 md:px-8 py-4 sm:py-6 md:py-8 bg-gray-50 border-x border-b border-gray-200">
-                      {a}
+                      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
+                        {t(`faqAccordion.${faqKey}.answer`)}
+                      </p>
                     </div>
                   </div>
                 </div>

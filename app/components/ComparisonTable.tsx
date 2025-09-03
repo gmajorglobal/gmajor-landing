@@ -1,15 +1,17 @@
+"use client"
+
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
+
 type Logo = { src: string; alt?: string } | string
 
 interface ComparisonTableProps {
   logos?: Logo[]
-  heading?: string
-  subtext?: string
+  locale?: Locale
 }
 
 export default function ComparisonTable({
-  heading = "Sự khác biệt nằm ở tính phù hợp",
-  subtext = `GMAJOR không phải là nền tảng duy nhất. Bên cạnh GMAJOR có rất nhiều nền tảng với ưu cũng như là nhược điểm khác nhau.
-Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có thể tham khảo:`,
+  locale = 'vi',
   logos = [
     "/images/logo-gmajor.png",
     "/images/logo-alibaba.png",
@@ -18,18 +20,20 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
     "/images/logo-shopify.png",
   ],
 }: ComparisonTableProps) {
+  const { t } = useTranslation(locale);
+  
   const logoItems = logos.map((l, i) =>
     typeof l === "string" ? { src: l, alt: `Logo ${i + 1}` } : l
   )
 
-  const rows: { label: string; values: string[] }[] = [
-    { label: "Miễn phí đăng bài sản phẩm/dịch vụ", values: ["Có", "Không, chi phí cao", "Không, chi phí thấp", "Có", "Không"] },
-    { label: "Số lượng doanh nghiệp đã đăng ký (quy mô toàn cầu)", values: ["Trung bình", "Lớn", "Trung bình", "Trung bình", "Lớn"] },
-    { label: "Hỗ trợ đa ngôn ngữ", values: ["Không giới hạn", "Tập trung vào tiếng Anh", "Không có", "Tuỳ loại ngôn ngữ", "Tập trung vào tiếng Anh"] },
-    { label: "Khả năng hiện thị (áp dụng cho doanh nghiệp Việt Nam)", values: ["Cao (tập trung vào doanh nghiệp Nhật Bản/Mỹ/Trung Quốc)", "Thấp (mức độ cạnh tranh cao)", "Thấp", "Trung bình", "Thấp"] },
-    { label: "Mô tả sản phẩm tối ưu với AI", values: ["Có", "Không", "Không", "Không", "Không"] },
-    { label: "Hỗ trợ kết nối sản phẩm/dịch vụ", values: ["Không bắt buộc", "Không", "Không", "Không", "Không"] },
-    { label: "Chi phí", values: ["Thấp", "Cao", "Trung bình", "Trung bình", "Cao (bao gồm chi phí tháng và quảng cáo)"] },
+  const rows: { labelKey: string; valuesKey: string }[] = [
+    { labelKey: "comparisonTable.rows.freePosting.label", valuesKey: "comparisonTable.rows.freePosting.values" },
+    { labelKey: "comparisonTable.rows.companyCount.label", valuesKey: "comparisonTable.rows.companyCount.values" },
+    { labelKey: "comparisonTable.rows.multiLanguage.label", valuesKey: "comparisonTable.rows.multiLanguage.values" },
+    { labelKey: "comparisonTable.rows.visibility.label", valuesKey: "comparisonTable.rows.visibility.values" },
+    { labelKey: "comparisonTable.rows.aiOptimization.label", valuesKey: "comparisonTable.rows.aiOptimization.values" },
+    { labelKey: "comparisonTable.rows.connectionSupport.label", valuesKey: "comparisonTable.rows.connectionSupport.values" },
+    { labelKey: "comparisonTable.rows.cost.label", valuesKey: "comparisonTable.rows.cost.values" },
   ]
 
   const colCount = logoItems.length
@@ -41,13 +45,13 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
         {/* Heading */}
         <div className="text-center mb-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl font-extrabold text-indigo-800 uppercase leading-tight">
-            {heading}
+            {t('comparisonTable.heading')}
           </h2>
 
           <hr className="mx-auto my-4 h-[2px] w-28 sm:w-40 md:w-48 lg:w-40 xl:w-60 border-0 rounded bg-indigo-800" />
 
           <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-xl text-indigo-700 italic leading-snug">
-            {subtext}
+            {t('comparisonTable.subtext')}
           </p>
         </div>
 
@@ -79,7 +83,7 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
 
               <tbody>
                 {rows.map((r, ri) => {
-                  const vals = pad(r.values)
+                  const vals = pad(t(r.valuesKey))
                   const lastRow = ri === rows.length - 1
                   return (
                     <tr key={ri} className="group align-middle text-center">
@@ -90,7 +94,7 @@ Dưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có t
                           lastRow ? "rounded-bl-xl" : ""
                         }`}
                       >
-                        {r.label}
+                        {t(r.labelKey)}
                       </th>
 
                       {vals.map((v, ci) => {

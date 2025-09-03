@@ -1,62 +1,23 @@
-type Feature = {
-    title: string
-    description: string
-    image?: string // leave empty; provide your path later
-    imageAlt?: string
-}
+"use client"
+
+import { useTranslation } from '../hooks/useTranslation';
+import { type Locale } from '../../i18n';
 
 interface FeatureGridProps {
-    heading?: string
-    subheading?: string
-    features?: Feature[]
+    locale?: Locale;
 }
 
-export default function FeatureGrid({
-    heading = "Các tính năng và tiện ích vượt trội",
-    subheading = "TRÊN NỀN TẢNG",
-    features = [
-        {
-            title: "MIỄN PHÍ",
-            description: "Tạo tài khoản & đăng bài sản phẩm/dịch vụ",
-            image: "/images/featuregrid1.png",
-            imageAlt: "Miễn phí",
-        },
-        {
-            title: "AI HỖ TRỢ",
-            description: "AI tự động mô tả sản phẩm dựa trên từ khóa",
-            image: "/images/featuregrid2.png",
-            imageAlt: "AI hỗ trợ",
-        },
-        {
-            title: "DỊCH THUẬT",
-            description:
-                "Hệ thống dịch tin nhắn tự động (Tiếng Anh/Tiếng Việt/Tiếng Nhật)",
-            image: "/images/featuregrid3.png",
-            imageAlt: "Dịch thuật",
-        },
-        {
-            title: "TÌM KIẾM",
-            description:
-                "Thuật toán tìm kiếm thông minh, gợi ý theo ngành nghề & mục tiêu kinh doanh",
-            image: "/images/featuregrid4.png",
-            imageAlt: "Tìm kiếm",
-        },
-        {
-            title: "TRỰC TIẾP",
-            description:
-                "Nhắn tin và đàm phán trực tiếp, quản lý tập trung trên một bảng điều khiển duy nhất",
-            image: "/images/featuregrid5.png",
-            imageAlt: "Trực tiếp",
-        },
-        {
-            title: "HANDS-ON",
-            description:
-                "Hỗ trợ tuỳ chọn từ chuyên gia địa phương (Hands-On Service)",
-            image: "/images/featuregrid6.png",
-            imageAlt: "Hands-on",
-        },
-    ],
-}: FeatureGridProps) {
+export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
+    const { t } = useTranslation(locale);
+
+    const featureKeys = [
+        { key: 'free', image: '/images/featuregrid1.png' },
+        { key: 'aiSupport', image: '/images/featuregrid2.png' },
+        { key: 'translation', image: '/images/featuregrid3.png' },
+        { key: 'search', image: '/images/featuregrid4.png' },
+        { key: 'direct', image: '/images/featuregrid5.png' },
+        { key: 'handsOn', image: '/images/featuregrid6.png' },
+    ];
     return (
         <section
             className="w-full bg-gray-50"
@@ -73,10 +34,10 @@ export default function FeatureGrid({
                         />
                         <div className="py-1">
                             <p className="text-indigo-700 font-semibold tracking-wide text-lg md:text-xl">
-                                {heading}
+                                {t('featureGrid.heading')}
                             </p>
                             <h2 className="mt-1 text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase leading-tight">
-                                {subheading}
+                                {t('featureGrid.subheading')}
                             </h2>
                         </div>
                     </div>
@@ -85,8 +46,8 @@ export default function FeatureGrid({
 
                 {/* Cards */}
                 <div className="flex flex-wrap -mx-3">
-                    {features.map((f, idx) => (
-                        <div key={`${f.title}-${idx}`} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+                    {featureKeys.map((feature, idx) => (
+                        <div key={`${feature.key}-${idx}`} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
                             <article
                                 className="
     group relative overflow-hidden rounded-xl border border-gray-200
@@ -122,26 +83,20 @@ export default function FeatureGrid({
       "
                                     />
 
-                                    {/* feature image (unchanged, stays full-color) */}
-                                    {f.image ? (
-                                        <img
-                                            src={f.image}
-                                            alt={f.imageAlt || f.title}
-                                            className="h-10 w-10 md:h-20 md:w-20 rounded-lg object-contain relative z-10"
-                                        />
-                                    ) : (
-                                        <div className="h-10 w-10 md:h-12 md:w-12 rounded-lg bg-indigo-50 text-indigo-400 flex items-center justify-center text-sm border border-dashed border-indigo-200 relative z-10">
-                                            img
-                                        </div>
-                                    )}
+                                    {/* feature image */}
+                                    <img
+                                        src={feature.image}
+                                        alt={t(`featureGrid.features.${feature.key}.imageAlt`)}
+                                        className="h-10 w-10 md:h-20 md:w-20 rounded-lg object-contain relative z-10"
+                                    />
                                 </div>
 
                                 {/* Text */}
                                 <h3 className="text-[18px] md:text-[28px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white">
-                                    {f.title}
+                                    {t(`featureGrid.features.${feature.key}.title`)}
                                 </h3>
                                 <p className="mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90">
-                                    {f.description}
+                                    {t(`featureGrid.features.${feature.key}.description`)}
                                 </p>
                             </article>
 
