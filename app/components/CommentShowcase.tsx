@@ -93,9 +93,9 @@ export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps)
                          hover:scale-[1.04] hover:-translate-y-1 hover:shadow-lg hover:z-10 cursor-pointer"
             >
               <div className="h-full pr-1 flex items-center pb-16 sm:pb-20 md:pb-24 lg:pb-28">
-    <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px]
+    <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[26px]
                   leading-[30px] sm:leading-[36px] md:leading-[44px] lg:leading-[50px]
-                  text-[#0b1b2b]">
+                  text-[#0b1b2b] whitespace-pre-line">
       "{t('commentShowcase.comment2.quote')}"
     </p>
   </div>

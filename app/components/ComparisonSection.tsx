@@ -61,7 +61,7 @@ export default function ComparisonSection({ locale = 'vi' }: ComparisonSectionPr
               className={[
                 "group relative rounded-lg sm:rounded-md",
                 "flex items-center",
-                "gap-3 sm:gap-4 md:gap-6",
+                "gap-2 sm:gap-3 md:gap-4",
                 "px-3 sm:px-4 md:px-6",
                 "py-3 sm:py-4 md:py-5",
                 bg,
