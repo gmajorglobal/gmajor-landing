@@ -33,10 +33,10 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
                             className="block w-1.5 md:w-2 bg-orange-500 rounded self-stretch"
                         />
                         <div className="py-1">
-                            <p className="text-indigo-700 font-semibold tracking-wide text-lg md:text-xl">
+                            <p className="text-indigo-700 font-semibold tracking-wide text-lg md:text-xl whitespace-pre-line">
                                 {t('featureGrid.heading')}
                             </p>
-                            <h2 className="mt-1 text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase leading-tight">
+                            <h2 className="mt-1 text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase leading-tight whitespace-pre-line">
                                 {t('featureGrid.subheading')}
                             </h2>
                         </div>
@@ -92,10 +92,10 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
                                 </div>
 
                                 {/* Text */}
-                                <h3 className="text-[18px] md:text-[28px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white">
+                                <h3 className="text-[18px] md:text-[28px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line">
                                     {t(`featureGrid.features.${feature.key}.title`)}
                                 </h3>
-                                <p className="mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90">
+                                <p className="mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90 whitespace-pre-line">
                                     {t(`featureGrid.features.${feature.key}.description`)}
                                 </p>
                             </article>

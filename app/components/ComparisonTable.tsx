@@ -44,13 +44,13 @@ export default function ComparisonTable({
       <div className="max-w-7xl mx-auto px-2 py-8 sm:py-12 md:py-14 lg:py-16">
         {/* Heading */}
         <div className="text-center mb-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl font-extrabold text-indigo-800 uppercase leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl font-extrabold text-indigo-800 uppercase leading-tight whitespace-pre-line">
             {t('comparisonTable.heading')}
           </h2>
 
           <hr className="mx-auto my-4 h-[2px] w-28 sm:w-40 md:w-48 lg:w-40 xl:w-60 border-0 rounded bg-indigo-800" />
 
-          <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-xl text-indigo-700 italic leading-snug">
+          <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-xl text-indigo-700 italic leading-snug whitespace-pre-line">
             {t('comparisonTable.subtext')}
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function ComparisonTable({
                       {/* left label */}
                       <th
                         scope="row"
-                        className={`bg-gray-100 text-gray-800 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg font-semibold p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-left border-t border-gray-200 leading-snug transition-colors duration-150 group-hover:bg-indigo-50 ${
+                        className={`bg-gray-100 text-gray-800 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg font-semibold p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-left border-t border-gray-200 leading-snug transition-colors duration-150 group-hover:bg-indigo-50 whitespace-pre-line ${
                           lastRow ? "rounded-bl-xl" : ""
                         }`}
                       >
@@ -102,7 +102,7 @@ export default function ComparisonTable({
                         return (
                           <td
                             key={ci}
-                            className={`p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg text-gray-700 border-t border-gray-200 leading-snug break-words transition-colors duration-150 group-hover:bg-indigo-50 ${
+                            className={`p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-lg text-gray-700 border-t border-gray-200 leading-snug break-words transition-colors duration-150 group-hover:bg-indigo-50 whitespace-pre-line ${
                               lastRow && isLastCol ? "rounded-br-xl" : ""
                             }`}
                           >

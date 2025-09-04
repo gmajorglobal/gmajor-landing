@@ -13,7 +13,7 @@ module.exports = {
         'gmajor-dark': '#1f2937',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
     },
   },

@@ -22,7 +22,7 @@ export default function SiteFooter({ locale = 'vi' }: SiteFooterProps) {
               </a>
             </h3>
 
-            <div className="mb-5 sm:mb-6 text-gray-700 text-sm sm:text-base md:text-lg leading-6 sm:leading-7">
+            <div className="mb-5 sm:mb-6 text-gray-700 text-sm sm:text-base md:text-lg leading-6 sm:leading-7 whitespace-pre-line">
               <b>{t('footer.owned.title')} </b>
               <ul className="mt-2 list-inside space-y-1">
                 <li>
@@ -38,7 +38,7 @@ export default function SiteFooter({ locale = 'vi' }: SiteFooterProps) {
               </ul>
             </div>
 
-            <div className="text-gray-700 text-sm sm:text-base md:text-lg leading-6 sm:leading-7">
+            <div className="text-gray-700 text-sm sm:text-base md:text-lg leading-6 sm:leading-7 whitespace-pre-line">
               <b>{t('footer.maintenance.title')}</b>
               <ul className="mt-2 list-inside space-y-1">
                 <li>

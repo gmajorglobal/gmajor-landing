@@ -79,12 +79,12 @@ export default function FeaturesCarousel({ locale = 'vi' }: FeaturesCarouselProp
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-blue-900 mb-3 lg:mb-4">GMAJOR</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-blue-900 mb-3 lg:mb-4 whitespace-pre-line">GMAJOR</h1>
           <div className="w-16 sm:w-20 lg:w-24 h-0.5 bg-black mx-auto mb-4 sm:mb-6" />
 
           <div className="space-y-1.5 sm:space-y-2 text-base sm:text-lg md:text-xl text-gray-700 px-2">
-            <p>{t('featuresCarousel.platform')}</p>
-            <p>{t('featuresCarousel.solution')}</p>
+            <p className="whitespace-pre-line">{t('featuresCarousel.platform')}</p>
+            <p className="whitespace-pre-line">{t('featuresCarousel.solution')}</p>
           </div>
         </div>
 
@@ -135,14 +135,14 @@ export default function FeaturesCarousel({ locale = 'vi' }: FeaturesCarouselProp
                             <img src={f.image} alt={f.alt} className="w-full h-full object-cover" />
                           </div>
                         </div>
-                        <div className="px-2 pb-4 sm:pb-5 text-center w-full max-w-[280px] mx-auto">
-                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-900">{f.title}</h3>
+                        <div className="px-2 pb-4 sm:pb-5 text-center w-full max-w-[280px] mx-auto grid place-items-center">
+                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-900 whitespace-pre-line">{f.title}</h3>
                         </div>
                       </div>
 
                       {/* Back (only your provided content) */}
                       <div className="flip-face flip-back h-full bg-blue-900 text-white border-8 border-blue-800 shadow-lg rounded-sm p-5 sm:p-6 lg:p-8 flex items-center justify-center text-center">
-                        <p className="max-w-[680px] text-[16px] sm:text-[18px] md:text-[20px] leading-6 sm:leading-8 font-semibold text-white/95">
+                        <p className="max-w-[680px] text-[16px] sm:text-[18px] md:text-[20px] leading-6 sm:leading-8 font-semibold text-white/95 whitespace-pre-line">
                           {f.desc}
                         </p>
                       </div>

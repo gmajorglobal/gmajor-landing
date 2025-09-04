@@ -60,9 +60,9 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
               </div>
 
               <div className="mt-5 sm:mt-6 md:mt-7 text-center leading-6 sm:leading-7 text-[#0c2083] italic">
-                <p className="text-[16px] sm:text-[18px] md:text-[20px]">{t('contactForm.consultationText1')}</p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px]">{t('contactForm.consultationText2')}</p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px]">
+                            <p className="text-[16px] sm:text-[18px] md:text-[20px] whitespace-pre-line">{t('contactForm.consultationText1')}</p>
+            <p className="text-[16px] sm:text-[18px] md:text-[20px] whitespace-pre-line">{t('contactForm.consultationText2')}</p>
+            <p className="text-[16px] sm:text-[18px] md:text-[20px] whitespace-pre-line">
                   <span className="font-semibold not-italic">GMAJOR</span> {t('contactForm.consultationText3')}
                 </p>
               </div>
@@ -172,8 +172,8 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                 </span>
               </div>
 
-              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-6 sm:leading-7 text-gray-700">
-                {t('contactForm.form.privacyText')} <span className="font-semibold">"{t('contactForm.form.submitButton')}"</span>,{" "}
+              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-6 sm:leading-7 text-gray-700 whitespace-pre-line">
+                {t('contactForm.form.privacyText')}{" "}
                 <a
                   href={`https://www.gmajor.biz/privacy-policy?lang=${locale}`}
                   target="_blank"

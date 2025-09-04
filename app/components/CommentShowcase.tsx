@@ -43,9 +43,9 @@ export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps)
                 <img src="/images/user1.png" alt="" className="h-full w-full object-cover" />
               </div>
               <div className="ml-3 sm:ml-4 rounded bg-white/90 px-3 sm:px-4 py-2 sm:py-2.5 shadow">
-                <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]">
-                  {t('commentShowcase.comment1.user.name')}
-                </div>
+                            <div className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b] whitespace-pre-line">
+              {t('commentShowcase.comment1.user.name')}
+            </div>
                 <div className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[18px] sm:leading-[20px] md:leading-[22px] text-[#0b1b2b]/70">
                   {t('commentShowcase.comment1.user.title')}
                 </div>
@@ -54,7 +54,7 @@ export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps)
 
             {/* quote */}
             <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
-              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b]">
+              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[26px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b] whitespace-pre-line">
                 "{t('commentShowcase.comment1.quote')}"
               </p>
             </div>
@@ -157,7 +157,7 @@ export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps)
 
               {/* points */}
               <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
-                <ul className="space-y-2 sm:space-y-2.5 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b]">
+                <ul className="space-y-2 sm:space-y-2.5 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b] whitespace-pre-line">
                   <li>
                     "{t('commentShowcase.comment3.quote')}"
                   </li>

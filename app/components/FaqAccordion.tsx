@@ -20,7 +20,7 @@ export default function FaqAccordion({ locale = 'vi' }: FaqAccordionProps) {
     <section className="bg-gray-50 lg:bg-white transition-all duration-500 ease-in-out">
       {/* match the top section width */}
       <div className="mx-auto w-full max-w-[1280px] px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-14 lg:py-16">
-        <h2 className="mb-6 sm:mb-8 md:mb-10 text-center font-extrabold tracking-tight text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+        <h2 className="mb-6 sm:mb-8 md:mb-10 text-center font-extrabold tracking-tight text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl whitespace-pre-line">
           {t('faqAccordion.title')}
         </h2>
 
@@ -44,7 +44,7 @@ export default function FaqAccordion({ locale = 'vi' }: FaqAccordionProps) {
                       : "bg-white border-gray-200 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-900",
                   ].join(" ")}
                 >
-                  <span className="text-base sm:text-lg md:text-xl font-semibold">
+                  <span className="text-base sm:text-lg md:text-xl font-semibold whitespace-pre-line">
                     {t(`faqAccordion.${faqKey}.question`)}
                   </span>
                   <svg
@@ -76,9 +76,9 @@ export default function FaqAccordion({ locale = 'vi' }: FaqAccordionProps) {
                 >
                   <div className="overflow-hidden">
                     <div className="px-4 sm:px-5 md:px-8 py-4 sm:py-6 md:py-8 bg-gray-50 border-x border-b border-gray-200">
-                      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700">
-                        {t(`faqAccordion.${faqKey}.answer`)}
-                      </p>
+                                      <p className="text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-gray-700 whitespace-pre-line">
+                  {t(`faqAccordion.${faqKey}.answer`)}
+                </p>
                     </div>
                   </div>
                 </div>

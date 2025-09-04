@@ -32,10 +32,10 @@ export default function HeroGlobalMarket({ locale = 'vi' }: HeroGlobalMarketProp
 
           {/* Headline + subhead */}
           <div className="absolute left-4 sm:left-6 md:left-10 lg:left-12 top-5 sm:top-6 md:top-10 lg:top-12">
-            <h1 className="text-white text-[24px] sm:text-[34px] md:text-[40px] lg:text-[46px] leading-[32px] sm:leading-[38px] md:leading-[46px] lg:leading-[52px] font-extrabold tracking-[0.02em] uppercase">
+            <h1 className="text-white text-[24px] sm:text-[34px] md:text-[40px] lg:text-[46px] leading-[32px] sm:leading-[38px] md:leading-[46px] lg:leading-[52px] font-extrabold tracking-[0.02em] uppercase whitespace-pre-line">
               {t('heroGlobalMarket.headline')}
             </h1>
-            <p className="mt-1 text-white/90 text-[10px] sm:text-[14px] md:text-[18px] lg:text-[20px] leading-[14px] sm:leading-[16px] md:leading-[18px] lg:leading-[20px] font-semibold tracking-[0.16em] italic uppercase">
+            <p className="mt-1 text-white/90 text-[10px] sm:text-[14px] md:text-[18px] lg:text-[20px] leading-[14px] sm:leading-[16px] md:leading-[18px] lg:leading-[20px] font-semibold tracking-[0.16em] italic uppercase whitespace-pre-line">
               {t('heroGlobalMarket.subheadline')}
             </p>
           </div>
@@ -48,15 +48,15 @@ export default function HeroGlobalMarket({ locale = 'vi' }: HeroGlobalMarketProp
                          group-hover:translate-y-[-4px] group-hover:scale-[1.01]"
             >
               <div className="px-4 py-5 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-8 lg:py-12">
-                <p className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b]">
-                  {t('heroGlobalMarket.content.line1')}
-                </p>
-                <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b]">
-                  {t('heroGlobalMarket.content.line2')}
-                </p>
-                <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b]">
-                  {t('heroGlobalMarket.content.line3')}
-                </p>
+                            <p className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
+              {t('heroGlobalMarket.content.line1')}
+            </p>
+                            <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
+              {t('heroGlobalMarket.content.line2')}
+            </p>
+                            <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
+              {t('heroGlobalMarket.content.line3')}
+            </p>
               </div>
             </div>
           </div>

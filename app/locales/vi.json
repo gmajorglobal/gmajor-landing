@@ -6,11 +6,11 @@
     "blog": "BÀI VIẾT"
   },
   "comparisonSection": {
-    "alibaba": "Một trong những nền tảng B2B lớn nhất thế giới, nhưng mức độ cạnh tranh quá cao khiến doanh nghiệp vừa và nhỏ khó tạo được lợi thế. Thêm vào đó, chi phí lớn làm cho việc đánh giá tỷ lệ hoàn vốn (ROI) trở nên khó khăn.",
-    "yellow": "Dễ sử dụng, nhưng hạn chế về tối ưu ngôn ngữ và khả năng hỗ trợ thương lượng. Do đặc thù nền tảng, tình trạng nhận nhiều email rác cũng là điều khó tránh.",
-    "globy": "Dễ sử dụng, nhưng hạn chế về tối ưu ngôn ngữ và khả năng hỗ trợ thương lượng. Do đặc thù nền tảng, tình trạng nhận nhiều email rác cũng là điều khó tránh.",
-    "shopify": "Giải pháp tốt nhất để xây dựng cửa hàng trực tuyến, nhưng lại thiếu về bản lề và chưa hỗ trợ đầy đủ cho các hoạt động B2B.",
-    "gmajor": "Khác biệt ở chỗ mang đến hệ thống kết nối nhanh chóng và hiệu quả giữa doanh nghiệp Việt Nam với đối tác quốc tế, đặc biệt tập trung vào các thị trường trọng điểm: Nhật Bản, Hoa Kỳ và Trung Quốc."
+    "alibaba": "Một trong những nền tảng B2B lớn nhất thế giới, nhưng mức độ cạnh tranh quá cao \nkhiến doanh nghiệp vừa và nhỏ khó tạo được lợi thế. Thêm vào đó, \nchi phí lớn làm cho việc đánh giá tỷ lệ hoàn vốn (ROI) trở nên khó khăn.",
+    "yellow": "Dễ sử dụng, nhưng hạn chế về tối ưu ngôn ngữ và khả năng hỗ trợ thương lượng. \nDo đặc thù nền tảng, tình trạng nhận nhiều email rác cũng là điều khó tránh.",
+    "globy": "Dễ sử dụng, nhưng hạn chế về tối ưu ngôn ngữ và khả năng hỗ trợ thương lượng. \nDo đặc thù nền tảng, tình trạng nhận nhiều email rác cũng là điều khó tránh.",
+    "shopify": "Giải pháp tốt nhất để xây dựng cửa hàng trực tuyến, nhưng lại thiếu về bản lề \nvà chưa hỗ trợ đầy đủ cho các hoạt động B2B.",
+    "gmajor": "Khác biệt ở chỗ mang đến hệ thống kết nối nhanh chóng và hiệu quả giữa doanh nghiệp Việt Nam với \nđối tác quốc tế, đặc biệt tập trung vào các thị trường trọng điểm: Nhật Bản, Hoa Kỳ và Trung Quốc."
   },
   "faqAccordion": {
     "title": "Những thắc mắc thường gặp",
@@ -33,17 +33,6 @@
     "faq5": {
       "question": "Các bạn có hỗ trợ đàm phán không?",
       "answer": "Có, dịch vụ hỗ trợ tùy chọn bởi các chuyên gia địa phương luôn sẵn sàng."
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "featuresCarousel": {
@@ -52,57 +41,35 @@
     "infoLabel": "Thông tin",
     "features": {
       "globalConnection": {
-        "title": "Kết nối trực tiếp với doanh nghiệp toàn cầu",
+        "title": "Kết nối trực tiếp với \ndoanh nghiệp toàn cầu",
         "alt": "Business collaboration puzzle pieces",
-        "desc": "Kết nối trực tiếp với doanh nghiệp toàn cầu: Hàng loạt nhà cung cấp, nhà máy sản xuất và đối tác tiềm năng đến từ Nhật Bản, Mỹ, Trung Quốc, Việt Nam… đã sẵn sàng. Đây chính là cánh cổng giúp doanh nghiệp Việt Nam tiến gần hơn đến thị trường quốc tế."
+        "desc": "Hàng loạt nhà cung cấp, nhà máy sản xuất và đối tác tiềm năng đến từ Nhật Bản, Mỹ, Trung Quốc, Việt Nam… đã sẵn sàng. Đây chính là cánh cổng giúp doanh nghiệp Việt Nam tiến gần hơn đến thị trường quốc tế."
       },
       "translation": {
-        "title": "Hệ thống tự động phiên dịch đa ngôn ngữ",
+        "title": "Hệ thống tự động \nphiên dịch đa ngôn ngữ",
         "alt": "Translate key on keyboard",
-        "desc": "Hệ thống tự động phiên dịch đa ngôn ngữ: Bạn có thể nhắn tin thoải mái bằng tiếng Việt, hệ thống sẽ ngay lập tức chuyển đổi sang tiếng Anh hoặc tiếng Nhật, đảm bảo cuộc trò chuyện luôn liền mạch và hiệu quả."
+        "desc": "Bạn có thể nhắn tin thoải mái bằng tiếng Việt, hệ thống sẽ ngay lập tức chuyển đổi sang tiếng Anh hoặc tiếng Nhật, đảm bảo cuộc trò chuyện luôn liền mạch và hiệu quả."
       },
       "negotiation": {
-        "title": "Kết nối để tiến tới đàm phán thực sự",
+        "title": "Kết nối để tiến tới \nđàm phán thực sự",
         "alt": "Business meeting and negotiation",
-        "desc": "Kết nối để tiến tới đàm phán thực sự: GMAJOR không chỉ là nơi giới thiệu sản phẩm. Với những tính năng thiết thực, nền tảng này giúp bạn rút ngắn khoảng cách từ bước giới thiệu đến bàn đàm phán và ký kết hợp đồng."
+        "desc": "GMAJOR không chỉ là nơi giới thiệu sản phẩm. Với những tính năng thiết thực, nền tảng này giúp bạn rút ngắn khoảng cách từ bước giới thiệu đến bàn đàm phán và ký kết hợp đồng."
       },
       "freePosting": {
-        "title": "Miễn phí đăng bài sản phẩm/dịch vụ",
+        "title": "Miễn phí đăng bài \nsản phẩm/dịch vụ",
         "alt": "Free tag on label",
-        "desc": "Miễn phí đăng bài sản phẩm/dịch vụ, chẳng ngại rủi ro: Chỉ cần đăng sản phẩm hoặc dịch vụ, bạn đã có cơ hội nhận yêu cầu hợp tác từ khắp nơi trên thế giới."
+        "desc": "Chỉ cần đăng sản phẩm hoặc dịch vụ, bạn đã có cơ hội nhận yêu cầu hợp tác từ khắp nơi trên thế giới."
       },
       "aiOptimization": {
-        "title": "Mô tả sản phẩm tối ưu với AI",
+        "title": "Mô tả sản phẩm \ntối ưu với AI",
         "alt": "AI concept with digital elements",
-        "desc": "Mô tả sản phẩm tối ưu với AI: Không cần chuyên môn sâu, chỉ với vài từ khóa, AI sẽ giúp bạn tạo nội dung mô tả sản phẩm chuyên nghiệp, chuẩn hóa cho thị trường quốc tế."
+        "desc": "Không cần chuyên môn sâu, chỉ với vài từ khóa, AI sẽ giúp bạn tạo nội dung mô tả sản phẩm chuyên nghiệp, chuẩn hóa cho thị trường quốc tế."
       },
       "pricing": {
-        "title": "Miễn phí tính năng cơ bản – Gói nâng cấp chi phí hợp lý",
+        "title": "Miễn phí tính năng cơ bản Gói nâng cấp \nchi phí hợp lý",
         "alt": "Finger pressing upgrade key",
-        "desc": "Miễn phí tính năng cơ bản - gói nâng cấp chi phí hợp lý: Dành riêng cho SMEs, GMAJOR cung cấp đầy đủ tính năng cơ bản hoàn toàn miễn phí. Nếu cần nâng cấp, bạn có thể chọn gói trả phí với chi phí phù hợp, đặc biệt cho những doanh nghiệp còn hạn chế ngân sách."
-      },
-      "heroGlobalMarket": {
-        "imageAlt": "Global market",
-        "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-        "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-        "content": {
-          "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-          "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-          "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-        },
-        "ctaButton": "Đăng ký ngay"
+        "desc": "Dành riêng cho SMEs, GMAJOR cung cấp đầy đủ tính năng cơ bản hoàn toàn miễn phí. Nếu cần nâng cấp, bạn có thể chọn gói trả phí với chi phí phù hợp, đặc biệt cho những doanh nghiệp còn hạn chế ngân sách."
       }
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "contactForm": {
@@ -121,21 +88,10 @@
       "privacyLink": "Chính sách bảo mật của GMAJOR",
       "successMessage": "Cảm ơn bạn! Thông tin đã được gửi thành công. Chúng tôi sẽ liên hệ sớm nhất.",
       "errorMessage": "Rất tiếc, có lỗi xảy ra. Vui lòng thử lại sau."
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "infoSection": {
-    "sectionTitle": "CHÚNG TÔI HIỂU RẰNG",
+    "sectionTitle": "CHÚNG TÔI \nHIỂU RẰNG",
     "intro1": "Những năm gần đây, khát vọng vươn mình ra thị trường quốc tế của các doanh nghiệp vừa và nhỏ ngày càng lớn mạnh.",
     "intro2": "Song, thực tế lại đặt ra nhiều rào cản không dễ vượt qua",
     "language": {
@@ -156,28 +112,17 @@
     },
     "budget": {
       "title": "NGÂN SÁCH",
-      "description": "Ngay cả khi doanh nghiệp có mong muốn mở rộng toàn cầu, hạn chế về ngân sách thường khiến kế hoạch không được thông qua."
+      "description": "Ngay cả khi doanh nghiệp có mong muốn mở rộng \ntoàn cầu, hạn chế về ngân sách thường khiến kế hoạch không được thông qua."
     },
     "start": {
       "title": "BẮT ĐẦU",
       "description": "Các nền tảng lớn như Alibaba vừa tốn kém, vừa khó xác định rõ hiệu quả đầu tư (ROI)."
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "hero": {
-    "title": "GMAJOR cùng bạn vươn ra thế giới",
-    "description1": "Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ Nhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới - \"HOÀN TOÀN MIỄN PHÍ\"",
-    "description2": "Tiếp cận với thị trường quốc tế từ hôm nay mà không cần hội chợ thương mại hay tốn kém cho trung gian",
+    "title": "GMAJOR cùng bạn \nvươn ra thế giới",
+    "description1": "Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ \nNhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới - \n\"<strong>HOÀN TOÀN MIỄN PHÍ</strong>\"",
+    "description2": "Tiếp cận với thị trường quốc tế từ hôm nay mà không cần \nhội chợ thương mại hay tốn kém cho trung gian",
     "registerButton": "Đăng ký ngay"
   },
   "featureGrid": {
@@ -196,7 +141,7 @@
       },
       "translation": {
         "title": "DỊCH THUẬT",
-        "description": "Hệ thống dịch tin nhắn tự động (Tiếng Anh/Tiếng Việt/Tiếng Nhật)",
+        "description": "Hệ thống dịch tin nhắn tự động \n(Tiếng Anh/Tiếng Việt/Tiếng Nhật)",
         "imageAlt": "Dịch thuật"
       },
       "search": {
@@ -213,29 +158,7 @@
         "title": "HANDS-ON",
         "description": "Hỗ trợ tuỳ chọn từ chuyên gia địa phương (Hands-On Service)",
         "imageAlt": "Hands-on"
-      },
-      "heroGlobalMarket": {
-        "imageAlt": "Global market",
-        "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-        "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-        "content": {
-          "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-          "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-          "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-        },
-        "ctaButton": "Đăng ký ngay"
       }
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "comparisonTable": {
@@ -243,7 +166,7 @@
     "subtext": "GMAJOR không phải là nền tảng duy nhất. Bên cạnh GMAJOR có rất nhiều nền tảng với ưu cũng như là nhược điểm khác nhau.\nDưới đây là bảng so sánh nhanh mà các doanh nghiệp Việt Nam có thể tham khảo:",
     "rows": {
       "freePosting": {
-        "label": "Miễn phí đăng bài sản phẩm/dịch vụ",
+        "label": "Miễn phí đăng bài \nsản phẩm/dịch vụ",
         "values": [
           "Có",
           "Không, chi phí cao",
@@ -266,17 +189,17 @@
         "label": "Hỗ trợ đa ngôn ngữ",
         "values": [
           "Không giới hạn",
-          "Tập trung vào tiếng Anh",
+          "Tập trung vào \ntiếng Anh",
           "Không có",
           "Tuỳ loại ngôn ngữ",
-          "Tập trung vào tiếng Anh"
+          "Tập trung vào \ntiếng Anh"
         ]
       },
       "visibility": {
-        "label": "Khả năng hiện thị (áp dụng cho doanh nghiệp Việt Nam)",
+        "label": "Khả năng hiện thị\n (áp dụng cho \ndoanh nghiệp \nViệt Nam)",
         "values": [
-          "Cao (tập trung vào doanh nghiệp Nhật Bản/Mỹ/Trung Quốc)",
-          "Thấp (mức độ cạnh tranh cao)",
+          "Cao (tập trung vào doanh nghiệp \nNhật Bản/Mỹ/\nTrung Quốc)",
+          "Thấp (mức độ \ncạnh tranh cao)",
           "Thấp",
           "Trung bình",
           "Thấp"
@@ -293,7 +216,7 @@
         ]
       },
       "connectionSupport": {
-        "label": "Hỗ trợ kết nối sản phẩm/dịch vụ",
+        "label": "Hỗ trợ kết nối \nsản phẩm/dịch vụ",
         "values": [
           "Không bắt buộc",
           "Không",
@@ -311,29 +234,7 @@
           "Trung bình",
           "Cao (bao gồm chi phí tháng và quảng cáo)"
         ]
-      },
-      "heroGlobalMarket": {
-        "imageAlt": "Global market",
-        "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-        "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-        "content": {
-          "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-          "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-          "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-        },
-        "ctaButton": "Đăng ký ngay"
       }
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "commentShowcase": {
@@ -363,17 +264,6 @@
         "title": "NÔNG DÂN CÀ PHÊ · ĐẮK LẮK"
       },
       "quote": "Chúng tôi sẵn sàng đưa cà phê đặc sản ra thị trường quốc tế nhưng ít hiểu biết về thương mại quốc tế. Nhờ GMAJOR, những khâu đối ngoại được đồng bộ rõ ràng và khớp với thị trường Nhật Bản."
-    },
-    "heroGlobalMarket": {
-      "imageAlt": "Global market",
-      "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
-      "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
-      "content": {
-        "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-        "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-        "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
-      },
-      "ctaButton": "Đăng ký ngay"
     }
   },
   "heroGlobalMarket": {

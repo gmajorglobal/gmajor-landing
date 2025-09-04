@@ -24,10 +24,10 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
         <div className="flex flex-col lg:flex-row justify-between items-center">
           {/* Left */}
           <div className="space-y-4 sm:space-y-5 md:space-y-6 w-full md:w-[600px] lg:w-[400px]">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-black text-blue-900 lg:leading-[1.2] uppercase">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-black text-blue-900 lg:leading-[1.2] uppercase whitespace-pre-line min-w-[500px]">
               {t('infoSection.sectionTitle')}
             </h2>
-            <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left text-blue-800 leading-relaxed">
+            <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left text-blue-800 leading-relaxed whitespace-pre-line ">
               <p className="italic">
                 {t('infoSection.intro1')}
               </p>
@@ -51,14 +51,14 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
                            hover:bg-blue-900 hover:border-blue-800
                            focus-within:bg-blue-900 focus-within:border-blue-800 outline-none"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
+                <h3 className="text-lg sm:text-xl  font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
-                               group-hover:text-white group-focus-within:text-white">
+                               group-hover:text-white group-focus-within:text-white whitespace-pre-line ">
                   {cards[0].title}
                 </h3>
-                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
+                <p className="text-[13px] sm:text-sm md:text-[13px] lg:text-[14px] leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
-                              group-hover:text-white/95 group-focus-within:text-white/95">
+                              group-hover:text-white/95 group-focus-within:text-white/95 whitespace-pre-line">
                   {cards[0].description}
                 </p>
               </div>
@@ -73,14 +73,14 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
                            hover:bg-blue-900 hover:border-blue-800
                            focus-within:bg-blue-900 focus-within:border-blue-800 outline-none"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
+                <h3 className="text-lg sm:text-xl  font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
-                               group-hover:text-white group-focus-within:text-white">
+                               group-hover:text-white group-focus-within:text-white whitespace-pre-line">
                   {cards[1].title}
                 </h3>
-                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
+                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-[14px]leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
-                              group-hover:text-white/95 group-focus-within:text-white/95">
+                              group-hover:text-white/95 group-focus-within:text-white/95 whitespace-pre-line">
                   {cards[1].description}
                 </p>
               </div>
@@ -99,14 +99,14 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
                            hover:bg-blue-900 hover:border-blue-800
                            focus-within:bg-blue-900 focus-within:border-blue-800 outline-none"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
+                <h3 className="text-lg sm:text-xl  font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
-                               group-hover:text-white group-focus-within:text-white">
+                               group-hover:text-white group-focus-within:text-white whitespace-pre-line">
                   {cards[2].title}
                 </h3>
-                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
+                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-[14px]leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
-                              group-hover:text-white/95 group-focus-within:text-white/95">
+                              group-hover:text-white/95 group-focus-within:text-white/95 whitespace-pre-line">
                   {cards[2].description}
                 </p>
               </div>
@@ -121,14 +121,14 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
                            hover:bg-blue-900 hover:border-blue-800
                            focus-within:bg-blue-900 focus-within:border-blue-800 outline-none"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
+                <h3 className="text-lg sm:text-xl  font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
-                               group-hover:text-white group-focus-within:text-white">
+                               group-hover:text-white group-focus-within:text-white whitespace-pre-line">
                   {cards[3].title}
                 </h3>
-                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
+                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-[14px]leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
-                              group-hover:text-white/95 group-focus-within:text-white/95">
+                              group-hover:text-white/95 group-focus-within:text-white/95 whitespace-pre-line">
                   {cards[3].description}
                 </p>
               </div>
@@ -145,16 +145,16 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
                            flex flex-col justify-center items-center text-center
                            transition-colors duration-300 ease-out
                            hover:bg-blue-900 hover:border-blue-800
-                           focus-within:bg-blue-900 focus-within:border-blue-800 outline-none"
+                           focus-within:bg-blue-900 focus-within:border-blue-800 outline-none whitespace-pre-line"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
+                <h3 className="text-lg sm:text-xl  font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
-                               group-hover:text-white group-focus-within:text-white">
+                               group-hover:text-white group-focus-within:text-white whitespace-pre-line">
                   {cards[4].title}
                 </h3>
-                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
+                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-[14px]leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
-                              group-hover:text-white/95 group-focus-within:text-white/95">
+                              group-hover:text-white/95 group-focus-within:text-white/95 whitespace-pre-line">
                   {cards[4].description}
                 </p>
               </div>
@@ -169,14 +169,14 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
                            hover:bg-blue-900 hover:border-blue-800
                            focus-within:bg-blue-900 focus-within:border-blue-800 outline-none"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-1.5 sm:mb-2
+                <h3 className="text-lg sm:text-xl  font-black uppercase mb-1.5 sm:mb-2
                                text-blue-900 transition-colors duration-300
-                               group-hover:text-white group-focus-within:text-white">
+                               group-hover:text-white group-focus-within:text-white whitespace-pre-line">
                   {cards[5].title}
                 </h3>
-                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-6
+                <p className="text-[13px] sm:text-sm md:text-[15px] lg:text-[14px]leading-relaxed md:leading-6
                               text-gray-700 transition-colors duration-300
-                              group-hover:text-white/95 group-focus-within:text-white/95">
+                              group-hover:text-white/95 group-focus-within:text-white/95 whitespace-pre-line">
                   {cards[5].description}
                 </p>
               </div>

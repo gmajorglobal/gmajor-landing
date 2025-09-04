@@ -28,15 +28,14 @@ export default function Hero({ locale = 'vi' }: HeroProps) {
           {/* Overlay content */}
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
             <div className="w-full p-6 pb-8 text-white">
-              <h1 className="text-3xl md:text-4xl font-black leading-tight mb-4">
+              <h1 className="text-3xl md:text-4xl font-black !leading-relaxed mb-4 whitespace-pre-line">
                 {t('hero.title')}
               </h1>
               
               <div className="space-y-3 text-sm md:text-base leading-relaxed mb-6">
-                <p>
-                  {t('hero.description1')}
+                <p dangerouslySetInnerHTML={{ __html: t('hero.description1') }}>
                 </p>
-                <p>
+                <p className="whitespace-pre-line">
                   {t('hero.description2')}
                 </p>
               </div>
@@ -55,17 +54,16 @@ export default function Hero({ locale = 'vi' }: HeroProps) {
       </div>
 
       {/* Desktop: Original side-by-side layout */}
-      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14 lg:py-16">
-        <div className="grid gap-8 sm:gap-12 items-center lg:grid-cols-2">
+      <div className="hidden lg:block max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12 md:py-14 lg:py-16">
+        <div className="grid gap-8 sm:gap-2 items-center lg:grid-cols-2">
           {/* Left Section - Text and CTA */}
           <div className="space-y-6 sm:space-y-8">
-            <h1 className="text-4xl sm:text-5xl lg:text-[50px] font-black text-black leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-[46px] font-black text-black !leading-tight whitespace-pre-line">
               {t('hero.title')}
             </h1>
 
-            <div className="space-y-4 text-base sm:text-lg text-black leading-relaxed">
-              <p>
-                {t('hero.description1')}
+            <div className="space-y-4 text-lg sm:text-xl text-black !leading-loose whitespace-pre-line">
+              <p dangerouslySetInnerHTML={{ __html: t('hero.description1') }}>
               </p>
               <p>
                 {t('hero.description2')}
