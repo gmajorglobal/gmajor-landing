@@ -90,7 +90,7 @@ export default function ComparisonSection({ locale = 'vi' }: ComparisonSectionPr
               )}
 
               {/* TEXT */}
-              <p className="flex-1 min-w-0 break-words text-xs sm:text-sm md:text-base lg:text-[22px] leading-5 sm:leading-6 md:leading-7 text-[#1f2937] whitespace-pre-line">
+              <p className="flex-1 min-w-0 break-words text-center text-xs sm:text-sm md:text-base lg:text-[22px] leading-5 sm:leading-6 md:leading-7 text-[#1f2937] whitespace-pre-line">
                 {t(textKey)}
               </p>
 
