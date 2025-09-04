@@ -9,7 +9,7 @@ interface ComparisonSectionProps {
 }
 
 export default function ComparisonSection({ locale = 'vi' }: ComparisonSectionProps) {
-  const { t } = useTranslation(locale);
+  const { t, isLoading } = useTranslation(locale);
   const rows: {
     id: number
     logo?: string
@@ -55,6 +55,14 @@ export default function ComparisonSection({ locale = 'vi' }: ComparisonSectionPr
     <section className="w-full bg-white py-8 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto w-full max-w-[1280px] px-2 sm:px-4 md:px-6">
         <div className="space-y-2 sm:space-y-3 md:space-y-3.5">
+          {isLoading ? (
+            <div className="space-y-3">
+              {[...Array(5)].map((_, i) => (
+                <div key={i} className="rounded-lg h-20 bg-gray-200 animate-pulse" />
+              ))}
+            </div>
+          ) : (
+            <>
           {rows.map(({ id, logo, textKey, bg, rightIcon, highlight }) => (
             <div
               key={id}
@@ -108,6 +116,8 @@ export default function ComparisonSection({ locale = 'vi' }: ComparisonSectionPr
               )}
             </div>
           ))}
+            </>
+          )}
         </div>
       </div>
     </section>

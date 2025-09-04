@@ -8,7 +8,7 @@ interface HeroProps {
 }
 
 export default function Hero({ locale = 'vi' }: HeroProps) {
-  const { t } = useTranslation(locale)
+  const { t, isLoading } = useTranslation(locale)
 
   const handleRegisterClick = () => {
     window.location.href = `https://market.gmajor.biz/register?lang=${locale}`
@@ -55,6 +55,17 @@ export default function Hero({ locale = 'vi' }: HeroProps) {
 
       {/* Desktop: Original side-by-side layout */}
       <div className="hidden lg:block max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12 md:py-14 lg:py-16">
+        {isLoading ? (
+          <div className="grid gap-8 sm:gap-2 lg:grid-cols-2">
+            <div className="space-y-4">
+              <div className="h-12 w-3/4 bg-gray-200 animate-pulse rounded" />
+              <div className="h-4 w-full bg-gray-200 animate-pulse rounded" />
+              <div className="h-4 w-5/6 bg-gray-200 animate-pulse rounded" />
+              <div className="h-12 w-44 bg-gray-300 animate-pulse rounded-full" />
+            </div>
+            <div className="h-80 bg-gray-200 animate-pulse rounded-2xl" />
+          </div>
+        ) : (
         <div className="grid gap-8 sm:gap-2 items-center lg:grid-cols-2">
           {/* Left Section - Text and CTA */}
           <div className="space-y-6 sm:space-y-8">
@@ -93,6 +104,7 @@ export default function Hero({ locale = 'vi' }: HeroProps) {
             </div>
           </div>
         </div>
+         )}
       </div>
     </section>
   )
