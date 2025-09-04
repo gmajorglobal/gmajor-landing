@@ -51,7 +51,7 @@ export default function LanguageDropdown({ currentLocale, onLocaleChange }: Lang
   return (
     <div className="relative" ref={dropdownRef}>
       {/* Trigger Button */}
-      <button
+      {/* <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-3 px-3 py-2 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 transition-colors duration-200 min-w-[135px]"
       >
@@ -69,11 +69,11 @@ export default function LanguageDropdown({ currentLocale, onLocaleChange }: Lang
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
-      </button>
+      </button> */}
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-50 overflow-hidden">
+        <div className="absolute top-full right-0 mt-1 min-w-[135px] bg-white border border-gray-200 rounded-lg shadow-lg z-50 overflow-hidden">
           {locales.map((locale) => (
             <button
               key={locale}
