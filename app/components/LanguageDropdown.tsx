@@ -53,7 +53,7 @@ export default function LanguageDropdown({ currentLocale, onLocaleChange }: Lang
       {/* Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 transition-colors duration-200 min-w-[120px]"
+        className="flex items-center gap-3 px-3 py-2 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 transition-colors duration-200 min-w-[135px]"
       >
         <span className="text-lg">{languageConfig[currentLocale].flag}</span>
         <span className="text-sm font-medium text-gray-700">
