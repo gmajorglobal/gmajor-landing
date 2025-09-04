@@ -54,7 +54,7 @@ export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps)
 
             {/* quote */}
             <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
-              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[26px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b] whitespace-pre-line">
+              <p className="text-[16px] text-center sm:text-[18px] md:text-[20px] lg:text-[26px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b] whitespace-pre-line">
                 "{t('commentShowcase.comment1.quote')}"
               </p>
             </div>
