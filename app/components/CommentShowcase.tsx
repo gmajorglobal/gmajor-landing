@@ -157,7 +157,7 @@ export default function CommentShowcase({ locale = 'vi' }: CommentShowcaseProps)
 
               {/* points */}
               <div className="rounded-lg bg-white/90 p-4 sm:p-5 md:p-6 shadow min-h-[120px] sm:min-h-[160px] md:min-h-[200px]">
-                <ul className="space-y-2 sm:space-y-2.5 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b] whitespace-pre-line">
+                <ul className="space-y-2 sm:space-y-2.5 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[34px] text-[#0b1b2b] whitespace-pre-line">
                   <li>
                     "{t('commentShowcase.comment3.quote')}"
                   </li>

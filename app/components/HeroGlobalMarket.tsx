@@ -48,13 +48,13 @@ export default function HeroGlobalMarket({ locale = 'vi' }: HeroGlobalMarketProp
                          group-hover:translate-y-[-4px] group-hover:scale-[1.01]"
             >
               <div className="px-4 py-5 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-8 lg:py-12">
-                            <p className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
+                            <p className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
               {t('heroGlobalMarket.content.line1')}
             </p>
-                            <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
+                            <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
               {t('heroGlobalMarket.content.line2')}
             </p>
-                            <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
+                            <p className="mt-2 sm:mt-3 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[18px] sm:leading-[24px] md:leading-[28px] lg:leading-[30px] text-[#0b1b2b] whitespace-pre-line">
               {t('heroGlobalMarket.content.line3')}
             </p>
               </div>
