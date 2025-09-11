@@ -37,18 +37,20 @@
   },
   "contactForm": {
     "imageAlt": "GMAJORコンサルテーション",
-    "consultationText1": "さらにご相談が必要ですか？",
-    "consultationText2": "お客様の情報をお聞かせください、",
-    "consultationText3": "があなたに寄り添い、\n共に歩んでいきます。",
+    "consultationText1": "お気軽にご連絡くださいませ！",
+    "consultationText2": "GMAJORがあなたに寄り添い、",
+    "consultationText3": "共に歩んでいきます。",
     "form": {
-      "nameLabel": "お名前",
+      "nameLabel": "氏名",
+      "companyLabel": "会社名",
       "phoneLabel": "電話番号",
       "emailLabel": "メールアドレス",
-      "messageLabel": "メッセージ",
-      "submitButton": "情報を送信",
+      "messageLabel": "ご相談内容",
+      "submitButton": "送信",
       "submittingButton": "送信中...",
-      "privacyText": "「情報を送信」ボタンをクリックすることで、以下に同意したことになります",
-      "privacyLink": "GMAJORのプライバシーポリシー",
+      "privacyText": "「送信」ボタンをクリックすること",
+      "privacyLink": "お客様はGMAJORのプライバシー",
+      "privacyText2": "ポリシーに同意したものとみなされます。",
       "successMessage": "ありがとうございます！お客様の情報が正常に送信されました。すぐにご連絡いたします。",
       "errorMessage": "申し訳ございませんが、エラーが発生しました。後でもう一度お試しください。"
     }
@@ -275,7 +277,7 @@
       "line2": "言語の壁を越えて、自社の製品・サービスをアピールできる",
       "line3": "無料でリスクゼロ、今すぐ始められる"
     },
-    "ctaButton": "今すぐ無料登録"
+    "ctaButton": "今すぐ登録"
   },
   "footer": {
     "owned": {

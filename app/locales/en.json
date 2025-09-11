@@ -79,6 +79,7 @@
     "consultationText3": "will accompany you",
     "form": {
       "nameLabel": "Full Name",
+      "companyLabel": "Company Name",
       "phoneLabel": "Phone Number",
       "emailLabel": "Email",
       "messageLabel": "Message",
@@ -86,6 +87,7 @@
       "submittingButton": "SENDING...",
       "privacyText": "By pressing the \"Submit Information\" button, you are deemed to have accepted",
       "privacyLink": "GMAJOR's Privacy Policy",
+      "privacyText2": "and agree to the terms and conditions.",
       "successMessage": "Thank you! Your information has been sent successfully. We will contact you soon.",
       "errorMessage": "Sorry, an error occurred. Please try again later."
     }

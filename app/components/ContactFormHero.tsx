@@ -104,6 +104,27 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                 </span>
               </div>
 
+              <div className="relative">
+                {/* real input */}
+                <input
+                  id="company"
+                  required
+                  placeholder=" "                             // keep a blank placeholder
+                  className="peer h-12 w-full rounded-full bg-white px-5 pr-5 text-[15px]
+               text-gray-800 placeholder-transparent ring-1 ring-gray-200
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                {/* fake placeholder + red star (disappears on focus or when typed) */}
+                <span
+                  className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2
+               text-gray-400 opacity-0
+               peer-placeholder-shown:opacity-100 peer-focus:opacity-0"
+                >
+                  {t('contactForm.form.companyLabel')} <span className="text-red-500">*</span>
+                </span>
+              </div>
+
               {/* Phone */}
               <div className="relative">
                 <label htmlFor="phone" className="sr-only">
@@ -182,7 +203,7 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                 >
                   {t('contactForm.form.privacyLink')}
                 </a>
-                .
+                {t('contactForm.form.privacyText2')}
               </p>
 
               <button

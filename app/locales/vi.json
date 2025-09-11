@@ -79,6 +79,7 @@
     "consultationText3": "sẽ đồng hành cùng bạn",
     "form": {
       "nameLabel": "Họ và tên",
+      "companyLabel": "Tên công ty",
       "phoneLabel": "Số điện thoại",
       "emailLabel": "Email",
       "messageLabel": "Nội dung",
@@ -86,6 +87,7 @@
       "submittingButton": "ĐANG GỬI...",
       "privacyText": "Khi nhấn vào nút \"GỬI THÔNG TIN\", bạn đồng nghĩa với việc chấp nhận",
       "privacyLink": "Chính sách bảo mật của GMAJOR",
+      "privacyText2": "và đồng ý với các điều khoản và điều kiện.",
       "successMessage": "Cảm ơn bạn! Thông tin đã được gửi thành công. Chúng tôi sẽ liên hệ sớm nhất.",
       "errorMessage": "Rất tiếc, có lỗi xảy ra. Vui lòng thử lại sau."
     }
