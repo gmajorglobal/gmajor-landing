@@ -63,7 +63,7 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                             <p className="text-[16px] sm:text-[18px] md:text-[20px] whitespace-pre-line">{t('contactForm.consultationText1')}</p>
             <p className="text-[16px] sm:text-[18px] md:text-[20px] whitespace-pre-line">{t('contactForm.consultationText2')}</p>
             <p className="text-[16px] sm:text-[18px] md:text-[20px] whitespace-pre-line">
-                  <span className="font-semibold not-italic">GMAJOR</span> {t('contactForm.consultationText3')}
+                  {t('contactForm.consultationText3')}
                 </p>
               </div>
             </div>
