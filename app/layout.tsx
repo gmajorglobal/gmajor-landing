@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'GMAJOR - Vươn ra thế giới',
+  title: 'GMAJOR - グローバル展開',
   description: 'Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ Nhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới - HOÀN TOÀN MIỄN PHÍ',
   keywords: 'GMAJOR, giao thương, doanh nghiệp, Nhật Bản, Mỹ, Trung Quốc, thị trường quốc tế',
   icons: {
