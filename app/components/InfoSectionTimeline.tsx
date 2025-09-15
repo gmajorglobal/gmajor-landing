@@ -73,18 +73,18 @@ export default function InfoSectionTimeline({ locale = 'vi' }: InfoSectionTimeli
 
         {/* Timeline */}
         <div className="relative">
-          {/* Central line - extends through all items */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-2.5 bg-[#83a7d4]" style={{height: '1000px'}}></div>
+          {/* Central line - extends through all items - hidden on mobile */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-2.5 bg-[#83a7d4]" style={{height: '1000px'}}></div>
 
           {/* Timeline items */}
           <div className="space-y-16 md:space-y-4">
             {timelineItems.map((item, index) => (
-              <div key={index} className={`relative flex items-center ${item.side === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+              <div key={index} className={`relative flex items-center justify-center md:justify-start ${item.side === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
 
                 {/* Content box */}
                 <div className={`w-full md:w-1/2 ${item.side === 'left' ? 'md:pr-16' : 'md:pl-2'}`}>
                   <div className="p-4">
-                    <div className={`flex items-center gap-4 ${item.side === 'left' ? 'flex-row' : 'flex-row-reverse'}`}>
+                    <div className={`flex items-center gap-4 flex-row md:${item.side === 'left' ? 'flex-row' : 'flex-row-reverse'}`}>
                       <div className="flex-shrink-0">
                         <Image
                           src={item.icon}
@@ -105,8 +105,8 @@ export default function InfoSectionTimeline({ locale = 'vi' }: InfoSectionTimeli
                   </div>
                 </div>
 
-                {/* Center dot */}
-                <img src="/images/info-section/dot.png" alt="dot" className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-2 border-white z-10"></img>
+                {/* Center dot - hidden on mobile */}
+                <img src="/images/info-section/dot.png" alt="dot" className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-2 border-white z-10"></img>
               
                 {/* Spacer for opposite side */}
                 <div className="hidden md:block w-5/12"></div>
