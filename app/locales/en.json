@@ -33,6 +33,22 @@
     "faq5": {
       "question": "Do you provide negotiation support?",
       "answer": "Yes, optional support services by local specialists are available."
+    },
+    "faq6": {
+      "question": "Which countries does this platform primarily connect businesses from?",
+      "answer": "It primarily connects businesses from Japan, Vietnam, the United States, and China, with a particularly strong network in the Asia-Pacific region."
+    },
+    "faq7": {
+      "question": "Are there any country restrictions for registration on this platform?",
+      "answer": "There are basically no restrictions, but we currently provide support in Japanese, English, and Vietnamese."
+    },
+    "faq8": {
+      "question": "Does GMAJOR charge service fees?",
+      "answer": "Basic registration and listing are free. For transaction fees upon successful deals and paid support services, please contact us for detailed consultation."
+    },
+    "faq9": {
+      "question": "Does GMAJOR have an information security policy?",
+      "answer": "Yes, we have strict security policies in place to protect our customers' valuable information and fully comply with all regulations."
     }
   },
   "featuresCarousel": {
@@ -273,9 +289,9 @@
     "headline": "FROM VIETNAM TO THE WORLD",
     "subheadline": "GMAJOR will be your partner",
     "content": {
-      "line1": "Connect with global companies without attending overseas trade fairs.",
-      "line2": "Overcome language barriers and showcase \nyour products/services",
-      "line3": "Start now, risk-free and free of charge"
+      "line1": "• Connect with global companies without attending overseas trade fairs.",
+      "line2": "• Overcome language barriers and showcase your products/services",
+      "line3": "• Start now, risk-free and free of charge"
     },
     "ctaButton": "Register Now"
   },
@@ -318,6 +334,34 @@
     "bottom": {
       "copyright": "© 2024-2025 GMAJOR. All rights reserved. Website designed and operated by",
       "brand": "GMAJOR"
+    }
+  },
+  "timelineSection": {
+    "subtitle": "Global Online B2B Matching Service",
+    "intro": "GMAJOR was created to solve these challenges.",
+    "global": {
+      "title": "Connect with Global\nBusinesses",
+      "description": "Food, textiles, furniture, agricultural products, IT,\nlogistics, and various Vietnamese companies\nare already registered."
+    },
+    "translate": {
+      "title": "Multilingual Automatic\nTranslation",
+      "description": "Input in Japanese and it will automatically\ntranslate to Vietnamese and English.\nSeamless communication with overseas partners."
+    },
+    "freepost": {
+      "title": "Free Listing with\nZero Risk",
+      "description": "Receive direct inquiries from Vietnamese\ncompanies and overseas buyers."
+    },
+    "aibot": {
+      "title": "AI-Powered Product\nDescription Generation",
+      "description": "Automatically create optimized descriptions\nfor overseas markets to enhance appeal."
+    },
+    "connection": {
+      "title": "Matching that Leads to\nReal Business Negotiations",
+      "description": "A system that doesn't just end with registration.\nEquipped with matching functions that\nlead to actual results."
+    },
+    "riskfree": {
+      "title": "All Basic Functions Free,\nAffordable Premium Plans",
+      "description": "GMAJOR provides full service as a comprehensive\ntransaction and matching platform, offering basic\nfunctions for free. For companies seeking more\nefficient support, we provide hands-on sales\nsupport by local representatives."
     }
   },
   "lang": {

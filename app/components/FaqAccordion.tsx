@@ -14,7 +14,7 @@ export default function FaqAccordion({ locale = 'vi' }: FaqAccordionProps) {
   const [openId, setOpenId] = useState<number | null>(null);
   const toggle = (id: number) => setOpenId((cur) => (cur === id ? null : id));
 
-  const faqKeys = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5'];
+  const faqKeys = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8', 'faq9'];
 
   return (
     <section className="bg-gray-50 lg:bg-white transition-all duration-500 ease-in-out">

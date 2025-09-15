@@ -33,6 +33,22 @@
     "faq5": {
       "question": "Các bạn có hỗ trợ đàm phán không?",
       "answer": "Có, dịch vụ hỗ trợ tùy chọn bởi các chuyên gia địa phương luôn sẵn sàng."
+    },
+    "faq6": {
+      "question": "Nền tảng này chủ yếu kết nối doanh nghiệp từ những quốc gia nào?",
+      "answer": "Chủ yếu kết nối các doanh nghiệp từ Nhật Bản, Việt Nam, Mỹ và Trung Quốc, với mạng lưới mạnh mẽ đặc biệt trong khu vực châu Á-Thái Bình Dương."
+    },
+    "faq7": {
+      "question": "Nền tảng này có hạn chế về quốc gia có thể đăng ký không?",
+      "answer": "Về cơ bản không có hạn chế, tuy nhiên hiện tại chúng tôi hỗ trợ bằng tiếng Nhật, tiếng Anh và tiếng Việt."
+    },
+    "faq8": {
+      "question": "GMAJOR có tính phí dịch vụ không?",
+      "answer": "Việc đăng ký và đăng bài cơ bản là miễn phí. Về phí giao dịch thành công và dịch vụ hỗ trợ có tính phí, vui lòng liên hệ để được tư vấn chi tiết."
+    },
+    "faq9": {
+      "question": "GMAJOR có chính sách bảo mật thông tin không?",
+      "answer": "Có, chúng tôi có chính sách bảo mật nghiêm ngặt để bảo vệ thông tin quý báu của khách hàng và tuân thủ đầy đủ các quy định."
     }
   },
   "featuresCarousel": {
@@ -273,9 +289,9 @@
     "headline": "TỪ VIỆT NAM VƯƠN RA THẾ GIỚI",
     "subheadline": "GMAJOR SẼ LÀ NGƯỜI ĐỒNG HÀNH CÙNG BẠN",
     "content": {
-      "line1": "Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
-      "line2": "Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
-      "line3": "Bắt đầu ngay hôm nay, hoàn toàn miễn phí   } không rủi ro."
+      "line1": "• Kết nối với các doanh nghiệp toàn cầu mà không cần tham dự hội chợ quốc tế.",
+      "line2": "• Vượt qua rào cản ngôn ngữ và giới thiệu sản phẩm/dịch vụ của bạn.",
+      "line3": "• Bắt đầu ngay hôm nay, hoàn toàn miễn phí và không rủi ro."
     },
     "ctaButton": "Đăng ký ngay"
   },
@@ -318,6 +334,34 @@
     "bottom": {
       "copyright": "© 2024-2025 GMAJOR. Bảo lưu mọi quyền. Trang web được thiết kế và vận hành bởi",
       "brand": "GMAJOR"
+    }
+  },
+  "timelineSection": {
+    "subtitle": "Dịch vụ kết nối doanh nghiệp B2B toàn cầu trực tuyến",
+    "intro": "GMAJOR ra đời để giải quyết những thách thức này.",
+    "global": {
+      "title": "Kết nối với các doanh\nnghiệp toàn cầu",
+      "description": "Thực phẩm, dệt may, nội thất, nông sản, CNTT,\nvận chuyển và nhiều doanh nghiệp Việt Nam\nđa dạng đã đăng ký."
+    },
+    "translate": {
+      "title": "Dịch tự động\nđa ngôn ngữ",
+      "description": "Nhập bằng tiếng Nhật sẽ tự động dịch sang\ntiếng Việt và tiếng Anh. Giao tiếp mượt mà\nvới đối tác nước ngoài."
+    },
+    "freepost": {
+      "title": "Đăng tin miễn phí\nvới rủi ro bằng không",
+      "description": "Nhận truy vấn trực tiếp từ các doanh nghiệp\nViệt Nam và người mua nước ngoài."
+    },
+    "aibot": {
+      "title": "Tạo mô tả sản phẩm\nbằng AI",
+      "description": "Tự động tạo mô tả được tối ưu hóa cho\nthị trường nước ngoài để tăng sức hấp dẫn."
+    },
+    "connection": {
+      "title": "Kết nối dẫn đến\nthương lượng kinh doanh thực tế",
+      "description": "Một hệ thống không chỉ dừng lại ở việc đăng ký.\nTrang bị các chức năng kết nối dẫn đến\nkết quả thực tế."
+    },
+    "riskfree": {
+      "title": "Tất cả tính năng cơ bản miễn phí,\nGói trả phí với giá hợp lý",
+      "description": "GMAJOR cung cấp dịch vụ đầy đủ như một nền tảng\ngiao dịch và kết nối toàn diện, cung cấp các tính năng\ncơ bản miễn phí. Đối với các công ty muốn hỗ trợ hiệu quả\nhơn, chúng tôi cung cấp hỗ trợ bán hàng thực tế\nbởi đại diện địa phương."
     }
   },
   "lang": {

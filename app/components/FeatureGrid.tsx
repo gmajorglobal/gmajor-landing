@@ -33,10 +33,10 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
                             className="block w-1.5 md:w-2 bg-orange-500 rounded self-stretch"
                         />
                         <div className="py-1">
-                            <p className="text-indigo-700 font-semibold tracking-wide text-lg md:text-xl whitespace-pre-line">
+                            <p className="font-serif text-3xl md:text-5xl whitespace-pre-line">
                                 {t('featureGrid.heading')}
                             </p>
-                            <h2 className="mt-1 text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase leading-tight whitespace-pre-line">
+                            <h2 className="mt-2 text-3xl md:text-5xl font-extrabold text-indigo-800 uppercase whitespace-pre-line">
                                 {t('featureGrid.subheading')}
                             </h2>
                         </div>

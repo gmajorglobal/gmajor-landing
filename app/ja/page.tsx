@@ -5,6 +5,7 @@ import { type Locale } from '../../i18n'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import InfoSection from '../components/InfoSection'
+import InfoSectionTimeline from '../components/InfoSectionTimeline'
 import FeaturesCarousel from '../components/FeaturesCarousel'
 import ComparisonSection from '../components/ComparisonSection'
 import FeatureGrid from '../components/FeatureGrid'
@@ -46,7 +47,8 @@ export default function JapanesePage() {
           <>
             <Hero locale={locale} />
             <InfoSection locale={locale} />
-            <FeaturesCarousel locale={locale} />  
+            <InfoSectionTimeline locale={locale} />
+            {/* <FeaturesCarousel locale={locale} />   */}
             <FeatureGrid locale={locale} />
             <ComparisonTable 
               locale={locale}

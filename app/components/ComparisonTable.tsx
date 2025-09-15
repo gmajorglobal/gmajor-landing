@@ -50,9 +50,9 @@ export default function ComparisonTable({
 
           <hr className="mx-auto my-4 h-[2px] w-28 sm:w-40 md:w-48 lg:w-40 xl:w-60 border-0 rounded bg-indigo-800" />
 
-          <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-xl text-indigo-700 italic leading-snug whitespace-pre-line">
+          {/* <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-xl text-indigo-700 italic leading-snug whitespace-pre-line">
             {t('comparisonTable.subtext')}
-          </p>
+          </p> */}
         </div>
 
         {/* Table (unchanged layout; just scales down on mobile + lg) */}

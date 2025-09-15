@@ -87,6 +87,7 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                 {/* real input */}
                 <input
                   id="name"
+                  name="name"
                   required
                   placeholder=" "                             // keep a blank placeholder
                   className="peer h-12 w-full rounded-full bg-white px-5 pr-5 text-[15px]
@@ -108,6 +109,7 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                 {/* real input */}
                 <input
                   id="company"
+                  name="company"
                   required
                   placeholder=" "                             // keep a blank placeholder
                   className="peer h-12 w-full rounded-full bg-white px-5 pr-5 text-[15px]

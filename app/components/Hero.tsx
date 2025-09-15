@@ -40,9 +40,9 @@ export default function Hero({ locale = 'vi' }: HeroProps) {
                 </p>
               </div>
 
-              <button onClick={handleRegisterClick} className="w-full bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-6 py-4 rounded-lg font-black text-lg flex items-center justify-center space-x-3 group shadow-lg">
+              <button onClick={handleRegisterClick} className="w-full bg-[#b4b4b4] hover:bg-[#9e9e9e] transition-colors duration-300 text-white px-6 py-4 rounded-lg font-black text-lg flex items-center justify-center space-x-3 group shadow-lg">
                 <span>{t('hero.registerButton')}</span>
-                <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                <div className="w-8 h-8 bg-[#b4b4b4] rounded-full flex items-center justify-center group-hover:bg-[#888888] transition-colors">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -81,9 +81,9 @@ export default function Hero({ locale = 'vi' }: HeroProps) {
               </p>
             </div>
 
-            <button onClick={handleRegisterClick} className="w-full sm:w-auto justify-center sm:justify-start bg-blue-800 hover:bg-blue-700 transition-colors duration-300 text-white px-8 py-4 rounded-lg font-black text-lg flex items-center space-x-3 group shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
+            <button onClick={handleRegisterClick} className="w-full sm:w-auto justify-center sm:justify-start bg-[#b4b4b4] hover:bg-[#9e9e9e] transition-colors duration-300 text-white px-8 py-4 rounded-lg font-black text-lg flex items-center space-x-3 group shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
               <span>{t('hero.registerButton')}</span>
-              <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+              <div className="w-8 h-8 bg-[#9e9e9e] rounded-full flex items-center justify-center group-hover:bg-[#888888] transition-colors">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
