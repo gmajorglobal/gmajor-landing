@@ -110,7 +110,6 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                 <input
                   id="company"
                   name="company"
-                  required
                   placeholder=" "                             // keep a blank placeholder
                   className="peer h-12 w-full rounded-full bg-white px-5 pr-5 text-[15px]
                text-gray-800 placeholder-transparent ring-1 ring-gray-200
