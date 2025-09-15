@@ -122,7 +122,7 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
                text-gray-400 opacity-0
                peer-placeholder-shown:opacity-100 peer-focus:opacity-0"
                 >
-                  {t('contactForm.form.companyLabel')} <span className="text-red-500">*</span>
+                  {t('contactForm.form.companyLabel')}
                 </span>
               </div>
 
@@ -196,6 +196,7 @@ export default function ContactFormHero({ locale = 'vi' }: ContactFormHeroProps)
 
               <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-6 sm:leading-7 text-gray-700 whitespace-pre-line">
                 {t('contactForm.form.privacyText')}{" "}
+                <br/>
                 <a
                   href={`https://www.gmajor.biz/privacy-policy?lang=${locale}`}
                   target="_blank"
