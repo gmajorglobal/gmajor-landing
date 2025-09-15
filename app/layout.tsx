@@ -3,8 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'GMAJOR - グローバル展開',
-  description: 'Trải nghiệm giao thương trực tiếp với các doanh nghiệp từ Nhật Bản, Mỹ, Trung Quốc và khắp nơi trên thế giới - HOÀN TOÀN MIỄN PHÍ',
-  keywords: 'GMAJOR, giao thương, doanh nghiệp, Nhật Bản, Mỹ, Trung Quốc, thị trường quốc tế',
+  description: '日本、アメリカ、中国、そして世界各国の企業と直接ビジネス交流を体験 ― 完全無料',
+  keywords: 'GMAJORは、日本、アメリカ、中国をはじめとする国際市場の企業と貿易・ビジネス交流をつなぐプラットフォームです。',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
