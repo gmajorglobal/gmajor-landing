@@ -36,19 +36,19 @@
     },
     "faq6": {
       "question": "Nền tảng chủ yếu tập trung kết nối doanh nghiệp ở các nước nào ?",
-      "answer": "Chủ yếu kết nối các doanh nghiệp từ Nhật Bản, Việt Nam, Mỹ và Trung Quốc, với mạng lưới mạnh mẽ đặc biệt trong khu vực châu Á-Thái Bình Dương."
+      "answer": "GMAJOR vừa là cầu nối giúp doanh nghiệp Việt vươn ra những thị trường lớn như Nhật Bản và Mỹ, vừa là điểm đến để các doanh nghiệp quốc tế tìm thấy đối tác phù hợp tại Việt Nam."
     },
     "faq7": {
       "question": "Nền tảng này có hạn chế về quốc gia có thể đăng ký không?",
-      "answer": "Về cơ bản không có hạn chế, tuy nhiên hiện tại chúng tôi hỗ trợ bằng tiếng Nhật, tiếng Anh và tiếng Việt."
+      "answer": "Không. GMAJOR chào đón doanh nghiệp từ nhiều quốc gia, miễn là họ có nhu cầu giao thương với Việt Nam – dù là nhà xuất khẩu hay nhà nhập khẩu."
     },
     "faq8": {
       "question": "GMAJOR có tính phí dịch vụ không?",
-      "answer": "Việc đăng ký và đăng bài cơ bản là miễn phí. Về phí giao dịch thành công và dịch vụ hỗ trợ có tính phí, vui lòng liên hệ để được tư vấn chi tiết."
+      "answer": "Không. GMAJOR không thu phí hoa hồng từ các giao dịch giữa người mua và người bán. Mọi thỏa thuận và thanh toán diễn ra độc lập giữa hai bên."
     },
     "faq9": {
       "question": "GMAJOR có chính sách bảo mật thông tin không?",
-      "answer": "Có, chúng tôi có chính sách bảo mật nghiêm ngặt để bảo vệ thông tin quý báu của khách hàng và tuân thủ đầy đủ các quy định."
+      "answer": "Có. GMAJOR cam kết tuân thủ các tiêu chuẩn quốc tế về bảo mật dữ liệu và quyền riêng tư, đảm bảo an toàn tuyệt đối cho thông tin của người dùng và doanh nghiệp."
     }
   },
   "featuresCarousel": {
@@ -103,7 +103,7 @@
       "submittingButton": "ĐANG GỬI...",
       "privacyText": "Khi nhấn vào nút \"GỬI THÔNG TIN\", bạn đồng nghĩa với việc chấp nhận",
       "privacyLink": "Chính sách bảo mật của GMAJOR",
-      "privacyText2": "và đồng ý với các điều khoản và điều kiện.",
+      "privacyText2": " và đồng ý với các điều khoản và điều kiện.",
       "successMessage": "Cảm ơn bạn! Thông tin đã được gửi thành công. Chúng tôi sẽ liên hệ sớm nhất.",
       "errorMessage": "Rất tiếc, có lỗi xảy ra. Vui lòng thử lại sau."
     }
