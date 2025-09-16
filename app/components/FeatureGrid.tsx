@@ -61,10 +61,11 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
     bg-white p-4 md:p-7 shadow-[0_2px_14px_rgba(0,0,0,0.06)] h-full
     transition-colors duration-300
     hover:bg-blue-900 hover:border-blue-900
+    flex flex-col
   "
                                 >
                                     {/* Top image row */}
-                                    <div className="relative h-12 md:h-20 mb-8 md:mb-19 flex justify-center gap-10 md:justify-between md:gap-0 items-center">
+                                    <div className="relative h-16 md:h-24 mb-6 md:mb-8 flex justify-center gap-10 md:justify-between md:gap-0 items-center">
                                         {/* feature image */}
                                         <img
                                             src={feature.image}
@@ -99,11 +100,11 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
                                     </div>
 
                                     {/* Text */}
-                                    <div className="text-center md:text-left">
-                                        <h3 className="text-[18px] md:text-[20px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line">
-                                            {t(`featureGrid.features.${feature.key}.title`)}
+                                    <div className="text-center md:text-left flex-grow flex flex-col justify-start">
+                                        <h3 className="text-[18px] md:text-[20px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line min-h-[3rem] md:min-h-[2.5rem] flex items-start">
+                                            <span>{t(`featureGrid.features.${feature.key}.title`)}</span>
                                         </h3>
-                                        <p className="mt-1 md:mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90 whitespace-pre-line">
+                                        <p className="mt-2 md:mt-3 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90 whitespace-pre-line min-h-[4rem] md:min-h-[3.5rem]">
                                             {t(`featureGrid.features.${feature.key}.description`)}
                                         </p>
                                     </div>

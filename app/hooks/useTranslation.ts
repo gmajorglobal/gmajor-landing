@@ -13,11 +13,9 @@ export function useTranslation(locale: Locale = 'vi') {
     const loadTranslations = async () => {
       try {
         setIsLoading(true);
-        console.log(`Loading translations for locale: ${locale}`);
         const messageLoader = messages[locale];
         if (messageLoader) {
           const loadedMessages = await messageLoader();
-          console.log(`Loaded translations for ${locale}:`, loadedMessages);
           setTranslations(loadedMessages);
         } else {
           console.warn(`No message loader found for locale: ${locale}`);
