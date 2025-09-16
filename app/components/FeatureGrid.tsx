@@ -23,10 +23,10 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
             className="w-full bg-gray-50"
             style={{ backgroundColor: "#f5f6f7" }}
         >
-            <div className="max-w-7xl mx-auto px-2 md:px-8 py-8 sm:py-12 md:py-14 lg:py-16">
+            <div className="max-w-7xl mx-auto px-2 md:px-8 py-4 sm:py-8 md:py-12 lg:py-16">
                 {/* Header */}
                 {/* Header */}
-                <div className="mb-6 md:mb-8">
+                <div className="mb-4 md:mb-8">
                     <div className="flex items-stretch justify-center gap-4 text-center">
                         <span
                             aria-hidden="true"
@@ -48,34 +48,41 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
                 <div className="flex flex-wrap -mx-3">
                     {isLoading ? (
                         [...Array(6)].map((_, idx) => (
-                            <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
-                                <div className="h-48 bg-gray-200 animate-pulse rounded-xl" />
+                            <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-4 sm:mb-6">
+                                <div className="h-40 sm:h-48 bg-gray-200 animate-pulse rounded-xl" />
                             </div>
                         ))
                     ) : (
                         featureKeys.map((feature, idx) => (
-                            <div key={`${feature.key}-${idx}`} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+                            <div key={`${feature.key}-${idx}`} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-4 sm:mb-6">
                                 <article
                                     className="
     group relative overflow-hidden rounded-xl border border-gray-200
-    bg-white p-6 md:p-7 shadow-[0_2px_14px_rgba(0,0,0,0.06)] h-full
+    bg-white p-4 md:p-7 shadow-[0_2px_14px_rgba(0,0,0,0.06)] h-full
     transition-colors duration-300
     hover:bg-blue-900 hover:border-blue-900
   "
                                 >
                                     {/* Top image row */}
-                                    <div className="relative h-12 mb-8">
+                                    <div className="relative h-12 md:h-20 mb-8 md:mb-19 flex justify-center gap-10 md:justify-between md:gap-0 items-center">
+                                        {/* feature image */}
+                                        <img
+                                            src={feature.image}
+                                            alt={t(`featureGrid.features.${feature.key}.imageAlt`)}
+                                            className="h-16 w-16 md:h-24 md:w-24 rounded-lg object-contain relative z-10"
+                                        />
+
                                         {/* default decorative image */}
                                         <img
                                             src="/images/decored.png"
                                             alt=""
                                             aria-hidden="true"
                                             className="
-        pointer-events-none select-none absolute right-4 top-0
-        w-16 md:w-20 opacity-90
-        transition-opacity duration-300
-        group-hover:opacity-0
-      "
+                                            pointer-events-none select-none
+                                            w-16 md:w-20 opacity-90
+                                            transition-opacity duration-300
+                                            group-hover:opacity-0
+                                        "
                                         />
                                         {/* white decorative image on hover */}
                                         <img
@@ -83,28 +90,23 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
                                             alt=""
                                             aria-hidden="true"
                                             className="
-        pointer-events-none select-none absolute right-4 top-0
-        w-16 md:w-20 opacity-0
-        transition-opacity duration-300
-        group-hover:opacity-90
-      "
-                                        />
-
-                                        {/* feature image */}
-                                        <img
-                                            src={feature.image}
-                                            alt={t(`featureGrid.features.${feature.key}.imageAlt`)}
-                                            className="h-10 w-10 md:h-20 md:w-20 rounded-lg object-contain relative z-10"
+                                            pointer-events-none select-none absolute right-0
+                                            w-16 md:w-20 opacity-0
+                                            transition-opacity duration-300
+                                            group-hover:opacity-90
+                                        "
                                         />
                                     </div>
 
                                     {/* Text */}
-                                    <h3 className="text-[18px] md:text-[28px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line">
-                                        {t(`featureGrid.features.${feature.key}.title`)}
-                                    </h3>
-                                    <p className="mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90 whitespace-pre-line">
-                                        {t(`featureGrid.features.${feature.key}.description`)}
-                                    </p>
+                                    <div className="text-center md:text-left">
+                                        <h3 className="text-[18px] md:text-[28px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line">
+                                            {t(`featureGrid.features.${feature.key}.title`)}
+                                        </h3>
+                                        <p className="mt-1 md:mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90 whitespace-pre-line">
+                                            {t(`featureGrid.features.${feature.key}.description`)}
+                                        </p>
+                                    </div>
                                 </article>
 
                             </div>
