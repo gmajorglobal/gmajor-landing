@@ -100,7 +100,7 @@ export default function FeatureGrid({ locale = 'vi' }: FeatureGridProps) {
 
                                     {/* Text */}
                                     <div className="text-center md:text-left">
-                                        <h3 className="text-[18px] md:text-[28px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line">
+                                        <h3 className="text-[18px] md:text-[20px] font-extrabold uppercase text-blue-900 transition-colors duration-300 group-hover:text-white whitespace-pre-line">
                                             {t(`featureGrid.features.${feature.key}.title`)}
                                         </h3>
                                         <p className="mt-1 md:mt-2 leading-relaxed text-sm md:text-[16px] max-w-[440px] text-gray-700 transition-colors duration-300 group-hover:text-white/90 whitespace-pre-line">

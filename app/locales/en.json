@@ -31,23 +31,23 @@
       "answer": "It depends on your industry and products, but relevant inquiries can arrive very quickly."
     },
     "faq5": {
-      "question": "Do you provide negotiation support?",
+      "question": "Do you provide negotiation support ?",
       "answer": "Yes, optional support services by local specialists are available."
     },
     "faq6": {
-      "question": "Which countries does this platform primarily connect businesses from?",
+      "question": "Which countries’ businesses does the platform primarily connect?",
       "answer": "It primarily connects businesses from Japan, Vietnam, the United States, and China, with a particularly strong network in the Asia-Pacific region."
     },
     "faq7": {
-      "question": "Are there any country restrictions for registration on this platform?",
+      "question": "Is registration on the platform limited to certain countries?",
       "answer": "There are basically no restrictions, but we currently provide support in Japanese, English, and Vietnamese."
     },
     "faq8": {
-      "question": "Does GMAJOR charge service fees?",
+      "question": "Does GMAJOR charge a commission fee?",
       "answer": "Basic registration and listing are free. For transaction fees upon successful deals and paid support services, please contact us for detailed consultation."
     },
     "faq9": {
-      "question": "Does GMAJOR have an information security policy?",
+      "question": "Does GMAJOR have a privacy policy?",
       "answer": "Yes, we have strict security policies in place to protect our customers' valuable information and fully comply with all regulations."
     }
   },
@@ -92,24 +92,24 @@
     "imageAlt": "GMAJOR Consultation",
     "consultationText1": "Need further consultation?",
     "consultationText2": "Just leave your details,",
-    "consultationText3": "will accompany you",
+    "consultationText3": "and GMAJOR will always be by your side.",
     "form": {
       "nameLabel": "Full Name",
       "companyLabel": "Company Name",
       "phoneLabel": "Phone Number",
       "emailLabel": "Email",
       "messageLabel": "Message",
-      "submitButton": "SEND INFORMATION",
+      "submitButton": "SUBMIT INFORMATION",
       "submittingButton": "SENDING...",
-      "privacyText": "By pressing the \"Submit Information\" button, you are deemed to have accepted",
-      "privacyLink": "GMAJOR's Privacy Policy",
+      "privacyText": "By pressing the \"Submit Information\" button, you have accepted",
+      "privacyLink": "GMAJOR's Privacy Policy ",
       "privacyText2": "and agree to the terms and conditions.",
       "successMessage": "Thank you! Your information has been sent successfully. We will contact you soon.",
       "errorMessage": "Sorry, an error occurred. Please try again later."
     }
   },
   "infoSection": {
-    "sectionTitle": "WE FULLY \nUNDERSTAND THAT",
+    "sectionTitle": "Main challenges\nfaced by companies",
     "intro1": "In recent years, more and more SMEs \nhave been aiming to challenge \ninternational markets.",
     "intro2": "However, in reality, the following barriers \noften stand in the way:",
     "language": {
@@ -148,33 +148,33 @@
     "subheading": "ON GMAJOR",
     "features": {
       "free": {
-        "title": "FREE",
-        "description": "Registration and \nproduct/service listing",
+        "title": "Start by Registering\nand Listing for Free",
+        "description": "Free registration and\nproduct/service listing",
         "imageAlt": "Free"
       },
       "aiSupport": {
-        "title": "AI-POWERED",
-        "description": "AI-powered product descriptions \n(generated from keywords, quick \nand easy setup)",
+        "title": "AI Support Available",
+        "description": "AI-generated product descriptions (can be created from keywords)\nSimplified registration support",
         "imageAlt": "AI POWERED"
       },
       "translation": {
-        "title": "TRANSLATION",
-        "description": "Automatic chat translation \n(Japanese / English / Vietnamese)",
+        "title": "A World Without\nLanguage Barriers",
+        "description": "Automatic translation chat\nfunction for Japanese, English &\nVietnamese",
         "imageAlt": "Translation"
       },
       "search": {
-        "title": "SEARCHING",
-        "description": "Search & recommendation \nalgorithms based on \nindustry and purpose",
+        "title": "Regarding Search",
+        "description": "Search and recommendation\nalgorithms tailored to industries &\npurposes",
         "imageAlt": "SEARCHING"
       },
       "direct": {
-        "title": "DIRECT",
-        "description": "Business messaging for direct \nnegotiations, all managed in \none dashboard",
+        "title": "Provision of\nManagement System",
+        "description": "Direct messaging for negotiations\nBulk quotations\nCustomer & partner management\nAll-in-one dashboard",
         "imageAlt": "Direct"
       },
       "handsOn": {
-        "title": "HANDS-ON",
-        "description": "Optional support by \nlocal specialists",
+        "title": "Hands-on Services,\nPriority Display, Banner",
+        "description": "Comprehensive optional support by\nGMAJOR specialists (including hands-on\nservices and advertising plans)",
         "imageAlt": "HANDS-ON"
       }
     }
@@ -338,30 +338,30 @@
   },
   "timelineSection": {
     "subtitle": "Global Online B2B Matching Service",
-    "intro": "GMAJOR was created to solve these challenges.",
+    "intro": "GMAJOR was created to solve these exact above problems.",
     "global": {
-      "title": "Connect with Global\nBusinesses",
-      "description": "Food, textiles, furniture, agricultural products, IT,\nlogistics, and various Vietnamese companies\nare already registered."
+      "title": "Direct connections with\nglobal companies",
+      "description": "Japanese, American, Vietnamese, & Chinese companies (suppliers, factories, expansion-oriented firms)\nare already registered, creating a gateway\nfor Vietnamese businesses to go global."
     },
     "translate": {
-      "title": "Multilingual Automatic\nTranslation",
-      "description": "Input in Japanese and it will automatically\ntranslate to Vietnamese and English.\nSeamless communication with overseas partners."
-    },
-    "freepost": {
-      "title": "Free Listing with\nZero Risk",
-      "description": "Receive direct inquiries from Vietnamese\ncompanies and overseas buyers."
-    },
-    "aibot": {
-      "title": "AI-Powered Product\nDescription Generation",
-      "description": "Automatically create optimized descriptions\nfor overseas markets to enhance appeal."
-    },
-    "connection": {
-      "title": "Matching that Leads to\nReal Business Negotiations",
-      "description": "A system that doesn't just end with registration.\nEquipped with matching functions that\nlead to actual results."
+      "title": "Automatic multilingual translation",
+      "description": " in Vietnamese, and it will automatically be translated\ninto Japanese or English for seamless communication."
     },
     "riskfree": {
-      "title": "All Basic Functions Free,\nAffordable Premium Plans",
-      "description": "GMAJOR provides full service as a comprehensive\ntransaction and matching platform, offering basic\nfunctions for free. For companies seeking more\nefficient support, we provide hands-on sales\nsupport by local representatives."
+      "title": "Free product/service listing\nwith zero risk",
+      "description": " Simply list your products or services &\nstart receiving inquiries from abroad."
+    },
+    "aibot": {
+      "title": "AI-powered product\ndescription generation",
+      "description": " Without special knowledge, create\noptimized product descriptions\nfor global markets using just a few keywords."
+    },
+    "connection": {
+      "title": "Matchmaking that\nleads to real negotiations",
+      "description": "GMAJOR is \"not just registration.\" \nBy listing products or services, you access practical\nfunctions that bring you closer to real business results."
+    },
+    "freepost": {
+      "title": "All basic functions are free,\npaid plans remain affordable",
+      "description": "Developed specifically for SMEs,\nGMAJOR offers all basic functions\nfree of charge. Affordable paid plans are also\navailable to fit environments where\ninternal approval is difficult to obtain."
     }
   },
   "lang": {

@@ -23,8 +23,8 @@ export default function InfoSection({ locale = 'vi' }: InfoSectionProps) {
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           {/* Left */}
-          <div className="space-y-4 sm:space-y-5 md:space-y-6 w-full md:w-[600px] lg:w-[400px]">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-black text-blue-900 lg:leading-[1.2] uppercase whitespace-pre-line">
+          <div className="space-y-4 sm:space-y-5 md:space-y-6 w-full md:w-[600px] lg:w-[800px]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl text-center lg:text-left font-black text-blue-900 lg:leading-[1.2] uppercase whitespace-pre-line">
               {t('infoSection.sectionTitle')}
             </h2>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left text-blue-800 leading-relaxed whitespace-pre-line ">

@@ -35,7 +35,7 @@
       "answer": "Có, dịch vụ hỗ trợ tùy chọn bởi các chuyên gia địa phương luôn sẵn sàng."
     },
     "faq6": {
-      "question": "Nền tảng này chủ yếu kết nối doanh nghiệp từ những quốc gia nào?",
+      "question": "Nền tảng chủ yếu tập trung kết nối doanh nghiệp ở các nước nào ?",
       "answer": "Chủ yếu kết nối các doanh nghiệp từ Nhật Bản, Việt Nam, Mỹ và Trung Quốc, với mạng lưới mạnh mẽ đặc biệt trong khu vực châu Á-Thái Bình Dương."
     },
     "faq7": {
@@ -92,7 +92,7 @@
     "imageAlt": "Tư vấn GMAJOR",
     "consultationText1": "Bạn cần tư vấn thêm ?",
     "consultationText2": "Hãy để lại thông tin,",
-    "consultationText3": "sẽ đồng hành cùng bạn",
+    "consultationText3": "GMAJOR sẽ đồng hành cùng bạn",
     "form": {
       "nameLabel": "Họ và tên",
       "companyLabel": "Tên công ty",
@@ -109,9 +109,9 @@
     }
   },
   "infoSection": {
-    "sectionTitle": "CHÚNG TÔI \nHIỂU RẰNG",
-    "intro1": "Những năm gần đây, khát vọng vươn mình ra thị trường quốc tế của các doanh nghiệp vừa và nhỏ ngày càng lớn mạnh.",
-    "intro2": "Song, thực tế lại đặt ra nhiều rào cản không dễ vượt qua",
+    "sectionTitle": "Những khó khăn chính\ncủa doanh nghiệp",
+    "intro1": "Những năm gần đây, khát vọng vươn mình\nra thị trường quốc tế của các doanh nghiệp\nvừa và nhỏ ngày càng lớn mạnh.",
+    "intro2": "Song, thực tế lại đặt ra nhiều rào cản không\ndễ vượt qua",
     "language": {
       "title": "NGÔN NGỮ",
       "description": "Khi thiếu kỹ năng tiếng Anh hoặc tiếng Nhật, doanh nghiệp dễ bỏ lỡ cơ hội trong trao đổi email hay đàm phán."
@@ -148,33 +148,33 @@
     "subheading": "TRÊN NỀN TẢNG",
     "features": {
       "free": {
-        "title": "MIỄN PHÍ",
+        "title": "đăng ký và\nđăng tải miễn phí",
         "description": "Tạo tài khoản & đăng bài sản phẩm/dịch vụ",
         "imageAlt": "Miễn phí"
       },
       "aiSupport": {
-        "title": "AI HỖ TRỢ",
-        "description": "AI tự động mô tả sản phẩm dựa trên từ khóa",
+        "title": "Có hỗ trợ AI",
+        "description": "Tạo mô tả sản phẩm bằng AI (có thể tạo từ từ khóa)\nHỗ trợ đăng ký đơn giản",
         "imageAlt": "AI hỗ trợ"
       },
       "translation": {
-        "title": "DỊCH THUẬT",
-        "description": "Hệ thống dịch tin nhắn tự động \n(Tiếng Anh/Tiếng Việt/Tiếng Nhật)",
+        "title": "Một thế giới không\nrào cản ngôn ngữ",
+        "description": "Chức năng chat tự động dịch giữa\ntiếng Nhật, tiếng Anh và tiếng Việt",
         "imageAlt": "Dịch thuật"
       },
       "search": {
         "title": "TÌM KIẾM",
-        "description": "Thuật toán tìm kiếm thông minh, gợi ý theo ngành nghề & mục tiêu kinh doanh",
+        "description": "Thuật toán tìm kiếm và gợi ý phù hợp\nvới ngành nghề và mục đích",
         "imageAlt": "Tìm kiếm"
       },
       "direct": {
-        "title": "TRỰC TIẾP",
-        "description": "Nhắn tin và đàm phán trực tiếp, quản lý tập trung trên một bảng điều khiển duy nhất",
+        "title": "Cung cấp hệ thống\nquản lý",
+        "description": "Nhắn tin trao đổi thương mại (có thể đàm phán trực tiếp)\nBáo giá hàng loạt\nQuản lý khách hàng tiềm năng & đối tác\nMột dashboard quản lý tất cả",
         "imageAlt": "Trực tiếp"
       },
       "handsOn": {
-        "title": "HANDS-ON",
-        "description": "Hỗ trợ tuỳ chọn từ chuyên gia địa phương (Hands-On Service)",
+        "title": "Dịch vụ hỗ trợ trực tiếp,\nưu tiên hiển thị,\nuảng cáo banner",
+        "description": "Gói hỗ trợ tùy chọn toàn diện bởi các chuyên\ngia GMAJOR (bao gồm dịch vụ hỗ trợ trực\ntiếp,gói quảng cáo, v.v.)",
         "imageAlt": "Hands-on"
       }
     }
@@ -337,31 +337,31 @@
     }
   },
   "timelineSection": {
-    "subtitle": "Dịch vụ kết nối doanh nghiệp B2B toàn cầu trực tuyến",
-    "intro": "GMAJOR ra đời để giải quyết những thách thức này.",
+    "subtitle": "Diễn Đàn Doanh Nghiệp Kết Nối B2B Trực Tuyến",
+    "intro": "Giải pháp mở rộng thị trường quốc tế cho doanh nghiệp Việt Nam",
     "global": {
-      "title": "Kết nối với các doanh\nnghiệp toàn cầu",
-      "description": "Thực phẩm, dệt may, nội thất, nông sản, CNTT,\nvận chuyển và nhiều doanh nghiệp Việt Nam\nđa dạng đã đăng ký."
+      "title": "Kết nối trực tiếp với\ndoanh nghiệp toàn cầu",
+      "description": "Hàng loạt nhà cung cấp, nhà máy sản xuất & đối tác\nđến từ Nhật Bản, Mỹ, Trung Quốc, Việt Nam… đã sẵn sàng. Đây chính là cánh cổng giúp doanh nghiệp Việt Nam\ntiến gần hơn đến thị trường quốc tế."
     },
     "translate": {
-      "title": "Dịch tự động\nđa ngôn ngữ",
-      "description": "Nhập bằng tiếng Nhật sẽ tự động dịch sang\ntiếng Việt và tiếng Anh. Giao tiếp mượt mà\nvới đối tác nước ngoài."
-    },
-    "freepost": {
-      "title": "Đăng tin miễn phí\nvới rủi ro bằng không",
-      "description": "Nhận truy vấn trực tiếp từ các doanh nghiệp\nViệt Nam và người mua nước ngoài."
-    },
-    "aibot": {
-      "title": "Tạo mô tả sản phẩm\nbằng AI",
-      "description": "Tự động tạo mô tả được tối ưu hóa cho\nthị trường nước ngoài để tăng sức hấp dẫn."
-    },
-    "connection": {
-      "title": "Kết nối dẫn đến\nthương lượng kinh doanh thực tế",
-      "description": "Một hệ thống không chỉ dừng lại ở việc đăng ký.\nTrang bị các chức năng kết nối dẫn đến\nkết quả thực tế."
+      "title": "Hệ thống tự động\nphiên dịch đa ngôn ngữ",
+      "description": "Bạn có thể nhắn tin thoải mái bằng tiếng Việt,\nhệ thống sẽ ngay lập tức chuyển đổi sang tiếng Anh hoặc tiếng Nhật, đảm bảo cuộc trò chuyện\nluôn liền mạch và hiệu quả."
     },
     "riskfree": {
-      "title": "Tất cả tính năng cơ bản miễn phí,\nGói trả phí với giá hợp lý",
-      "description": "GMAJOR cung cấp dịch vụ đầy đủ như một nền tảng\ngiao dịch và kết nối toàn diện, cung cấp các tính năng\ncơ bản miễn phí. Đối với các công ty muốn hỗ trợ hiệu quả\nhơn, chúng tôi cung cấp hỗ trợ bán hàng thực tế\nbởi đại diện địa phương."
+      "title": "Miễn phí đăng bài\nsản phẩm/dịch vụ, \nchẳng ngại rủi ro",
+      "description": "Chỉ cần đăng sản phẩm hoặc dịch vụ, bạn đã có cơ hội\nnhận yêu cầu hợp tác từ khắp nơi trên thế giới."
+    },
+    "aibot": {
+      "title": "Mô tả sản phẩm tối ưu với AI",
+      "description": "Không cần chuyên môn sâu, chỉ với vài từ khóa, AI sẽ giúp tạo nội dung, mô tả sản phẩm\nchuyên nghiệp, chuẩn hóa cho thị trường quốc tế."
+    },
+    "connection": {
+      "title": "Kết nối để tiến tới đàm phán thực sự",
+      "description": "GMAJOR không chỉ là nơi giới thiệu sản phẩm. Với những tính năng thiết thực, nền tảng này giúp bạn\nrút ngắn khoảng cách\ntừ bước giới thiệu đến bàn đàm phán và ký kết hợp đồng."
+    },
+    "freepost": {
+      "title": "Miễn phí tính năng cơ bản\nGói nâng cấp chi phí hợp lý",
+      "description": "Dành riêng cho SMEs, GMAJOR cung cấp\nđầy đủ tính năng cơ bản hoàn toàn miễn phí.\nNếu cần nâng cấp, bạn có thể chọn gói trả phí\nvới chi phí phù hợp, đặc biệt cho\ndoanh nghiệp còn hạn chế ngân sách."
     }
   },
   "lang": {

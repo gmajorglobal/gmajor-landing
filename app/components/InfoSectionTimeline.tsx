@@ -74,7 +74,7 @@ export default function InfoSectionTimeline({ locale = 'vi' }: InfoSectionTimeli
         {/* Timeline */}
         <div className="relative">
           {/* Central line - extends through all items - hidden on mobile */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-2.5 bg-[#83a7d4]" style={{height: '1000px'}}></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-2.5 bg-[#83a7d4]" style={{height: '1100px'}}></div>
 
           {/* Timeline items */}
           <div className="space-y-16 md:space-y-4">
