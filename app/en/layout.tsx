@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import '../globals.css'
 
 export const metadata: Metadata = {
-  title: 'GMAJOR - グローバル展開',
-  description: '日本、アメリカ、中国、そして世界各国の企業と直接ビジネス交流を体験 ― 完全無料',
-  keywords: 'GMAJOR、グローバル展開、日本、アメリカ、中国、国際市場、企業、貿易、ビジネス交流、プラットフォーム',
+  title: 'GMAJOR - Global Expansion',
+  description: 'Experience direct business exchanges with companies from Japan, USA, China and around the world - COMPLETELY FREE',
+  keywords: 'GMAJOR, global expansion, Japan, USA, China, international market, business, trade, B2B platform, business connection',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default function EnglishLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="ja">
+    <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
