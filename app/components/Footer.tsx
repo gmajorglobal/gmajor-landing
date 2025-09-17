@@ -100,7 +100,7 @@ export default function SiteFooter({ locale = 'vi' }: SiteFooterProps) {
                   {t('footer.more.about')}
                 </a>
               </li>
-              <li className="mb-2.5 sm:mb-3 md:mb-4">
+              {/* <li className="mb-2.5 sm:mb-3 md:mb-4">
                 <a href={`https://gmajor.biz/for-ma?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
                   {t('footer.more.ma')}
                 </a>
@@ -109,7 +109,7 @@ export default function SiteFooter({ locale = 'vi' }: SiteFooterProps) {
                 <a href={`https://gmajor.biz/for-ps?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
                   {t('footer.more.ps')}
                 </a>
-              </li>
+              </li> */}
               <li className="mb-2.5 sm:mb-3 md:mb-4">
                 <a href={`https://gmajor.biz/faq?lang=${locale}`} rel="noopener noreferrer" className="hover:underline">
                   {t('footer.more.faq')}
